@@ -1,6 +1,6 @@
 {
-  "snapshot_utc": "2026-10-22T02:44:52.993367+00:00",
-  "completed_records": 307,
+  "snapshot_utc": "2026-10-22T03:29:06.454639+00:00",
+  "completed_records": 308,
   "comparisons": [
     {
       "id": "coaxial-2af5472879",
@@ -4492,6 +4492,15 @@
       "scheme": "upwind",
       "mesh_n": null,
       "elapsed_s": 2618.371
+    },
+    {
+      "id": "legacy-828b718f0d",
+      "family": "legacy",
+      "execution_status": "executed",
+      "voltage_v": 7540,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 2661.885
     }
   ]
 }
