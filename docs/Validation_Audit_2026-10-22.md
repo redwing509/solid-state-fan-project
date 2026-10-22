@@ -51,3 +51,7 @@ The timed-out case's last log reached 6.34411 s, but its last saved field is **6
 4. Resolve physical air properties and source experimental conditions before choosing between the two 187 W/m² controls. Freeze the next model/protocol revision before collecting unseen acceptance data.
 
 No new material ranking, mains-to-electrode mapping, emissions, sound, endurance, insulation or product-performance claim follows from this audit. Results and notes remain on simulation-results pending owner review for main.
+
+## Additional archived copy discovered at publication
+
+The uploader now retains 315 terminal case-folder records, but the immutable batch manifest still contains 314 jobs. The extra folder legacy-91be60c7e7-rerun has the original case ID in job.json and a result.json identical to the original timeout (same hash, timestamp, exit status and simulated time). It is an archived copy with stale execution metadata, not evidence of an additional completed execution or independent reproduction. This audit covers the original 314 manifest jobs only. Preserve the copy; before any claimed rerun completion, establish its distinct run identity and fresh runtime/result provenance. No copied metadata was changed by this audit.
