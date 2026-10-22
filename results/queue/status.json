@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-21T23:25:46.410863+00:00",
-  "updated_at": "2026-10-22T01:41:39.352210+00:00",
+  "updated_at": "2026-10-22T01:47:40.742341+00:00",
   "state": "running",
   "jobs": {
     "coaxial-2af5472879": {
@@ -6920,13 +6920,633 @@
       "validation_status": "not_assessed"
     },
     "esp-f0f62e28a1": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 441.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.9360083e-13
+          },
+          "outlet": {
+            "I": 2.2784141e-09
+          },
+          "plate": {
+            "I": 9.0417508e-07
+          },
+          "wire": {
+            "I": -9.0645257e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "3186f18964df9e7481167868d59b90bb170fe1a9d3ebf976eda91e33967f698d",
+      "finished_at": "2026-10-22T01:41:56.269032+00:00",
+      "elapsed_s": 16.906,
+      "validation_status": "not_assessed"
+    },
+    "esp-9e9c07923c": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 451.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.9211487e-13
+          },
+          "outlet": {
+            "I": 2.2759194e-09
+          },
+          "plate": {
+            "I": 9.0418763e-07
+          },
+          "wire": {
+            "I": -9.0646332e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "df74886c2ce2d8016afa81d2497780036a11d2566afd6460375c9b019e6d6903",
+      "finished_at": "2026-10-22T01:42:14.789431+00:00",
+      "elapsed_s": 17.82,
+      "validation_status": "not_assessed"
+    },
+    "esp-222aa0abb3": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 456.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.369935e-12
+          },
+          "outlet": {
+            "I": 2.6335474e-09
+          },
+          "plate": {
+            "I": 1.3231068e-06
+          },
+          "wire": {
+            "I": -1.3257425e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "89005f7b9276e50e349100db3f0469f1be43627ed1d80d60a19c02066830ed61",
+      "finished_at": "2026-10-22T01:42:33.006003+00:00",
+      "elapsed_s": 17.552,
+      "validation_status": "not_assessed"
+    },
+    "esp-8245f42c56": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 453.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.3671722e-12
+          },
+          "outlet": {
+            "I": 2.6290361e-09
+          },
+          "plate": {
+            "I": 1.3231472e-06
+          },
+          "wire": {
+            "I": -1.3257777e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "40f600dc77937e9f8de82499a07ea2635e566217594927baeba5932c7d67efae",
+      "finished_at": "2026-10-22T01:42:52.041449+00:00",
+      "elapsed_s": 18.407,
+      "validation_status": "not_assessed"
+    },
+    "esp-2a886854ff": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 435.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.2410832e-13
+          },
+          "outlet": {
+            "I": 1.8256443e-09
+          },
+          "plate": {
+            "I": 7.1158588e-07
+          },
+          "wire": {
+            "I": -7.1341214e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "452b72bceb9dd570719ab36f3e64bd3b10afcb1ff9ef1d7a93d521fe3c2c774d",
+      "finished_at": "2026-10-22T01:43:10.893723+00:00",
+      "elapsed_s": 18.12,
+      "validation_status": "not_assessed"
+    },
+    "esp-2ba67b8863": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 446.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.2353061e-13
+          },
+          "outlet": {
+            "I": 1.8245159e-09
+          },
+          "plate": {
+            "I": 7.1158954e-07
+          },
+          "wire": {
+            "I": -7.134146e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "3d512d1a0f15c1506614a37c4f1c4e3282bb141282b4a0c5a0f047c3e2aba471",
+      "finished_at": "2026-10-22T01:43:28.610787+00:00",
+      "elapsed_s": 17.149,
+      "validation_status": "not_assessed"
+    },
+    "esp-8683609c49": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 442.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.3164107e-12
+          },
+          "outlet": {
+            "I": 2.1897847e-09
+          },
+          "plate": {
+            "I": 1.1559654e-06
+          },
+          "wire": {
+            "I": -1.1581543e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "090d931585cc96bf4f5992a475d6745cb5fd32fb211108954a1a4e34f7163c4e",
+      "finished_at": "2026-10-22T01:43:45.410035+00:00",
+      "elapsed_s": 16.236,
+      "validation_status": "not_assessed"
+    },
+    "esp-1e5b725745": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 448.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.3151276e-12
+          },
+          "outlet": {
+            "I": 2.1874753e-09
+          },
+          "plate": {
+            "I": 1.1559774e-06
+          },
+          "wire": {
+            "I": -1.1581646e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "a932decb9e94f14816a21604811f24ea966ac65d5eac381950f526dffd63a6cd",
+      "finished_at": "2026-10-22T01:44:03.151021+00:00",
+      "elapsed_s": 17.167,
+      "validation_status": "not_assessed"
+    },
+    "esp-c808aa6d24": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 456.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.9270555e-12
+          },
+          "outlet": {
+            "I": 2.5407123e-09
+          },
+          "plate": {
+            "I": 1.691307e-06
+          },
+          "wire": {
+            "I": -1.6938503e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "429d6592eaa1478bb19d348ad09cf22ca2d7a243c74c1c550d094322156b826a",
+      "finished_at": "2026-10-22T01:44:21.638488+00:00",
+      "elapsed_s": 17.91,
+      "validation_status": "not_assessed"
+    },
+    "esp-8699e5f8af": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 454.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.9247476e-12
+          },
+          "outlet": {
+            "I": 2.5366524e-09
+          },
+          "plate": {
+            "I": 1.6913451e-06
+          },
+          "wire": {
+            "I": -1.6938841e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "810dba0a00a6e6adda369ac5d0a76c8df263ab0dc327f1d91065dacf13ac792a",
+      "finished_at": "2026-10-22T01:44:38.943305+00:00",
+      "elapsed_s": 16.647,
+      "validation_status": "not_assessed"
+    },
+    "esp-f8422cbc48": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 433.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 3.6504605e-13
+          },
+          "outlet": {
+            "I": 2.2996195e-09
+          },
+          "plate": {
+            "I": 6.5803936e-07
+          },
+          "wire": {
+            "I": -6.6033975e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "d5b627948d16d51787e4c9d47d38fd986bd98c586e69cd1338fb9cb2af989af3",
+      "finished_at": "2026-10-22T01:44:55.476424+00:00",
+      "elapsed_s": 15.966,
+      "validation_status": "not_assessed"
+    },
+    "esp-7c2df46bb5": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 454.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 3.6411016e-13
+          },
+          "outlet": {
+            "I": 2.2977023e-09
+          },
+          "plate": {
+            "I": 6.5804463e-07
+          },
+          "wire": {
+            "I": -6.6034277e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "bce7157a4f26a8de9fd54a9b320a914c3ad855cf8a6e1880fe80a6512aa7d0f7",
+      "finished_at": "2026-10-22T01:45:14.382995+00:00",
+      "elapsed_s": 18.299,
+      "validation_status": "not_assessed"
+    },
+    "esp-d9eb59fc3c": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 436.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.0436003e-12
+          },
+          "outlet": {
+            "I": 2.7791444e-09
+          },
+          "plate": {
+            "I": 1.10775e-06
+          },
+          "wire": {
+            "I": -1.1105288e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "64293c30d7bd5cc183a9dae0a167794f7ae5b07f65af7fdb2610eab6375d69a0",
+      "finished_at": "2026-10-22T01:45:31.746028+00:00",
+      "elapsed_s": 16.674,
+      "validation_status": "not_assessed"
+    },
+    "esp-9ef068ac7a": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 457.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.0411691e-12
+          },
+          "outlet": {
+            "I": 2.7749186e-09
+          },
+          "plate": {
+            "I": 1.1077677e-06
+          },
+          "wire": {
+            "I": -1.110543e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "10fa1adb935137a6a089acc1c7be2486e7683e410d2a2d75eb0e2d68144056bd",
+      "finished_at": "2026-10-22T01:45:50.199979+00:00",
+      "elapsed_s": 17.92,
+      "validation_status": "not_assessed"
+    },
+    "esp-880dbc10f5": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 453.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.8396598e-12
+          },
+          "outlet": {
+            "I": 3.2669196e-09
+          },
+          "plate": {
+            "I": 1.6980358e-06
+          },
+          "wire": {
+            "I": -1.7013036e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "befc8f90ce6a244a39add78a4d5f55d5651a05f5274387589eb1e428b1665dea",
+      "finished_at": "2026-10-22T01:46:10.307045+00:00",
+      "elapsed_s": 19.476,
+      "validation_status": "not_assessed"
+    },
+    "esp-e6b3dba446": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 456.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.8347547e-12
+          },
+          "outlet": {
+            "I": 3.2588338e-09
+          },
+          "plate": {
+            "I": 1.6980961e-06
+          },
+          "wire": {
+            "I": -1.7013558e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "2960b9d92485ffa7adc18df880dfb71058a50054b700b0d1872ca013b2da8663",
+      "finished_at": "2026-10-22T01:46:28.362306+00:00",
+      "elapsed_s": 17.429,
+      "validation_status": "not_assessed"
+    },
+    "esp-4b8c444632": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 432.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.7524207e-13
+          },
+          "outlet": {
+            "I": 2.2255391e-09
+          },
+          "plate": {
+            "I": 7.9014602e-07
+          },
+          "wire": {
+            "I": -7.9237287e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "61ef85d023efd28504d8ba655648efc59c82a05a3efa2fa6dabcc0abaf0f7b8b",
+      "finished_at": "2026-10-22T01:46:45.658123+00:00",
+      "elapsed_s": 16.691,
+      "validation_status": "not_assessed"
+    },
+    "esp-856dc3880d": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 449.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 7.7433066e-13
+          },
+          "outlet": {
+            "I": 2.2236681e-09
+          },
+          "plate": {
+            "I": 7.9015128e-07
+          },
+          "wire": {
+            "I": -7.9237582e-07
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "733a09559bc5e94832ccf77ed5183e4f68ca1f997fc3878c6b315f1abbb99e9f",
+      "finished_at": "2026-10-22T01:47:04.083980+00:00",
+      "elapsed_s": 17.806,
+      "validation_status": "not_assessed"
+    },
+    "esp-de04ecb4f6": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 437.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.5225989e-12
+          },
+          "outlet": {
+            "I": 2.6985334e-09
+          },
+          "plate": {
+            "I": 1.3298709e-06
+          },
+          "wire": {
+            "I": -1.3325692e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "9f3e7dddcc7e8624bd68b5551e277d06c06cb314647956d6f61aa6c91a254042",
+      "finished_at": "2026-10-22T01:47:22.163437+00:00",
+      "elapsed_s": 17.462,
+      "validation_status": "not_assessed"
+    },
+    "esp-27374018fe": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 453.0,
+        "last_patch_metrics": {
+          "inlet": {
+            "I": 1.5204132e-12
+          },
+          "outlet": {
+            "I": 2.6945157e-09
+          },
+          "plate": {
+            "I": 1.3298881e-06
+          },
+          "wire": {
+            "I": -1.3325831e-06
+          },
+          "sym": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "a5af98702144ad900bdf6152e2c6c10ad55c10b9c7c3b0198b6c4fe78e0fbbbb",
+      "finished_at": "2026-10-22T01:47:40.144946+00:00",
+      "elapsed_s": 17.372,
+      "validation_status": "not_assessed"
+    },
+    "esp-46ff1788a2": {
       "status": "running",
-      "started_at": "2026-10-22T01:41:39.352092+00:00",
-      "job_hash": "3186f18964df9e7481167868d59b90bb170fe1a9d3ebf976eda91e33967f698d"
+      "started_at": "2026-10-22T01:47:40.741774+00:00",
+      "job_hash": "e5c2566c17ec647c03ca614261cbcf6e381d52fbe0db6d2e9a6e382ab124762f"
     }
   },
   "paused_families": [],
   "validation_status": "not_assessed",
-  "current_job": "esp-f0f62e28a1",
+  "current_job": "esp-46ff1788a2",
   "reason": null
 }

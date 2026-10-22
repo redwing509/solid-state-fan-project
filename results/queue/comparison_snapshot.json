@@ -1,6 +1,6 @@
 {
-  "snapshot_utc": "2026-10-22T01:40:57.286962+00:00",
-  "completed_records": 241,
+  "snapshot_utc": "2026-10-22T01:47:13.108960+00:00",
+  "completed_records": 262,
   "comparisons": [
     {
       "id": "coaxial-2af5472879",
@@ -3898,6 +3898,195 @@
       "scheme": "upwind",
       "mesh_n": null,
       "elapsed_s": 17.438
+    },
+    {
+      "id": "esp-9e469a59ae",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 19.308
+    },
+    {
+      "id": "esp-17f7e77071",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.432
+    },
+    {
+      "id": "esp-032b0d71a2",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.106
+    },
+    {
+      "id": "esp-f0f62e28a1",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.906
+    },
+    {
+      "id": "esp-9e9c07923c",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.82
+    },
+    {
+      "id": "esp-222aa0abb3",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.552
+    },
+    {
+      "id": "esp-8245f42c56",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.407
+    },
+    {
+      "id": "esp-2a886854ff",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.12
+    },
+    {
+      "id": "esp-2ba67b8863",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.149
+    },
+    {
+      "id": "esp-8683609c49",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.236
+    },
+    {
+      "id": "esp-1e5b725745",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.167
+    },
+    {
+      "id": "esp-c808aa6d24",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.91
+    },
+    {
+      "id": "esp-8699e5f8af",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 30000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.647
+    },
+    {
+      "id": "esp-f8422cbc48",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 15.966
+    },
+    {
+      "id": "esp-7c2df46bb5",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.299
+    },
+    {
+      "id": "esp-d9eb59fc3c",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.674
+    },
+    {
+      "id": "esp-9ef068ac7a",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.92
+    },
+    {
+      "id": "esp-880dbc10f5",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 19.476
+    },
+    {
+      "id": "esp-e6b3dba446",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.429
+    },
+    {
+      "id": "esp-4b8c444632",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.691
+    },
+    {
+      "id": "esp-856dc3880d",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.806
     }
   ]
 }
