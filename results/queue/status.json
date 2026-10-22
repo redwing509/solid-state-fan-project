@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-21T23:25:46.410863+00:00",
-  "updated_at": "2026-10-22T03:28:22.885445+00:00",
+  "updated_at": "2026-10-22T04:08:57.569515+00:00",
   "state": "running",
   "jobs": {
     "coaxial-2af5472879": {
@@ -8872,13 +8872,28 @@
       "validation_status": "not_assessed"
     },
     "legacy-43ef982684": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 10.0,
+        "last_patch_metrics": {},
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "af37c92ba55dc467a6d1f10139923587ce972daab7af4979e6dfd1693f84b480",
+      "finished_at": "2026-10-22T04:08:56.740050+00:00",
+      "elapsed_s": 2433.809,
+      "validation_status": "not_assessed"
+    },
+    "legacy-8266a66833": {
       "status": "running",
-      "started_at": "2026-10-22T03:28:22.885305+00:00",
-      "job_hash": "af37c92ba55dc467a6d1f10139923587ce972daab7af4979e6dfd1693f84b480"
+      "started_at": "2026-10-22T04:08:57.569374+00:00",
+      "job_hash": "d2ab5eb558fda54d8d27deb7a97cb2106bc1a6e9781f05755364c5aca90c9c27"
     }
   },
   "paused_families": [],
   "validation_status": "not_assessed",
-  "current_job": "legacy-43ef982684",
+  "current_job": "legacy-8266a66833",
   "reason": null
 }
