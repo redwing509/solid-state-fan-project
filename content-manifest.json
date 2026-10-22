@@ -25,14 +25,19 @@
     "size_bytes": 4358
   },
   {
+    "path": "docs/Batch_Completion_Review.md",
+    "sha256": "616d9a0a635bb7a521e4783292eff40d3a9b1a718c7c09768962e9ba9a3f0410",
+    "size_bytes": 4885
+  },
+  {
     "path": "docs/Fanless_Fan_Project.md",
     "sha256": "30c5d337be821c29df0c1f179ae869f0a7ed8f29b7c9a75670323bbc686d7d96",
     "size_bytes": 29896
   },
   {
     "path": "docs/GitHub_Sync.md",
-    "sha256": "921c22d0b05614a41e042aaa7dde26ef9901c3a3c57b9020850dc11370476c17",
-    "size_bytes": 4304
+    "sha256": "d2a4892b20060d4b6a79c2dee5b537b8b7397174197a77cc83ad8e6a0e540272",
+    "size_bytes": 4835
   },
   {
     "path": "docs/Legacy_Benchmark_Review.md",
@@ -51,18 +56,18 @@
   },
   {
     "path": "docs/Project_To_Do.md",
-    "sha256": "8ab7075f67b624ebbbfc536383aa810f800eb813a49240250401701ad7274ec4",
-    "size_bytes": 8779
+    "sha256": "ecb44059fb8028462aa0c8547dc3f1d46b7513d35c2c48dc990ce505d33c2b45",
+    "size_bytes": 9356
   },
   {
     "path": "docs/Queue_Status.md",
-    "sha256": "e8aecccdf2f5f204a3d0347ca9ba01029674f9a084b92761b7fc7bdb6ada6083",
-    "size_bytes": 6062
+    "sha256": "42bb915ad85b3bfaad782b984b23ed8a40c2aff86354be794f210c51c6903f28",
+    "size_bytes": 6478
   },
   {
     "path": "docs/Simulation_Progress.md",
-    "sha256": "67b6cd61dcbc0c473f435cc4c6c6c7ad42e15a122cdd4b66076cc380113207cc",
-    "size_bytes": 5833
+    "sha256": "a8f5f2437c55228183b1a3becd02b41706eb9fdfa52f9df560e9c94a6749b3d2",
+    "size_bytes": 6289
   },
   {
     "path": "docs/Simulator_Comparison_Register.md",
@@ -71,8 +76,13 @@
   },
   {
     "path": "docs/TASKS.md",
-    "sha256": "8ab7075f67b624ebbbfc536383aa810f800eb813a49240250401701ad7274ec4",
-    "size_bytes": 8779
+    "sha256": "ecb44059fb8028462aa0c8547dc3f1d46b7513d35c2c48dc990ce505d33c2b45",
+    "size_bytes": 9356
+  },
+  {
+    "path": "docs/Validation_Plan.md",
+    "sha256": "53224340e9c927cb0f6512eac3e474d014d3e59c2d37693e3fb4e8cad27ff053",
+    "size_bytes": 11446
   },
   {
     "path": "docs/Voltage_and_Materials_Campaign.md",
@@ -6923,6 +6933,21 @@
     "path": "results/initial/queue/status.json",
     "sha256": "4ccfeacc98a97e1a8e9a53a3abe08f5f199e7dd100cfea1cd39ae2a338c9423c",
     "size_bytes": 4145
+  },
+  {
+    "path": "results/initial/validation/comparison_snapshot.json",
+    "sha256": "c000d16686147cc5ebcb9a928cf225d05f1bc8730d33350784e1f96df57bfc0a",
+    "size_bytes": 167503
+  },
+  {
+    "path": "results/initial/validation/final_integrity_audit.json",
+    "sha256": "7e1156e319d62580ffff67d9a958f6eef3d3b4810e59d72ef52d1baacb44b1f3",
+    "size_bytes": 690
+  },
+  {
+    "path": "results/initial/validation/reference_cases_and_convergence.json",
+    "sha256": "e0bc156a4890f9803f082676a07cc79ba84cef731e63098cad2186ee1323cb39",
+    "size_bytes": 3661
   },
   {
     "path": "results/legacy-202fc5f9af/job.json",
