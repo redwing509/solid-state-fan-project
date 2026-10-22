@@ -1,4 +1,4 @@
-# GitHub incremental project backup
+# Solid State Fan Project — GitHub sync
 
 Repository: https://github.com/redwing509/solid-state-fan-project
 
@@ -14,10 +14,12 @@ The running case is archived after its terminal result appears. Runtime images, 
 
 The user explicitly approved mail's repository-only write key in the chat. Registration succeeded (deploy key ID 167250586). Private key material has never left mail; the personal GitHub credential was not copied there. An earlier automatic-review rejection was resolved by this specific user authorization.
 
-The registered grant is: the mail-hosted public deploy key named **mail fan-research results publisher** receives write permission for **redwing509/solid-state-fan-project only**, allowing automatic pushes while this computer is offline. The key cannot grant access to other repositories. The user can revoke it from the repository's Settings → Deploy keys. Initial upload and ongoing sync are being verified before being reported as working.
+The registered grant is: the mail-hosted public deploy key named **mail fan-research results publisher** receives write permission for **redwing509/solid-state-fan-project only**, allowing automatic pushes while this computer is offline. The key cannot grant access to other repositories. The user can revoke it from the repository's Settings → Deploy keys. Initial upload succeeded: 205 completed queue cases plus the original baseline and project records, commit `ce5dd97e6f7f9559cd01831dac96dc73c539c73c`, verified against GitHub main at 2026-10-22 01:18 UTC. New results continue to accumulate.
 
 ## Publisher behavior
 
-The isolated export checkout is `/opt/fan-research/2026-10-21/github-export`. A single locked publisher is prepared to check for completed results every five minutes, commit changes and push to `main`. Failed pushes retain local commits for retry; no force push is allowed. State is recorded in `queue/github_sync_status.json` on mail. Export stops for review at 2 GiB rather than silently dropping data or buying capacity.
+The isolated export checkout is `/opt/fan-research/2026-10-21/github-export`. A single locked publisher is running and checks for completed results every five minutes, commit changes and push to `main`. Failed pushes retain local commits for retry; no force push is allowed. State is recorded in `queue/github_sync_status.json` on mail. Export stops for review at 2 GiB rather than silently dropping data or buying capacity.
 
 Scoped write access has been approved and registered. Local project changes are mirrored into the fan folder on mail before export; the publisher alone writes the GitHub branch to avoid conflicts.
+
+The recurring publisher checks every five minutes and survives chat/SSH closure or this PC going offline. It is not installed to start after a VPS reboot; the hourly monitor checks for unexpected stops. The repository was renamed at the user’s request to **Solid State Fan Project**, slug `solid-state-fan-project`; its repository ID and scoped deploy key were preserved. Existing computer authentication supports repository management, and mail has repository-only push access. No broader server credential was granted.

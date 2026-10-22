@@ -16,8 +16,8 @@
   },
   {
     "path": "docs/GitHub_Sync.md",
-    "sha256": "5bfa0333fc1c8e337300e1f748a053a06fc5c642b83d3b28a0ee4e34a7ccd464",
-    "size_bytes": 2443
+    "sha256": "200751da01eae8ca002f18784d586f388c2cdb4f8989edcc442da00c528cf3b3",
+    "size_bytes": 3132
   },
   {
     "path": "docs/Legacy_Benchmark_Review.md",
@@ -36,8 +36,8 @@
   },
   {
     "path": "docs/Project_To_Do.md",
-    "sha256": "bfb8653664b64351058774a11519ed492d06e515200a73d4816ada0b0b673bd7",
-    "size_bytes": 8304
+    "sha256": "7f6656e89cd3f77321664b2a8789bc7cccd2113f4d47cf16fb77fd2f66b0a414",
+    "size_bytes": 8414
   },
   {
     "path": "docs/Queue_Status.md",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/TASKS.md",
-    "sha256": "bfb8653664b64351058774a11519ed492d06e515200a73d4816ada0b0b673bd7",
-    "size_bytes": 8304
+    "sha256": "7f6656e89cd3f77321664b2a8789bc7cccd2113f4d47cf16fb77fd2f66b0a414",
+    "size_bytes": 8414
   },
   {
     "path": "docs/Voltage_and_Materials_Campaign.md",
@@ -1055,6 +1055,16 @@
     "size_bytes": 152064
   },
   {
+    "path": "raw-cases/coaxial-33f8de7c78.manifest.json",
+    "sha256": "11719f561deac5897c28e6234493cd91c8988d3a7cbd879f8275723355473ceb",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-33f8de7c78.tar.gz",
+    "sha256": "46f4a7c64691707879fd08093ace5fb7a279ca4dbc928ff4ebc846730951fac9",
+    "size_bytes": 2308524
+  },
+  {
     "path": "raw-cases/coaxial-35bb00b5af.manifest.json",
     "sha256": "f4a805cd4485d0e6a85f2421feb1ed9454db277b01e6cf1ef545186a033c0b48",
     "size_bytes": 423
@@ -1363,6 +1373,16 @@
     "path": "raw-cases/coaxial-543115c3f8.tar.gz",
     "sha256": "ad6fcaa25c188372a7958adb0b20729f92f0be95327f9e0dbea732f8238942e4",
     "size_bytes": 151737
+  },
+  {
+    "path": "raw-cases/coaxial-545e5c4106.manifest.json",
+    "sha256": "c398f62e3ee936a0e63556fa076f6db8fc7a8702223c4cca0c072d787950acbf",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-545e5c4106.tar.gz",
+    "sha256": "0c34114cd9c710a6b5e34b6e4592c4583811b01b36c7bd4649edbc448bda3722",
+    "size_bytes": 2309396
   },
   {
     "path": "raw-cases/coaxial-56cdfc3085.manifest.json",
@@ -2325,6 +2345,16 @@
     "size_bytes": 2319607
   },
   {
+    "path": "raw-cases/coaxial-d577d5b577.manifest.json",
+    "sha256": "0d3832a3b4322e7fb201295c5a1707f37c078ca1bdc25d5bc0f952b4e6eb284e",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-d577d5b577.tar.gz",
+    "sha256": "7210a92e8fbdae1df06cdf3b94f8bf2516a4c462a824d0ff8536d7021a31c66e",
+    "size_bytes": 2307889
+  },
+  {
     "path": "raw-cases/coaxial-d5d6193251.manifest.json",
     "sha256": "206d66c4320f879fe44ccf4f9da0aa32ce703118933d544451368ffc86f13e59",
     "size_bytes": 423
@@ -2643,6 +2673,16 @@
     "path": "raw-cases/coaxial-f5c97de6ec.tar.gz",
     "sha256": "4951beabd97d5dacd1eee8cd5b32bb59b19fa1fa1d12393c57030f83e2e6b26c",
     "size_bytes": 502623
+  },
+  {
+    "path": "raw-cases/coaxial-f63d7845f4.manifest.json",
+    "sha256": "16656286e3026b827a87190926428c189e9af482e53e446072778d7713b5ac76",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-f63d7845f4.tar.gz",
+    "sha256": "993fc2c1864a123d46089476a175eafde9e1e08be7fcbe0a20693e225a2c6eec",
+    "size_bytes": 2320195
   },
   {
     "path": "raw-cases/coaxial-f6640f2a3c.manifest.json",
@@ -3135,6 +3175,16 @@
     "size_bytes": 599
   },
   {
+    "path": "results/coaxial-33f8de7c78/job.json",
+    "sha256": "996e05c47a2d41657e9f684dc622087e4a68ce51f3303b6591187d6887cdd7fa",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-33f8de7c78/result.json",
+    "sha256": "4821b8ac80f8fa9cc6d24871d7b31de907641b8b892292137ab08811e672f260",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-35bb00b5af/job.json",
     "sha256": "bc3c6a3ad41f5518a848ddd18268a1c8674a31b3ed4abd1fc971a77063687e7c",
     "size_bytes": 449
@@ -3443,6 +3493,16 @@
     "path": "results/coaxial-543115c3f8/result.json",
     "sha256": "a4a9123bcd6a9693751ef91103cbba1a198db110cacdfb5a7227563f1336ebb8",
     "size_bytes": 599
+  },
+  {
+    "path": "results/coaxial-545e5c4106/job.json",
+    "sha256": "40490dfe61f7b8e01fed13763b9909c9b46db2191f034075c36d9f95c14420be",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-545e5c4106/result.json",
+    "sha256": "cf2b14c90ff55eea7e596abe1ce4d1c7b4d968849aebadac649a9ada0ace79ce",
+    "size_bytes": 600
   },
   {
     "path": "results/coaxial-56cdfc3085/job.json",
@@ -4405,6 +4465,16 @@
     "size_bytes": 600
   },
   {
+    "path": "results/coaxial-d577d5b577/job.json",
+    "sha256": "ba085d10f9d6a4ecbd6532ac98d4d66e93ea2aeeae52ed72cc401d9a53448bbd",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-d577d5b577/result.json",
+    "sha256": "1e9f8931d266edd8a5bd282168a671396cf2a81c3425561c8941398c4e27287f",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-d5d6193251/job.json",
     "sha256": "8e107b954237b03f2632db258a41fab57e3c22466a85b2f816065bc8ef389562",
     "size_bytes": 449
@@ -4725,6 +4795,16 @@
     "size_bytes": 600
   },
   {
+    "path": "results/coaxial-f63d7845f4/job.json",
+    "sha256": "3eeb7baa6a1fa1f66165502063d4f860d6ec9b74bff882386809964a6a89c867",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-f63d7845f4/result.json",
+    "sha256": "4131496ebd6254bcbb321ef77fe599613269168d7860ecf2ec9eb48cf62df662",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-f6640f2a3c/job.json",
     "sha256": "e3a06e2cbbb5d74bb5249ca4e49536da4910f9ba43c25c3748721b5f432fbc4e",
     "size_bytes": 443
@@ -4871,18 +4951,18 @@
   },
   {
     "path": "results/queue/analysis_status.json",
-    "sha256": "be4492081709f5eac4db52dcdf78232889c27406371dc6694b371ea5ef1c924a",
+    "sha256": "8e3b9af14054a8ce4c121290a3f5fe89ef75860399ecd60a915c8a736c32b0c4",
     "size_bytes": 150
   },
   {
     "path": "results/queue/comparison_snapshot.csv",
-    "sha256": "f2f2712fee3b2a1137ae84674511b7b979d5cf2fb7841bd5ae6fce7fe39a80bf",
-    "size_bytes": 52357
+    "sha256": "46869df1b62a1fbfb51944d963a865fb31d5ee4324e70d7768b6a2827c893f4a",
+    "size_bytes": 53101
   },
   {
     "path": "results/queue/comparison_snapshot.json",
-    "sha256": "3f4c986dced0d4003587a7cbcb3835d84c285c1c70d189269d130da2b638b6d4",
-    "size_bytes": 141076
+    "sha256": "3e5158fdf48fdd8b16fe3d2cebbfa49d9b8ade834617e9d99edabf1b69351406",
+    "size_bytes": 143110
   },
   {
     "path": "results/queue/manifest.json",
@@ -4901,8 +4981,8 @@
   },
   {
     "path": "results/queue/status.json",
-    "sha256": "17475df041d7ba9e200a755f1e836815fd435c2e9453f382c9dbe4b5715b92a7",
-    "size_bytes": 153550
+    "sha256": "d6dd5095f9e8ae684dac15d58ae15547587d19e0e82d1c3b6f71dae7757d30c2",
+    "size_bytes": 156494
   },
   {
     "path": "scripts/build_queue_manifest.py",

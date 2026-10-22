@@ -2,7 +2,7 @@
 
 ## Active
 
-- [ ] **Publish project and completed test records to private GitHub** - Repository `redwing509/solid-state-fan-project` created; user approved mail's dedicated repository-only write key and it is registered. Complete/verify initial upload and launch the single five-minute publisher; keep raw compressed records, hashes, comparisons and notes current. Never publish credentials, runtime caches or unrelated host files. Monitor `queue/github_sync_status.json`.
+- [ ] **Publish project and completed test records to private GitHub** - Repository `redwing509/solid-state-fan-project` created; user approved mail's dedicated repository-only write key and it is registered. Initial upload verified at commit ce5dd97 (205 queue cases plus baseline); single five-minute publisher is running on mail. Continue monitoring uploads; keep raw compressed records, hashes, comparisons and notes current. Never publish credentials, runtime caches or unrelated host files. Monitor `queue/github_sync_status.json`.
 
 - [ ] **Run and review the 314-job mail queue** - Started October 21, 2026; one container at a time, at most two CPUs/4 GB RAM. Includes 216 coaxial electrical verification cases, 90 fixed-injection wire-duct flow sensitivity cases and eight legacy thermal/boundary controls. All 314 input preparations passed. Read `/opt/fan-research/2026-10-21/queue/status.json`, per-case result files and `outputs/queue/manifest.json`; distinguish execution from numerical/experimental validation. Pause/diagnose failed families before retrying.
 - [ ] **Monitor queue completion or required compute decisions** - Hourly thread follow-up `fan-simulation-queue-check` is active; stay quiet during normal progress and notify only on completion/actionable failures/holds/resource needs. Pause it after terminal results. A lightweight server companion also refreshes numerical comparison snapshots as jobs complete.
@@ -35,7 +35,7 @@
 
 ## Done
 
-- [x] ~~Create private GitHub repository and register the explicitly approved mail-only repository write key~~ (2026-10-21; `redwing509/solid-state-fan-project`, deploy key ID 167250586; private key remains on mail)
+- [x] ~~Create and name Solid State Fan Project private GitHub repository and register the explicitly approved mail-only repository write key~~ (2026-10-21; `redwing509/solid-state-fan-project`, deploy key ID 167250586; private key remains on mail)
 
 - [x] ~~Finish and numerically review the original full OpenFOAM EHD case~~ (2026-10-21; time 10 s, exit 0, finite fields, stable saved outputs and close boundary flow balance; experimental validation remains open)
 - [x] ~~Compile the second EHD implementation in its pinned OpenCFD v2412 environment~~ (2026-10-21)
