@@ -1,8 +1,23 @@
 [
   {
+    "path": "CODEOWNERS",
+    "sha256": "2c8be5987aefd931d6ee4dae4edb1624bf332f49c5c48192d96134c0a6c71962",
+    "size_bytes": 74
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "f44bfeb5f0ff5fe49efe3a3da32913941ee6d4cb9f744fadadb27e015ec24e9a",
+    "size_bytes": 1679
+  },
+  {
     "path": "README.md",
-    "sha256": "006af9e9182be21ccf2e4784c0d04176b62f5c45b06cc5253bfe93142862fbfc",
-    "size_bytes": 1998
+    "sha256": "5833545849c34ed35662a8ff9704d504f21ccd1f4d66c246de1122954be64cb2",
+    "size_bytes": 2855
+  },
+  {
+    "path": "VALIDATION.md",
+    "sha256": "19ab17c98849d0d865182362c36fa653f7a386506ef3b2de263d8dec1cedb907",
+    "size_bytes": 2215
   },
   {
     "path": "docs/AGENTS.md",
@@ -16,8 +31,8 @@
   },
   {
     "path": "docs/GitHub_Sync.md",
-    "sha256": "200751da01eae8ca002f18784d586f388c2cdb4f8989edcc442da00c528cf3b3",
-    "size_bytes": 3132
+    "sha256": "1edf60e260c99ccf1c8292b880f4dda098cb6d8a6e9efa62d85e58decd20f934",
+    "size_bytes": 3848
   },
   {
     "path": "docs/Legacy_Benchmark_Review.md",
@@ -36,8 +51,8 @@
   },
   {
     "path": "docs/Project_To_Do.md",
-    "sha256": "7f6656e89cd3f77321664b2a8789bc7cccd2113f4d47cf16fb77fd2f66b0a414",
-    "size_bytes": 8414
+    "sha256": "8ab7075f67b624ebbbfc536383aa810f800eb813a49240250401701ad7274ec4",
+    "size_bytes": 8779
   },
   {
     "path": "docs/Queue_Status.md",
@@ -56,8 +71,8 @@
   },
   {
     "path": "docs/TASKS.md",
-    "sha256": "7f6656e89cd3f77321664b2a8789bc7cccd2113f4d47cf16fb77fd2f66b0a414",
-    "size_bytes": 8414
+    "sha256": "8ab7075f67b624ebbbfc536383aa810f800eb813a49240250401701ad7274ec4",
+    "size_bytes": 8779
   },
   {
     "path": "docs/Voltage_and_Materials_Campaign.md",
@@ -1255,6 +1270,16 @@
     "size_bytes": 2314724
   },
   {
+    "path": "raw-cases/coaxial-48f2a4b331.manifest.json",
+    "sha256": "632ed1e0d06dd29dc3fbb65f60f4a82f9a0acb6c1d182162a05030e332355df0",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-48f2a4b331.tar.gz",
+    "sha256": "ef26620dbc854580fc7f0fe6bc45ee1eb2393964add3ec556ba3e7586496c17b",
+    "size_bytes": 2309692
+  },
+  {
     "path": "raw-cases/coaxial-4adcdef036.manifest.json",
     "sha256": "74308997bb128c65ff182fc8925df813624633d2941e2c1cc88c085e1a8e63fc",
     "size_bytes": 423
@@ -1493,6 +1518,16 @@
     "path": "raw-cases/coaxial-6337bdbdef.tar.gz",
     "sha256": "18b7c5c8704def3b416d1c1f7a996d16883ccdb77ad6d5ecd01fa9d016cda464",
     "size_bytes": 502636
+  },
+  {
+    "path": "raw-cases/coaxial-65a951229c.manifest.json",
+    "sha256": "3267a995929dc399a8f5f011b7f5af1e0d0e4f9559d235ee4514bba5876df6ca",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-65a951229c.tar.gz",
+    "sha256": "aafca59ee7ebdda440b9f801eacf5261ee203151b2f10ed844d18a5a55b8663d",
+    "size_bytes": 2307999
   },
   {
     "path": "raw-cases/coaxial-66ee338e20.manifest.json",
@@ -2645,6 +2680,16 @@
     "size_bytes": 151797
   },
   {
+    "path": "raw-cases/coaxial-f25cb4b63b.manifest.json",
+    "sha256": "24c8dca7c6e50308e6ca52829300b20912e1ed1107518e186c8d0087bb49853d",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-f25cb4b63b.tar.gz",
+    "sha256": "8664430b0099251d15847b64d15364be9a5173ddfdef8d0afedfc044b866d9aa",
+    "size_bytes": 2322515
+  },
+  {
     "path": "raw-cases/coaxial-f3b59ddcb1.manifest.json",
     "sha256": "2e99da4cd2af06b875e3da5009e6fb79d3b7e33903958b1fe99a10933555d8f6",
     "size_bytes": 425
@@ -3375,6 +3420,16 @@
     "size_bytes": 599
   },
   {
+    "path": "results/coaxial-48f2a4b331/job.json",
+    "sha256": "e0a03f8cd816975bf83bf27ea9c5d60c557a0d4b76ea23bd682b5263c1108dfc",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-48f2a4b331/result.json",
+    "sha256": "fe1d42245592fb92ffb0c8995df34fa570f2fe9a46abba5d4f15efbbe1180e3d",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-4adcdef036/job.json",
     "sha256": "15324ca6fe8d5f2ddf63ec305d888577450bc6aceb786cac43d09bcaf615b1d2",
     "size_bytes": 443
@@ -3613,6 +3668,16 @@
     "path": "results/coaxial-6337bdbdef/result.json",
     "sha256": "3a49ed2810906861ddc75940437b3c6aae85742c995668c71114ba87cfb8fd15",
     "size_bytes": 599
+  },
+  {
+    "path": "results/coaxial-65a951229c/job.json",
+    "sha256": "928d58e7b28d029eea94d9e2d221ca6662f08bdde251a74cd7f973ff392866f3",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-65a951229c/result.json",
+    "sha256": "0e44a04079d27a8767abd416d3453574db40247c19c022a37f971ddcf804bcbd",
+    "size_bytes": 600
   },
   {
     "path": "results/coaxial-66ee338e20/job.json",
@@ -4765,6 +4830,16 @@
     "size_bytes": 597
   },
   {
+    "path": "results/coaxial-f25cb4b63b/job.json",
+    "sha256": "52d2cc01c760520ccb4d2312583d1751c27d363dbe9a095d7451f6832309e42a",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-f25cb4b63b/result.json",
+    "sha256": "199d435aebd3c6c21cbd9f0cb8a64709bb4afe9c046d1c1d2ade786eed9e88e5",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-f3b59ddcb1/job.json",
     "sha256": "ec1a90a0bcc1f69f0d78e4fe9baedc19a3f66ea8a20466ddaa2869b42e931f80",
     "size_bytes": 444
@@ -4951,18 +5026,18 @@
   },
   {
     "path": "results/queue/analysis_status.json",
-    "sha256": "8e3b9af14054a8ce4c121290a3f5fe89ef75860399ecd60a915c8a736c32b0c4",
+    "sha256": "e8f3cdb5daa358a56dee6d42ef7f618d54c3666e6e87cd3dfadb33b48825bc73",
     "size_bytes": 150
   },
   {
     "path": "results/queue/comparison_snapshot.csv",
-    "sha256": "46869df1b62a1fbfb51944d963a865fb31d5ee4324e70d7768b6a2827c893f4a",
-    "size_bytes": 53101
+    "sha256": "2c002db150c257cd7a19eedaf34b6d27388e970eac60338ff5343feec69c45d5",
+    "size_bytes": 54106
   },
   {
     "path": "results/queue/comparison_snapshot.json",
-    "sha256": "3e5158fdf48fdd8b16fe3d2cebbfa49d9b8ade834617e9d99edabf1b69351406",
-    "size_bytes": 143110
+    "sha256": "f8652a451ed948fc0dce75ea65b335b72298d3610bdeef3aaabfc5f681fcdd95",
+    "size_bytes": 145835
   },
   {
     "path": "results/queue/manifest.json",
@@ -4981,8 +5056,8 @@
   },
   {
     "path": "results/queue/status.json",
-    "sha256": "d6dd5095f9e8ae684dac15d58ae15547587d19e0e82d1c3b6f71dae7757d30c2",
-    "size_bytes": 156494
+    "sha256": "1521c814f1c9757185949c0c3354adcec1cd5b4c4a30492b4afa17632617cdae",
+    "size_bytes": 158702
   },
   {
     "path": "scripts/build_queue_manifest.py",
@@ -5016,8 +5091,8 @@
   },
   {
     "path": "scripts/github_result_publisher.py",
-    "sha256": "6a698c88b953d9e6d093c785c468b01ab8ed7710154ba969d93cf979fdc642c9",
-    "size_bytes": 15802
+    "sha256": "4dafdc780b3c64bfe9a9b3531a9dc18ed351ed2647b9c8407ee80958c72c7925",
+    "size_bytes": 15896
   },
   {
     "path": "scripts/material_campaign.py",
