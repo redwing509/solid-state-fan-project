@@ -3700,6 +3700,16 @@
     "size_bytes": 914320
   },
   {
+    "path": "raw-cases/legacy-92814a16d6.manifest.json",
+    "sha256": "4b9b8ea3ff5ede0427af91dd698f3ade1788b23f99ffd18cd9d66b5a422c31e5",
+    "size_bytes": 427
+  },
+  {
+    "path": "raw-cases/legacy-92814a16d6.tar.gz",
+    "sha256": "a5928f722ac4b4ba8dda5e4a918fce1a0674b31f47a14950eea76cf5db789ae4",
+    "size_bytes": 14000554
+  },
+  {
     "path": "results/coaxial-01706d0f29/job.json",
     "sha256": "4914632dc152b6ea4fd2a050d0eeab458ff45521d6ab6942491ce203dcd83ca0",
     "size_bytes": 449
@@ -6845,19 +6855,29 @@
     "size_bytes": 4145
   },
   {
+    "path": "results/legacy-92814a16d6/job.json",
+    "sha256": "140defbc3dba609dff0f827f983f1a1455f8f5dd897491e2e190c70f0b1e96e3",
+    "size_bytes": 509
+  },
+  {
+    "path": "results/legacy-92814a16d6/result.json",
+    "sha256": "9b6a6125b7a25fe1375321754a4fd52052d95657988de37efeee7210e66ab1ab",
+    "size_bytes": 407
+  },
+  {
     "path": "results/queue/analysis_status.json",
-    "sha256": "79d59d2c1bdcf01eb9b39d8242627b3632f3f975ce5e324295059beb9cac0949",
+    "sha256": "7a6a7c859642e4731133d88862f11b6cebad8aeed371025723f1aeb31733cadb",
     "size_bytes": 150
   },
   {
     "path": "results/queue/comparison_snapshot.csv",
-    "sha256": "3c0ca95d1dd4c48f08c301f1497998d9ffb4a76c0cdd1860bf496e0462ef8ba8",
-    "size_bytes": 59955
+    "sha256": "0e8c47e913287b270716aece5ad215997a6a2b310146652109f75dc5a381ba8d",
+    "size_bytes": 60020
   },
   {
     "path": "results/queue/comparison_snapshot.json",
-    "sha256": "74d48996a4d961a2846e0a70cfc46e62bcdef58c2f6699e3f6bab4ff08c090ad",
-    "size_bytes": 165822
+    "sha256": "4d13cb70f22e04775d886667a7124b5fd6590e4d22bf1f38af2679ba204f9982",
+    "size_bytes": 166033
   },
   {
     "path": "results/queue/manifest.json",
@@ -6876,8 +6896,8 @@
   },
   {
     "path": "results/queue/status.json",
-    "sha256": "8e73aa2f30c4058a1adb73aa741830fb1b382696a1da8f14651cbe17dec7be87",
-    "size_bytes": 231955
+    "sha256": "82348e1a302add12e6ada734d2d89355ab0bcd956e48bb4af99bff32e416d752",
+    "size_bytes": 232445
   },
   {
     "path": "scripts/build_queue_manifest.py",
