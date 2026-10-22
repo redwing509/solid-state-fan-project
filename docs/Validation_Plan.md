@@ -69,3 +69,7 @@ Next actions: independently audit E-01 comparison assumptions; perform F-01/T-01
 - AMCA 210-25 / ASHRAE 51-25 scope and revision: https://www.amca.org/educate/amca-inmotion-e-news/amca-inmotion-e-news-%E2%80%94-summer-2025.html
 - NIST uncertainty guidance: https://physics.nist.gov/cuu/Uncertainty/coverage.html
 - UL ozone claim program: https://www.ul.com/services/zero-ozone-emissions-validation
+
+## Revision 0.1 audit addendum — October 22
+
+Validation_Audit_2026-10-22.md records completed reference-calculation, coordinate, duct flux and thermal-input checks. The audit is retrospective; no provisional acceptance target has been promoted to an approval. E-01 now has a second implementation of its exact voltage/current calculation. F-01 retains an imposed 1 m/s inlet, requiring separate boundary conditions before self-driven fan claims. T-01 still needs exact wall reconstruction and complete transient energy balance. The last saved timeout field is 6.0 s even though the log reached 6.34411 s.

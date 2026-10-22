@@ -52,3 +52,7 @@ The lab URL can be opened from a phone with the same account. The user subsequen
 ## Completed batch review
 
 See Batch_Completion_Review.md for final counts, integrity audit, electrical error/convergence summaries and the incomplete thermal control. All 314 terminal case records are backed up. Validation_Plan.md revision 0.1 defines the working evidence gates and future acceptance protocol; it is not a retroactive validation certificate.
+
+## October 22 validation continuation
+
+See Validation_Audit_2026-10-22.md. Independently coded exact-current calculation agrees with the previous reference to 8.21e-16 relative difference; sample-start rounding correction is retained separately. All 90 duct final fields passed through a boundary-flux audit, but a fixed 1 m/s inlet means they do not predict self-generated airflow. Thermal input/control fields now distinguish the two 187 W/m² corrections; wall-temperature reconstruction and full transient energy closure remain pending. No solver was launched.

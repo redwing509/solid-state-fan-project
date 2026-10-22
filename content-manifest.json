@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/Project_To_Do.md",
-    "sha256": "ecb44059fb8028462aa0c8547dc3f1d46b7513d35c2c48dc990ce505d33c2b45",
-    "size_bytes": 9356
+    "sha256": "5a74839524b5f4453f017afb11a2f17cc45d2e348ca79d92a1ecc750a8c70d9d",
+    "size_bytes": 9673
   },
   {
     "path": "docs/Queue_Status.md",
@@ -66,8 +66,8 @@
   },
   {
     "path": "docs/Simulation_Progress.md",
-    "sha256": "a8f5f2437c55228183b1a3becd02b41706eb9fdfa52f9df560e9c94a6749b3d2",
-    "size_bytes": 6289
+    "sha256": "03d882a0692816bc06eb509a6867ff90260e2c588ed81674beaaa33fe9e63cc5",
+    "size_bytes": 6859
   },
   {
     "path": "docs/Simulator_Comparison_Register.md",
@@ -76,13 +76,18 @@
   },
   {
     "path": "docs/TASKS.md",
-    "sha256": "ecb44059fb8028462aa0c8547dc3f1d46b7513d35c2c48dc990ce505d33c2b45",
-    "size_bytes": 9356
+    "sha256": "5a74839524b5f4453f017afb11a2f17cc45d2e348ca79d92a1ecc750a8c70d9d",
+    "size_bytes": 9673
+  },
+  {
+    "path": "docs/Validation_Audit_2026-10-22.md",
+    "sha256": "e8eaa64f416e6d5bc3d0ca29d0db39e1f50e8572285296521096f3c7c153e220",
+    "size_bytes": 7579
   },
   {
     "path": "docs/Validation_Plan.md",
-    "sha256": "53224340e9c927cb0f6512eac3e474d014d3e59c2d37693e3fb4e8cad27ff053",
-    "size_bytes": 11446
+    "sha256": "766b260a730f366689044b3903f529f6fcfcdd9ce8c9dd9731936a55be546ae2",
+    "size_bytes": 12129
   },
   {
     "path": "docs/Voltage_and_Materials_Campaign.md",
@@ -3760,6 +3765,16 @@
     "size_bytes": 13996848
   },
   {
+    "path": "raw-cases/legacy-91be60c7e7-rerun.manifest.json",
+    "sha256": "a22b086c64b76c7ebed476f60bc872b30562eeba8ec8a9e7468327d9ab345374",
+    "size_bytes": 433
+  },
+  {
+    "path": "raw-cases/legacy-91be60c7e7-rerun.tar.gz",
+    "sha256": "c63a66d3847fa6e36d5da39849478c422c859c3a4a26b78c9d1c6c5bca66ec1a",
+    "size_bytes": 12556841
+  },
+  {
     "path": "raw-cases/legacy-91be60c7e7.manifest.json",
     "sha256": "0f653107fd1a93d691e76d3499104e53dea4beb9daefa9c9dcc03260c2328b74",
     "size_bytes": 427
@@ -6935,6 +6950,11 @@
     "size_bytes": 4145
   },
   {
+    "path": "results/initial/validation/audit_math_checks.json",
+    "sha256": "579f940b5833ce638a8063abac96a0a5708eb744e1ec2b31bd009c6bc925f8b4",
+    "size_bytes": 339
+  },
+  {
     "path": "results/initial/validation/comparison_snapshot.json",
     "sha256": "c000d16686147cc5ebcb9a928cf225d05f1bc8730d33350784e1f96df57bfc0a",
     "size_bytes": 167503
@@ -6948,6 +6968,11 @@
     "path": "results/initial/validation/reference_cases_and_convergence.json",
     "sha256": "e0bc156a4890f9803f082676a07cc79ba84cef731e63098cad2186ee1323cb39",
     "size_bytes": 3661
+  },
+  {
+    "path": "results/initial/validation/validation_audit_v2.json",
+    "sha256": "ee270f5b65b780cf2f2ad1cab0b650bd6cef8e8eaafdd19b4832d8e24f0e218d",
+    "size_bytes": 194627
   },
   {
     "path": "results/legacy-202fc5f9af/job.json",
@@ -7006,6 +7031,16 @@
   },
   {
     "path": "results/legacy-91be60c7e7/result.json",
+    "sha256": "11d49d536d774b036671b112ab63dcfa65f46e9071ff15b0855c18a331cb59e4",
+    "size_bytes": 412
+  },
+  {
+    "path": "results/legacy-91be60c7e7-rerun/job.json",
+    "sha256": "a3a5d68a82dfa4253df76ed42b09472046103aeae8e80778045dd9198c3ff78f",
+    "size_bytes": 525
+  },
+  {
+    "path": "results/legacy-91be60c7e7-rerun/result.json",
     "sha256": "11d49d536d774b036671b112ab63dcfa65f46e9071ff15b0855c18a331cb59e4",
     "size_bytes": 412
   },
@@ -7070,6 +7105,11 @@
     "size_bytes": 3588
   },
   {
+    "path": "scripts/check_audit_math.py",
+    "sha256": "40246e3cdea5082b9cf8a860adbef16862c5bc839272ab5efc9a5b2c9a876eaa",
+    "size_bytes": 1356
+  },
+  {
     "path": "scripts/coaxial_verification.py",
     "sha256": "a3617e6f14d7221c02b8a6730575306c343c9cdf1b9dab331289fb9d65a44692",
     "size_bytes": 6086
@@ -7115,6 +7155,11 @@
     "size_bytes": 828
   },
   {
+    "path": "scripts/report_validation_audit.py",
+    "sha256": "9b066a8b808c2aeb39d0cea7ca3c9f644182a0ab88c051005688354b6e739b4f",
+    "size_bytes": 8260
+  },
+  {
     "path": "scripts/review_legacy.py",
     "sha256": "b33cb6b0f9d0baa741459c7b006857d6f933cfe1300bd572e92bcb1b601d5fa3",
     "size_bytes": 4966
@@ -7133,6 +7178,11 @@
     "path": "scripts/run-modern-verification.sh",
     "sha256": "e5090bc11b962c6be4c8e8a88419187a848588b74814c33aff68982e218c925a",
     "size_bytes": 1023
+  },
+  {
+    "path": "scripts/validation_audit_v2.py",
+    "sha256": "f80127701dab182445c12d46c84eaf3f55f3b88bdd3a69565eccc796419bc115",
+    "size_bytes": 7543
   },
   {
     "path": "scripts/watch_queue_comparisons.py",
