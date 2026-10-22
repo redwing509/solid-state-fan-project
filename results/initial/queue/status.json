@@ -1,0 +1,156 @@
+{
+  "started_at": "2026-10-21T23:25:46.410863+00:00",
+  "updated_at": "2026-10-21T23:27:44.822897+00:00",
+  "state": "running",
+  "jobs": {
+    "coaxial-2af5472879": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 233.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.6920785e-07
+          },
+          "outer": {
+            "I": 1.6920787e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "528f29fe28f3ea809f659110ef38a38a5b671d6acc387c4e552b16f28d7e207e",
+      "finished_at": "2026-10-21T23:25:50.361096+00:00",
+      "elapsed_s": 3.774,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-bc9b183bce": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 266.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.6935681e-07
+          },
+          "outer": {
+            "I": 1.6935684e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "af45f0f7995f2e5647d2de86d8eb9916cd619713ab23911b320736f158b13fab",
+      "finished_at": "2026-10-21T23:25:54.146589+00:00",
+      "elapsed_s": 3.708,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-47a80b75c3": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 449.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.6944845e-07
+          },
+          "outer": {
+            "I": 1.6944847e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "c75da422b31230f7bf3381761e302f7f9bb6b12e7f54ff7284a1b595b69b2c63",
+      "finished_at": "2026-10-21T23:26:05.654988+00:00",
+      "elapsed_s": 11.43,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-9d6e72468c": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 478.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.6952478e-07
+          },
+          "outer": {
+            "I": 1.6952482e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "8f32d756195f5fe1d7b6817e12af033d2af08e9a0cdbe4ff776f23f874367f9e",
+      "finished_at": "2026-10-21T23:26:18.316772+00:00",
+      "elapsed_s": 12.586,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-d7b595ef04": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 862.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.6950899e-07
+          },
+          "outer": {
+            "I": 1.6950906e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "35685c752262aa41bd60fa139c200b944d0d5ee5377421d137d6349e7b1e2e1b",
+      "finished_at": "2026-10-21T23:27:44.706003+00:00",
+      "elapsed_s": 86.284,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-e3ce5cc3d9": {
+      "status": "running",
+      "started_at": "2026-10-21T23:27:44.822121+00:00",
+      "job_hash": "1d8c2d03b2bf2aff284749120114e022a94beb3723452adf29e84cbc3dfcd7c3"
+    }
+  },
+  "paused_families": [],
+  "validation_status": "not_assessed",
+  "current_job": "coaxial-e3ce5cc3d9",
+  "reason": null
+}

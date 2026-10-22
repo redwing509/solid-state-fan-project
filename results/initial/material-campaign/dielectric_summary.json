@@ -1,0 +1,53 @@
+{
+  "cases_per_voltage": {
+    "110": 75,
+    "220": 75,
+    "330": 75,
+    "440": 75
+  },
+  "passed": 300,
+  "ngspice_version": "******\n** ngspice-44.2 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2024, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Sun Jan 12 08:19:15 UTC 2025\n******\n",
+  "max_ngspice_relative_error": 1.3322676295501878e-15,
+  "max_fv_relative_error": 2.7566837701442637e-13,
+  "maximum_peak_field_v_m": 1866761.9023324857,
+  "materials": [
+    {
+      "name": "air_reference",
+      "er": 1.0,
+      "source": "Idealized reference: relative permittivity 1",
+      "condition": "ideal approximation"
+    },
+    {
+      "name": "PTFE",
+      "er": 2.1,
+      "source": "https://www.daikinchemicals.com/solutions/technical-challenges/electrical-properties.html",
+      "condition": "representative low-frequency supplier value; not guaranteed"
+    },
+    {
+      "name": "PEEK_450G",
+      "er": 3.0,
+      "source": "https://www.victrex.com/en/downloads/datasheets/victrex-peek-450g",
+      "condition": "23 C, 50 Hz; held constant at 60 Hz as approximation"
+    },
+    {
+      "name": "BOROFLOAT_33",
+      "er": 4.6,
+      "source": "https://www.schott.com/-/media/project/onex/products/b/borofloat/downloads/schott-borofloat-technical-data-sheet-english-26032019.pdf?rev=aa66d15af04a4ce7994f5e7699350364",
+      "condition": "25 C, 1 MHz supplier value; held constant at 60 Hz: unvalidated frequency extrapolation"
+    },
+    {
+      "name": "alumina_AD96",
+      "er": 9.0,
+      "source": "https://www2.coorstek.com/media/4235/advanced-alumina.pdf",
+      "condition": "25 C, 1 MHz supplier table indexed by search; direct fetch failed; held constant at 60 Hz: unvalidated frequency extrapolation"
+    }
+  ],
+  "limitations": [
+    "Parameter-case count includes deliberately equivalent/reversed-layer and uniform-material controls; it is not a count of independent designs",
+    "Ideal linear 1D dielectric coupons; no discharge, leakage, loss, breakdown, edges, voids, converter or airflow",
+    "Nominal permittivity held constant across frequency and field; glass/alumina values measured at 1 MHz, not verified at 60 Hz",
+    "20/40/80 grids are interface-aligned and exact for piecewise-linear potential; this is not convergence evidence for complex EHD geometry",
+    "Agreement between capacitor circuit, finite-volume discretization and analytical formula is numerical verification only"
+  ],
+  "parameter_cases": 300
+}

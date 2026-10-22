@@ -1,0 +1,79 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Web:      www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale   1;
+
+// wire radius a = 1 mm, outer cylinder radius b = 100 mm, quarter annulus
+a    0.001;
+b    0.100;
+nA   #eval{ $a/sqrt(2.0) };
+nB   #eval{ $b/sqrt(2.0) };
+
+vertices
+(
+    ($a  0    0)      // 0
+    ($b  0    0)      // 1
+    (0   $b   0)      // 2
+    (0   $a   0)      // 3
+    ($a  0    0.01)   // 4
+    ($b  0    0.01)   // 5
+    (0   $b   0.01)   // 6
+    (0   $a   0.01)   // 7
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (96 60 1) simpleGrading (100 1 1)
+);
+
+edges
+(
+    arc 0 3 ($nA $nA 0)
+    arc 1 2 ($nB $nB 0)
+    arc 4 7 ($nA $nA 0.01)
+    arc 5 6 ($nB $nB 0.01)
+);
+
+boundary
+(
+    wire
+    {
+        type wall;
+        faces ((0 4 7 3));
+    }
+    outer
+    {
+        type wall;
+        faces ((1 2 6 5));
+    }
+    symX
+    {
+        type symmetry;
+        faces ((0 1 5 4));
+    }
+    symY
+    {
+        type symmetry;
+        faces ((3 7 6 2));
+    }
+    frontAndBack
+    {
+        type empty;
+        faces ((0 3 2 1) (4 5 6 7));
+    }
+);
+
+// ************************************************************************* //

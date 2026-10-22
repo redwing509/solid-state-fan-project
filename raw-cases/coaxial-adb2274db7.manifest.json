@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "9ece5a5c9d914919a4eb3b6673f89e8e6af297f7566c8a6a8b2631c80576ef03",
+  "archive_size_bytes": 153016,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/coaxial-adb2274db7.tar.gz",
+      "sha256": "9ece5a5c9d914919a4eb3b6673f89e8e6af297f7566c8a6a8b2631c80576ef03",
+      "size_bytes": 153016
+    }
+  ],
+  "source_file_count": 35
+}

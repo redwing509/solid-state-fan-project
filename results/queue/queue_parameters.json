@@ -1,0 +1,25 @@
+{
+  "total_jobs": 314,
+  "families": {
+    "coaxial": 216,
+    "esp": 90,
+    "legacy": 8
+  },
+  "max_concurrent_jobs": 1,
+  "container_cpu_limit": 2,
+  "container_memory_gib": 4,
+  "queue_output_limit_gib": 20,
+  "minimum_free_disk_gib": 30,
+  "requested_ac_supply_voltages": [
+    110,
+    220,
+    330,
+    440
+  ],
+  "electrode_voltages_are_distinct": true,
+  "limits": "No local GPU work; no paid compute; no metal-specific results without surface/onset models",
+  "estimate": "Roughly overnight to one day if modern runs complete promptly; timeouts, numerical instability or slow cases may extend it. This is a planning range, not a promised finish time.",
+  "stop": "Create queue/STOP on mail to stop before the next job. Current per-job timeout still applies.",
+  "progress": "/opt/fan-research/2026-10-21/queue/status.json",
+  "manifest_sha256": "d16eb3fa5f4f1e3bf9ba4bec4e49fbbcdf1c2e3b47365dd458b39f49c3508ad2"
+}

@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "2aa7ca2a6324132de2f9b10465ea3b4980635a91ce1e6eabd5c69297072a1122",
+  "archive_size_bytes": 151884,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/coaxial-fd650622ad.tar.gz",
+      "sha256": "2aa7ca2a6324132de2f9b10465ea3b4980635a91ce1e6eabd5c69297072a1122",
+      "size_bytes": 151884
+    }
+  ],
+  "source_file_count": 35
+}

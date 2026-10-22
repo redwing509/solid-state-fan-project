@@ -1,0 +1,32 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Web:      www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      electricProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// vacuum permittivity [F/m]
+epsilon0        8.854e-12;
+
+// ion mobility [m^2/(V s)]
+muq             1.8e-04;
+
+// ion diffusivity [m^2/s]
+Dq              1e-05;
+
+// fluid mass density [kg/m^3]
+rhoFluid        1.225;
+
+// EHD body force in the momentum equation
+electricForce   on;
+
+// ************************************************************************* //

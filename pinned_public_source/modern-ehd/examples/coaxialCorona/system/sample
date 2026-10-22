@@ -1,0 +1,38 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Web:      www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      sample;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type            sets;
+libs            (sampling);
+
+interpolationScheme cellPoint;
+setFormat       raw;
+
+fields          (V rhoq E U);
+
+sets
+(
+    ray45
+    {
+        // radial ray at 45 degrees, r = 1.1 mm ... 98 mm
+        type    uniform;
+        axis    distance;
+        start   (0.00077782 0.00077782 0.005);
+        end     (0.06929646 0.06929646 0.005);
+        nPoints 600;
+    }
+);
+
+// ************************************************************************* //

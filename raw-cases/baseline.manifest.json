@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "e8d7d029775d101bcec1ff3fa17c059ed5f3e1359278fba9b95fbad84c928903",
+  "archive_size_bytes": 15552069,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/baseline.tar.gz",
+      "sha256": "e8d7d029775d101bcec1ff3fa17c059ed5f3e1359278fba9b95fbad84c928903",
+      "size_bytes": 15552069
+    }
+  ],
+  "source_file_count": 342
+}

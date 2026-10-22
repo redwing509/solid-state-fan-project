@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Web:      www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      sampleLines;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type            sets;
+libs            (sampling);
+
+interpolationScheme cellPoint;
+setFormat       raw;
+
+fields          (U V rhoq E);
+
+sets
+(
+    x0
+    {
+        // vertical line above the wire
+        type    uniform;
+        axis    y;
+        start   (0 0.0012 0.005);
+        end     (0 0.1142 0.005);
+        nPoints 300;
+    }
+    x076
+    {
+        type    uniform;
+        axis    y;
+        start   (0.0762 1e-05 0.005);
+        end     (0.0762 0.1142 0.005);
+        nPoints 300;
+    }
+    x152
+    {
+        type    uniform;
+        axis    y;
+        start   (0.1524 1e-05 0.005);
+        end     (0.1524 0.1142 0.005);
+        nPoints 300;
+    }
+    plateLine
+    {
+        // line just below the plate, for the current density profile J(x)
+        type    uniform;
+        axis    x;
+        start   (-0.2285 0.1135 0.005);
+        end     ( 0.2285 0.1135 0.005);
+        nPoints 600;
+    }
+);
+
+// ************************************************************************* //

@@ -1,0 +1,16 @@
+{
+  "hash": "b1acfdcaf8a5302ab384655ad624a3bcceaf6ee8acc15d181d56dfbe1ff19a47",
+  "job": {
+    "family": "coaxial",
+    "voltage_v": 10000,
+    "mobility": 0.00018,
+    "injection": 2e-05,
+    "mesh_n": 192,
+    "scheme": "linearUpwind",
+    "electric_force": false,
+    "timeout_s": 600,
+    "classification": "FIXED_INJECTION_ELECTRICAL_BENCHMARK",
+    "supply_mapping_status": "UNAVAILABLE_NO_CONVERTER_MODEL",
+    "id": "coaxial-932e68cbc6"
+  }
+}

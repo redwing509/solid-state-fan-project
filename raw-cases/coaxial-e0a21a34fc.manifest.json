@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "43a340ed3d5272deeb7bf88b88b8430ff39c460a723ce4103267504f5d79dd58",
+  "archive_size_bytes": 152345,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/coaxial-e0a21a34fc.tar.gz",
+      "sha256": "43a340ed3d5272deeb7bf88b88b8430ff39c460a723ce4103267504f5d79dd58",
+      "size_bytes": 152345
+    }
+  ],
+  "source_file_count": 35
+}

@@ -1,0 +1,28 @@
+{
+  "status": "executed",
+  "exit_code": 0,
+  "metrics": {
+    "last_time": 258.0,
+    "last_patch_metrics": {
+      "wire": {
+        "I": -1.1854914e-07
+      },
+      "outer": {
+        "I": 1.1854915e-07
+      },
+      "symX": {
+        "I": 0.0
+      },
+      "symY": {
+        "I": 0.0
+      }
+    },
+    "end_marker": true,
+    "fatal_marker": false,
+    "validation_status": "not_assessed"
+  },
+  "job_hash": "23b7ca591b3617dbb05ef3eea68bc739a05ba4cb109e56e0d99b4de2f1b5c7b7",
+  "finished_at": "2026-10-21T23:33:53.946994+00:00",
+  "elapsed_s": 3.509,
+  "validation_status": "not_assessed"
+}

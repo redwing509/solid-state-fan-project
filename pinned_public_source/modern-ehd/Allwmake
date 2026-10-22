@@ -1,0 +1,10 @@
+#!/bin/sh
+cd "${0%/*}" || exit
+[ -n "$WM_PROJECT_DIR" ] || {
+    echo "Error: the OpenFOAM environment is not set."
+    echo "Source the OpenFOAM bashrc first, e.g.:"
+    echo "    source /usr/lib/openfoam/openfoam2412/etc/bashrc"
+    exit 1
+}
+
+wmake $* src/electrostaticSimpleFoam

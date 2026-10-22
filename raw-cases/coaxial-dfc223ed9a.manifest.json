@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "e26620aee237c18fb00d47026d54eec14aa6509f724ba7407e793768c37335fc",
+  "archive_size_bytes": 2316004,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/coaxial-dfc223ed9a.tar.gz",
+      "sha256": "e26620aee237c18fb00d47026d54eec14aa6509f724ba7407e793768c37335fc",
+      "size_bytes": 2316004
+    }
+  ],
+  "source_file_count": 44
+}

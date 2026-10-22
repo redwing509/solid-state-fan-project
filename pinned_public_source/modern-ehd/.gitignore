@@ -1,0 +1,29 @@
+# OpenFOAM build artifacts
+lnInclude/
+Make/linux*
+Make/darwin*
+*.dep
+*.o
+
+# case results
+[0-9]*.[0-9]*/
+[1-9]*/
+!0/
+processor*/
+postProcessing/
+dynamicCode/
+log.*
+*.log
+*.foam
+*.OpenFOAM
+
+# example-generated directories
+examples/coaxialCorona/convergence/
+examples/coaxialCorona/verification/
+examples/espWirePlate/sweep/
+examples/espWirePlate/ionicWind/
+
+# misc
+*.pyc
+__pycache__/
+.vscode/

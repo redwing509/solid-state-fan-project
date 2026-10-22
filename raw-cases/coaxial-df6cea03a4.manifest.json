@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "f6a6f7d6040aca297e1d7da2dc2c89115fe4c9f11ca72d90c4412b7f2118b731",
+  "archive_size_bytes": 507668,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/coaxial-df6cea03a4.tar.gz",
+      "sha256": "f6a6f7d6040aca297e1d7da2dc2c89115fe4c9f11ca72d90c4412b7f2118b731",
+      "size_bytes": 507668
+    }
+  ],
+  "source_file_count": 35
+}

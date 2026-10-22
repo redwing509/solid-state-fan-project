@@ -1,0 +1,140 @@
+{
+  "execution": {
+    "end_time_s": 10,
+    "exit_code": 0,
+    "normal_end": true
+  },
+  "fields": {
+    "T": {
+      "finite": true,
+      "min": 300.0,
+      "max": 340.476,
+      "cell_count": 4700
+    },
+    "U": {
+      "finite": true,
+      "min": 0.026490904027609175,
+      "max": 0.6880041422782192,
+      "cell_count": 4700
+    },
+    "elecPot": {
+      "finite": true,
+      "min": 0.389632,
+      "max": 6170.48,
+      "cell_count": 4700
+    },
+    "chargeDens": {
+      "finite": true,
+      "min": 5.5268e-15,
+      "max": 0.000174196,
+      "cell_count": 4700
+    },
+    "elec": {
+      "finite": true,
+      "min": 140.6133708062288,
+      "max": 6756252.141091242,
+      "cell_count": 4700
+    },
+    "curDens": {
+      "finite": true,
+      "min": 1.7265502853471092e-15,
+      "max": 0.2706830168719308,
+      "cell_count": 4700
+    }
+  },
+  "last_interval_changes": {
+    "T": {
+      "rms_absolute": 0.0,
+      "relative_l2": 0.0,
+      "reference": "temperature rise from initial 300 K",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    },
+    "U": {
+      "rms_absolute": 2.7732787688334137e-07,
+      "relative_l2": 1.524345663312361e-06,
+      "reference": "field norm",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    },
+    "elecPot": {
+      "rms_absolute": 0.0,
+      "relative_l2": 0.0,
+      "reference": "field norm",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    },
+    "chargeDens": {
+      "rms_absolute": 0.0,
+      "relative_l2": 0.0,
+      "reference": "field norm",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    },
+    "elec": {
+      "rms_absolute": 0.0,
+      "relative_l2": 0.0,
+      "reference": "field norm",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    },
+    "curDens": {
+      "rms_absolute": 0.0,
+      "relative_l2": 0.0,
+      "reference": "field norm",
+      "interval_s": [
+        9.5,
+        10
+      ]
+    }
+  },
+  "volume_flux": {
+    "patch_m3_s_outward_positive": {
+      "left": 0.0,
+      "right": 0.004861041399999999,
+      "down": 0.0,
+      "up": -0.0048610418119,
+      "hole": 0.0
+    },
+    "net_m3_s": -4.119000010863183e-10,
+    "relative_imbalance": 8.473492965649673e-08,
+    "note": "Open benchmark boundaries, not delivered fan flow; stored phi includes 0.3 m extruded half-domain thickness"
+  },
+  "final_logged_continuity": {
+    "local": 2.41602e-14,
+    "global": 7.82708e-15,
+    "cumulative": -1.08791e-10
+  },
+  "thermal_audit": {
+    "rho_kg_m3": 1.225,
+    "cp_j_kg_k": 1000.0,
+    "nu_m2_s": 1e-05,
+    "Pr": 0.9,
+    "declared_but_unused_kf_w_m_k": 0.02,
+    "gradient_k_m": 9350.0,
+    "effective_conductivity_w_m_k": 0.013611111111111112,
+    "effective_heat_flux_w_m2": 127.2638888888889,
+    "nominal_reference_heat_flux_w_m2": 187.0,
+    "relative_heat_flux_difference": -0.3194444444444444,
+    "ambient_fixed_temperature_boundary": false,
+    "experimental_validation_status": "NOT_ESTABLISHED_THERMAL_INPUT_MISMATCH"
+  },
+  "heated_wall": {
+    "area_m2": 0.096,
+    "min_temperature_k": 305.795,
+    "max_temperature_k": 343.158,
+    "area_weighted_temperature_k": 327.4545929307812,
+    "effective_heat_input_w": 12.217333333333334,
+    "nominal_heat_input_w": 17.952
+  }
+}

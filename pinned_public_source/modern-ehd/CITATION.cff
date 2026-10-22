@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "electrostaticSimpleFoam: an OpenFOAM solver for DC corona discharge coupled with incompressible flow (ionic wind)"
+type: software
+authors:
+  - family-names: "Kim"
+    given-names: "Sangwoo"
+    email: "sangwoo.kim@kier.re.kr"
+repository-code: "https://github.com/swtbkim/electrostaticSimpleFoam"
+license: GPL-3.0
+keywords:
+  - OpenFOAM
+  - corona discharge
+  - ionic wind
+  - electrohydrodynamics
+  - electrostatic precipitator
+version: "1.0.0"
+date-released: "2026-06-12"
