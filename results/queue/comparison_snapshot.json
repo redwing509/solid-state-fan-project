@@ -1,6 +1,6 @@
 {
-  "snapshot_utc": "2026-10-22T04:51:15.434989+00:00",
-  "completed_records": 310,
+  "snapshot_utc": "2026-10-22T05:32:23.555193+00:00",
+  "completed_records": 313,
   "comparisons": [
     {
       "id": "coaxial-2af5472879",
@@ -4519,6 +4519,33 @@
       "scheme": "upwind",
       "mesh_n": null,
       "elapsed_s": 2522.241
+    },
+    {
+      "id": "legacy-78246e4701",
+      "family": "legacy",
+      "execution_status": "executed",
+      "voltage_v": 7540,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 2408.945
+    },
+    {
+      "id": "legacy-202fc5f9af",
+      "family": "legacy",
+      "execution_status": "executed",
+      "voltage_v": 7540,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 5.312
+    },
+    {
+      "id": "legacy-bad9d0c386",
+      "family": "legacy",
+      "execution_status": "executed",
+      "voltage_v": 7540,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 4.609
     }
   ]
 }

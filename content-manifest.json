@@ -3700,6 +3700,16 @@
     "size_bytes": 914320
   },
   {
+    "path": "raw-cases/legacy-202fc5f9af.manifest.json",
+    "sha256": "174bf594341441306d34146fb525f0a50f10405089b3a4d3922ab06123a359a2",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/legacy-202fc5f9af.tar.gz",
+    "sha256": "e8844086f6128f31b407ea9de9bd41b06090167a16a34e61ae58e872fda822b5",
+    "size_bytes": 2368639
+  },
+  {
     "path": "raw-cases/legacy-43ef982684.manifest.json",
     "sha256": "3e9ee6e691444724607e0ee8292288f74d9726c82916a20b4a8246c01ea690d1",
     "size_bytes": 427
@@ -3708,6 +3718,16 @@
     "path": "raw-cases/legacy-43ef982684.tar.gz",
     "sha256": "00cc50471a2c222d61d2e22e3c098f5a32fb4ee852f906a1327f51fa8adfdad3",
     "size_bytes": 13966625
+  },
+  {
+    "path": "raw-cases/legacy-78246e4701.manifest.json",
+    "sha256": "25e647e91245ceb722dbfb98c0bce41385c42d33aeabad5640fc09e0cf8c3601",
+    "size_bytes": 427
+  },
+  {
+    "path": "raw-cases/legacy-78246e4701.tar.gz",
+    "sha256": "38fc484746a0659b03d855844bd56d82af2d089d7597989917fb20790781e556",
+    "size_bytes": 13969822
   },
   {
     "path": "raw-cases/legacy-8266a66833.manifest.json",
@@ -3738,6 +3758,16 @@
     "path": "raw-cases/legacy-92814a16d6.tar.gz",
     "sha256": "a5928f722ac4b4ba8dda5e4a918fce1a0674b31f47a14950eea76cf5db789ae4",
     "size_bytes": 14000554
+  },
+  {
+    "path": "raw-cases/legacy-bad9d0c386.manifest.json",
+    "sha256": "380a2f13d4d0b16b95cedf6c864fdb1201ddc9e385b01314c7b8e83a363ae763",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/legacy-bad9d0c386.tar.gz",
+    "sha256": "6261d883e36d411d7baf27afd9734336ae5466d6b51a28ef92966a5411a816f8",
+    "size_bytes": 2375736
   },
   {
     "path": "results/coaxial-01706d0f29/job.json",
@@ -6885,6 +6915,16 @@
     "size_bytes": 4145
   },
   {
+    "path": "results/legacy-202fc5f9af/job.json",
+    "sha256": "c7488e65b89eb33f1371e7f44bc1a60018e83e745642f4a4acc077bad65a83e0",
+    "size_bytes": 508
+  },
+  {
+    "path": "results/legacy-202fc5f9af/result.json",
+    "sha256": "05a3d295c9415c2d42bed14f3fc1783efd4d717376d6fc0dc6e2496ec9d57377",
+    "size_bytes": 404
+  },
+  {
     "path": "results/legacy-43ef982684/job.json",
     "sha256": "f6c2e73300f7fde5064e3e86f566f66cc3d0a573ef27ae26b86ebc76c4aa3f41",
     "size_bytes": 507
@@ -6892,6 +6932,16 @@
   {
     "path": "results/legacy-43ef982684/result.json",
     "sha256": "d7fe723ec63c1634e0f5c76ac25936d363256d9fba1f937d85a732a2c2004c0e",
+    "size_bytes": 407
+  },
+  {
+    "path": "results/legacy-78246e4701/job.json",
+    "sha256": "c1e9360ad4ea21491b97e4e7b15a4bae420102b875b62d182044073c8db0985d",
+    "size_bytes": 533
+  },
+  {
+    "path": "results/legacy-78246e4701/result.json",
+    "sha256": "aa3be893327c30e26745dd2a60c391230af82a94c4fd767b5a4b048e0239d57a",
     "size_bytes": 407
   },
   {
@@ -6925,19 +6975,29 @@
     "size_bytes": 407
   },
   {
+    "path": "results/legacy-bad9d0c386/job.json",
+    "sha256": "1f74698446206768315f0ca6cffd4c856bfe940d44ccbfa067fa7c2bc3e42c47",
+    "size_bytes": 523
+  },
+  {
+    "path": "results/legacy-bad9d0c386/result.json",
+    "sha256": "251954d657da3d4207e0403e08bc9cd3b1e6eb4dfdbb311fe28f878070efb36d",
+    "size_bytes": 404
+  },
+  {
     "path": "results/queue/analysis_status.json",
-    "sha256": "480e9804afc110d227391d0796d138bc56c3faa95e51e37b567ad4b145a60a50",
+    "sha256": "fe65d5b4f536313c3e03ab4bd6b2e8b4e3c7dd6ebe7296a8b83e8fb48ac385ca",
     "size_bytes": 150
   },
   {
     "path": "results/queue/comparison_snapshot.csv",
-    "sha256": "b1524771ba17b12afc2e07f9c86da317f47ede61dc7c9eaef9249447fbac3ea8",
-    "size_bytes": 60215
+    "sha256": "5cc4fd759e22c0c8ae9f56529346b803b29d0b242d6f252f4517abe76aba92d5",
+    "size_bytes": 60404
   },
   {
     "path": "results/queue/comparison_snapshot.json",
-    "sha256": "66151dcba6f70909ea5a8febe0bfd03ca9b73f59fde56ea43e5d32fabab7d3ba",
-    "size_bytes": 166666
+    "sha256": "cb96ce72b40ed88c393b59114db2a1f744f8b08072de9a2cee05db03dfbb10e8",
+    "size_bytes": 167293
   },
   {
     "path": "results/queue/manifest.json",
@@ -6956,8 +7016,8 @@
   },
   {
     "path": "results/queue/status.json",
-    "sha256": "7a965c6acb1db7321946a7894a9102604e2f9866918fc2b73bed0a8c6770931a",
-    "size_bytes": 233915
+    "sha256": "fe4db84230b9e232431ed98984103eed6932ebb0e1060d2872ce987584a4ce14",
+    "size_bytes": 235379
   },
   {
     "path": "scripts/build_queue_manifest.py",

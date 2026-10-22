@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-21T23:25:46.410863+00:00",
-  "updated_at": "2026-10-22T04:51:01.003472+00:00",
+  "updated_at": "2026-10-22T05:31:22.396084+00:00",
   "state": "running",
   "jobs": {
     "coaxial-2af5472879": {
@@ -8902,13 +8902,58 @@
       "validation_status": "not_assessed"
     },
     "legacy-78246e4701": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 10.0,
+        "last_patch_metrics": {},
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "fe3c8c1a9a2ea56847c42d049d89933e46b01a3ab0363eef73f7c52144aa9697",
+      "finished_at": "2026-10-22T05:31:09.968716+00:00",
+      "elapsed_s": 2408.945,
+      "validation_status": "not_assessed"
+    },
+    "legacy-202fc5f9af": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 10.0,
+        "last_patch_metrics": {},
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "4ad9c161a45a236e758cc10f01c1f530ce63401a023dc66c5e232d54bdf4fd05",
+      "finished_at": "2026-10-22T05:31:16.114178+00:00",
+      "elapsed_s": 5.312,
+      "validation_status": "not_assessed"
+    },
+    "legacy-bad9d0c386": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 10.0,
+        "last_patch_metrics": {},
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "40d65e531184f7bbceeed686b3513d088f83954c9cae3a6afcb8ac071b385f59",
+      "finished_at": "2026-10-22T05:31:21.545393+00:00",
+      "elapsed_s": 4.609,
+      "validation_status": "not_assessed"
+    },
+    "legacy-91be60c7e7": {
       "status": "running",
-      "started_at": "2026-10-22T04:51:01.003315+00:00",
-      "job_hash": "fe3c8c1a9a2ea56847c42d049d89933e46b01a3ab0363eef73f7c52144aa9697"
+      "started_at": "2026-10-22T05:31:22.395950+00:00",
+      "job_hash": "6f51e81cb0f73b4a2e2200838d0379bb6419270322e2f802ec721cedf2e6b32d"
     }
   },
   "paused_families": [],
   "validation_status": "not_assessed",
-  "current_job": "legacy-78246e4701",
+  "current_job": "legacy-91be60c7e7",
   "reason": null
 }
