@@ -1,6 +1,6 @@
 {
-  "snapshot_utc": "2026-10-22T01:29:30.060985+00:00",
-  "completed_records": 215,
+  "snapshot_utc": "2026-10-22T01:35:43.899212+00:00",
+  "completed_records": 225,
   "comparisons": [
     {
       "id": "coaxial-2af5472879",
@@ -3640,6 +3640,120 @@
       "charge_profile_relative_l2": 0.0036415571693452086,
       "max_sampled_speed_m_s": 0.0,
       "validation_label": "REDUCED_ELECTRICAL_NUMERICAL_COMPARISON_NOT_FAN_VALIDATION"
+    },
+    {
+      "id": "coaxial-252d65ebbf",
+      "family": "coaxial",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": 192,
+      "elapsed_s": 80.393,
+      "exact_current_a_per_m": 6.070242340647317e-05,
+      "simulated_current_a_per_m": 6.0697712e-05,
+      "current_relative_error": 7.761480034528014e-05,
+      "relative_discrete_charge_imbalance": 2.6360140400883086e-07,
+      "field_profile_relative_l2": 5.6798069104130195e-05,
+      "charge_profile_relative_l2": 0.0020794953681556204,
+      "max_sampled_speed_m_s": 0.0,
+      "validation_label": "REDUCED_ELECTRICAL_NUMERICAL_COMPARISON_NOT_FAN_VALIDATION"
+    },
+    {
+      "id": "coaxial-8590f5e5e9",
+      "family": "coaxial",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": 192,
+      "elapsed_s": 88.244,
+      "exact_current_a_per_m": 0.00011776217956735438,
+      "simulated_current_a_per_m": 0.000117765228,
+      "current_relative_error": 2.5886347015847358e-05,
+      "relative_discrete_charge_imbalance": 5.094883804797015e-07,
+      "field_profile_relative_l2": 0.0001295201339391565,
+      "charge_profile_relative_l2": 0.0029341667354734736,
+      "max_sampled_speed_m_s": 0.0,
+      "validation_label": "REDUCED_ELECTRICAL_NUMERICAL_COMPARISON_NOT_FAN_VALIDATION"
+    },
+    {
+      "id": "coaxial-fe85263d6d",
+      "family": "coaxial",
+      "execution_status": "executed",
+      "voltage_v": 40000,
+      "scheme": "upwind",
+      "mesh_n": 192,
+      "elapsed_s": 91.301,
+      "exact_current_a_per_m": 0.00022287685210432693,
+      "simulated_current_a_per_m": 0.00022294077199999998,
+      "current_relative_error": 0.0002867946808721586,
+      "relative_discrete_charge_imbalance": 9.329836581999882e-07,
+      "field_profile_relative_l2": 0.00039963724284447575,
+      "charge_profile_relative_l2": 0.0036415241928836723,
+      "max_sampled_speed_m_s": 0.0,
+      "validation_label": "REDUCED_ELECTRICAL_NUMERICAL_COMPARISON_NOT_FAN_VALIDATION"
+    },
+    {
+      "id": "esp-9a387e1994",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 16.69
+    },
+    {
+      "id": "esp-ac864dfd73",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.189
+    },
+    {
+      "id": "esp-429e85e276",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 19.639
+    },
+    {
+      "id": "esp-46d08aeeba",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.019
+    },
+    {
+      "id": "esp-b13a4e357a",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 17.93
+    },
+    {
+      "id": "esp-7b41b7b0b4",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 20.502
+    },
+    {
+      "id": "esp-c838b1d1d4",
+      "family": "esp",
+      "execution_status": "executed",
+      "voltage_v": 20000,
+      "scheme": "upwind",
+      "mesh_n": null,
+      "elapsed_s": 18.112
     }
   ]
 }
