@@ -1,4 +1,4 @@
-# Fanless Fan Research
+# Solid State Fan Project
 
 Private research workspace for an electricity-driven air mover without mechanically moving airflow components.
 

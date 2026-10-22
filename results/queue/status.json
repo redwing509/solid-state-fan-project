@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-21T23:25:46.410863+00:00",
-  "updated_at": "2026-10-22T01:15:37.886138+00:00",
+  "updated_at": "2026-10-22T01:18:50.883221+00:00",
   "state": "running",
   "jobs": {
     "coaxial-2af5472879": {
@@ -5778,13 +5778,69 @@
       "validation_status": "not_assessed"
     },
     "coaxial-1d20e73bbd": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 879.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -1.1263147e-07
+          },
+          "outer": {
+            "I": 1.1263151e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "1e19f5fcdf1377023b2ac7ca7c6cf5dace7207de6aac0216f3f85f892ec8f3a0",
+      "finished_at": "2026-10-22T01:17:00.683547+00:00",
+      "elapsed_s": 82.787,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-18a8bd3918": {
+      "status": "executed",
+      "exit_code": 0,
+      "metrics": {
+        "last_time": 887.0,
+        "last_patch_metrics": {
+          "wire": {
+            "I": -2.1664395e-07
+          },
+          "outer": {
+            "I": 2.1664409e-07
+          },
+          "symX": {
+            "I": 0.0
+          },
+          "symY": {
+            "I": 0.0
+          }
+        },
+        "end_marker": true,
+        "fatal_marker": false,
+        "validation_status": "not_assessed"
+      },
+      "job_hash": "853c83786c700cda1aacfc62bed23326ea0ee1244841c9cecca1f062f142e22b",
+      "finished_at": "2026-10-22T01:18:49.103726+00:00",
+      "elapsed_s": 107.444,
+      "validation_status": "not_assessed"
+    },
+    "coaxial-33f8de7c78": {
       "status": "running",
-      "started_at": "2026-10-22T01:15:37.885996+00:00",
-      "job_hash": "1e19f5fcdf1377023b2ac7ca7c6cf5dace7207de6aac0216f3f85f892ec8f3a0"
+      "started_at": "2026-10-22T01:18:50.883089+00:00",
+      "job_hash": "32005edf2075337c1e0c4f55c6128abbac2baa53ec559f5930333a123a6b4bf9"
     }
   },
   "paused_families": [],
   "validation_status": "not_assessed",
-  "current_job": "coaxial-1d20e73bbd",
+  "current_job": "coaxial-33f8de7c78",
   "reason": null
 }

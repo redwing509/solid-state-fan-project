@@ -1,8 +1,8 @@
 [
   {
     "path": "README.md",
-    "sha256": "0b0cea7fb6f4128749493a121dc1fd12912ddbf608bdc7193aef457223b48ee6",
-    "size_bytes": 1967
+    "sha256": "006af9e9182be21ccf2e4784c0d04176b62f5c45b06cc5253bfe93142862fbfc",
+    "size_bytes": 1998
   },
   {
     "path": "docs/AGENTS.md",
@@ -16,8 +16,8 @@
   },
   {
     "path": "docs/GitHub_Sync.md",
-    "sha256": "056882f0cf47203365aaa22c7517cb9521202bbc30e1ab036b31833c13993750",
-    "size_bytes": 2414
+    "sha256": "5bfa0333fc1c8e337300e1f748a053a06fc5c642b83d3b28a0ee4e34a7ccd464",
+    "size_bytes": 2443
   },
   {
     "path": "docs/Legacy_Benchmark_Review.md",
@@ -36,8 +36,8 @@
   },
   {
     "path": "docs/Project_To_Do.md",
-    "sha256": "51a80ad92c6e9f6904967c82c3252224940d2cc04e65ee924979c4a106fe9b17",
-    "size_bytes": 8245
+    "sha256": "bfb8653664b64351058774a11519ed492d06e515200a73d4816ada0b0b673bd7",
+    "size_bytes": 8304
   },
   {
     "path": "docs/Queue_Status.md",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/TASKS.md",
-    "sha256": "51a80ad92c6e9f6904967c82c3252224940d2cc04e65ee924979c4a106fe9b17",
-    "size_bytes": 8245
+    "sha256": "bfb8653664b64351058774a11519ed492d06e515200a73d4816ada0b0b673bd7",
+    "size_bytes": 8304
   },
   {
     "path": "docs/Voltage_and_Materials_Campaign.md",
@@ -755,6 +755,16 @@
     "size_bytes": 504385
   },
   {
+    "path": "raw-cases/coaxial-14d3c67dce.manifest.json",
+    "sha256": "8877236580cdbee9f89f0badd7c47b483688ade2b878c4057f8702d15e633fc3",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-14d3c67dce.tar.gz",
+    "sha256": "b2c64ed2e6ce3a4ed7e758d482a6c2e753d09b654b6456c7e95ecc3f96c7572d",
+    "size_bytes": 2308357
+  },
+  {
     "path": "raw-cases/coaxial-15904da447.manifest.json",
     "sha256": "17ec9e6a34c7abab7785941b6a5a7e1d1f086fc39605f8c184e666689dcaaadf",
     "size_bytes": 425
@@ -815,6 +825,16 @@
     "size_bytes": 2333677
   },
   {
+    "path": "raw-cases/coaxial-18a8bd3918.manifest.json",
+    "sha256": "265d91801d6f136239cf56cd95a22ba650e988ba3bb6e18f0c4d01993fc7b377",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-18a8bd3918.tar.gz",
+    "sha256": "a6a7704a533f9d7937b47a1ead5a3500245273e3d5757251ce3655b14a01efc5",
+    "size_bytes": 2322498
+  },
+  {
     "path": "raw-cases/coaxial-18ea397236.manifest.json",
     "sha256": "ec1d9f4c823a34e41ab8c23d1c161aa66cf041bf2f8dcf6a5c5974e3bdc7d9ed",
     "size_bytes": 423
@@ -833,6 +853,16 @@
     "path": "raw-cases/coaxial-19e8ee84b1.tar.gz",
     "sha256": "a409dff317d9b517ab4408462262044adc7cfc8a8435d8a886713da19296fa83",
     "size_bytes": 150760
+  },
+  {
+    "path": "raw-cases/coaxial-1d20e73bbd.manifest.json",
+    "sha256": "a68d583c434342b6e4053a8d998e56a37c65dde14d2015b615330198402441f3",
+    "size_bytes": 425
+  },
+  {
+    "path": "raw-cases/coaxial-1d20e73bbd.tar.gz",
+    "sha256": "0fa97b07ea3564c33130ea7aa14d542fc0f8a9ca301a83fdd6c822d2a6022857",
+    "size_bytes": 2312039
   },
   {
     "path": "raw-cases/coaxial-20346cdd3a.manifest.json",
@@ -2805,6 +2835,16 @@
     "size_bytes": 600
   },
   {
+    "path": "results/coaxial-14d3c67dce/job.json",
+    "sha256": "a00d9479b9a58f538b869efde1498a1795b9a3d26f813e2a04a04775a80c56b0",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-14d3c67dce/result.json",
+    "sha256": "d2af9a105d1dc8347115b0c776fd63430a757f249779651e84ed45f17f02586f",
+    "size_bytes": 600
+  },
+  {
     "path": "results/coaxial-15904da447/job.json",
     "sha256": "7496d6b3651ba81276baae6e4a39ac33b3f734f8e53663ec327d405d2141d847",
     "size_bytes": 444
@@ -2865,6 +2905,16 @@
     "size_bytes": 599
   },
   {
+    "path": "results/coaxial-18a8bd3918/job.json",
+    "sha256": "25d74f84a0806f56e1e8b129e519538737e7cc059351190d9c65c4b55785fd48",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-18a8bd3918/result.json",
+    "sha256": "7c9f3202f48f4ae8a1b23aaf7b5665243fff4172def511eee46e2ebe962a5656",
+    "size_bytes": 601
+  },
+  {
     "path": "results/coaxial-18ea397236/job.json",
     "sha256": "9790ac61d18246b400ffac686c2cce79444645e509e95f04d682e8279f5dc181",
     "size_bytes": 443
@@ -2883,6 +2933,16 @@
     "path": "results/coaxial-19e8ee84b1/result.json",
     "sha256": "e08e6ebb7a5b17652c8b63f2d1590bffa6d26b3a456df941d543b3f55ade8f72",
     "size_bytes": 599
+  },
+  {
+    "path": "results/coaxial-1d20e73bbd/job.json",
+    "sha256": "8dbc41a35d17bc74d3203a24ba1cd68e6ebad22bba88bb15720b994776253d9d",
+    "size_bytes": 444
+  },
+  {
+    "path": "results/coaxial-1d20e73bbd/result.json",
+    "sha256": "f283b6f4125c46f4578a5ec4ee08ef8b29c929a045aa394172697d34a2a1250a",
+    "size_bytes": 600
   },
   {
     "path": "results/coaxial-20346cdd3a/job.json",
@@ -4811,18 +4871,18 @@
   },
   {
     "path": "results/queue/analysis_status.json",
-    "sha256": "25be5547bab5a7b08d36dbec9610e84a6bfe13b969eaa823c900321824d08ed4",
+    "sha256": "be4492081709f5eac4db52dcdf78232889c27406371dc6694b371ea5ef1c924a",
     "size_bytes": 150
   },
   {
     "path": "results/queue/comparison_snapshot.csv",
-    "sha256": "5d5f99de2bf71755acdee40ece7e4005f46e275b83a8880fddf3d2f39ce369cc",
-    "size_bytes": 51850
+    "sha256": "f2f2712fee3b2a1137ae84674511b7b979d5cf2fb7841bd5ae6fce7fe39a80bf",
+    "size_bytes": 52357
   },
   {
     "path": "results/queue/comparison_snapshot.json",
-    "sha256": "a8b9d0c69cd81b645cb0f16bb1671ca23cd92ff070725103133234f6e5ab2ae8",
-    "size_bytes": 139709
+    "sha256": "3f4c986dced0d4003587a7cbcb3835d84c285c1c70d189269d130da2b638b6d4",
+    "size_bytes": 141076
   },
   {
     "path": "results/queue/manifest.json",
@@ -4841,8 +4901,8 @@
   },
   {
     "path": "results/queue/status.json",
-    "sha256": "7d2db0e5bf079f393e6acb69f643bc8c478f1f490de5847b0c0a6bcb216f322f",
-    "size_bytes": 152077
+    "sha256": "17475df041d7ba9e200a755f1e836815fd435c2e9453f382c9dbe4b5715b92a7",
+    "size_bytes": 153550
   },
   {
     "path": "scripts/build_queue_manifest.py",
@@ -4876,8 +4936,8 @@
   },
   {
     "path": "scripts/github_result_publisher.py",
-    "sha256": "6001c1a05058bcab98d9ba146af979592e6639e1650db37e77ae3e5d121ad8e6",
-    "size_bytes": 15302
+    "sha256": "6a698c88b953d9e6d093c785c468b01ab8ed7710154ba969d93cf979fdc642c9",
+    "size_bytes": 15802
   },
   {
     "path": "scripts/material_campaign.py",

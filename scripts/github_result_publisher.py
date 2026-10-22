@@ -189,9 +189,9 @@ def publish_git():
     if git('branch', '--show-current').stdout.strip() != 'main':
         raise SafeStop('Export checkout must be on main')
     remote = git('remote', 'get-url', 'origin').stdout.strip()
-    if remote not in ('git@github.com:redwing509/fanless-fan-research.git',
-                      'https://github.com/redwing509/fanless-fan-research.git',
-                      'ssh://git@github.com/redwing509/fanless-fan-research.git'):
+    if remote not in ('git@github.com:redwing509/solid-state-fan-project.git',
+                      'https://github.com/redwing509/solid-state-fan-project.git',
+                      'ssh://git@github.com/redwing509/solid-state-fan-project.git'):
         raise SafeStop('Unexpected export remote; push refused')
     tracking = git('rev-parse', '--verify', 'refs/remotes/origin/main', allowed=(0, 128))
     if tracking.returncode == 0:
@@ -293,7 +293,8 @@ def main():
         state = json.loads(STATE.read_text()) if STATE.is_file() else {}
         final_refreshes = 0
         while True:
-            state.update(updated_at=now(), state='building')
+            state.update(updated_at=now(), state='building', publisher_pid=os.getpid(),
+                         loop_interval_s=300, mode='build_only' if args.oneshot_build_only else ('once' if args.once else 'continuous'))
             atomic(STATE, json_bytes(state))
             try:
                 snapshot(state)

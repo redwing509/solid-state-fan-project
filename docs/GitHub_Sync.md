@@ -1,6 +1,6 @@
 # GitHub incremental project backup
 
-Repository: https://github.com/redwing509/fanless-fan-research
+Repository: https://github.com/redwing509/solid-state-fan-project
 
 Visibility: **private**, owned by `redwing509`. Repository creation succeeded October 21, 2026 using the computer's existing GitHub login without displaying or exporting its credential.
 
@@ -14,7 +14,7 @@ The running case is archived after its terminal result appears. Runtime images, 
 
 The user explicitly approved mail's repository-only write key in the chat. Registration succeeded (deploy key ID 167250586). Private key material has never left mail; the personal GitHub credential was not copied there. An earlier automatic-review rejection was resolved by this specific user authorization.
 
-The registered grant is: the mail-hosted public deploy key named **mail fan-research results publisher** receives write permission for **redwing509/fanless-fan-research only**, allowing automatic pushes while this computer is offline. The key cannot grant access to other repositories. The user can revoke it from the repository's Settings → Deploy keys. Initial upload and ongoing sync are being verified before being reported as working.
+The registered grant is: the mail-hosted public deploy key named **mail fan-research results publisher** receives write permission for **redwing509/solid-state-fan-project only**, allowing automatic pushes while this computer is offline. The key cannot grant access to other repositories. The user can revoke it from the repository's Settings → Deploy keys. Initial upload and ongoing sync are being verified before being reported as working.
 
 ## Publisher behavior
 
