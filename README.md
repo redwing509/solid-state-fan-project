@@ -1,6 +1,6 @@
 # Solid State Fan Project
 
-Private research workspace for an electricity-driven air mover without mechanically moving airflow components.
+Public research project for an electricity-driven air mover without mechanically moving airflow components.
 
 Tracks research, simulator verification, the 110/220/330/440 V supply campaign, candidate materials, numerical comparisons and completed simulation evidence. This is a research record, not a construction-ready electrical design or a claim of validated commercial performance.
 
@@ -26,3 +26,9 @@ Pinned public solver snapshots retain their original licenses and attribution. I
 ## Compute policy
 
 Mail runs one simulation job at a time, at most two CPU cores and 4 GB RAM, with per-case timeouts. Local simulation CPU/GPU use is capped at 50%. Notify the user before heavy-load work or requiring more compute; never raise limits or provision paid capacity automatically.
+
+## Contribute and review
+
+Everyone may submit ideas, data, models, code or corrections through an [issue](https://github.com/redwing509/solid-state-fan-project/issues/new) or a pull request from a fork. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [VALIDATION.md](VALIDATION.md). Submission does not mean acceptance. The project owner reviews the evidence and approves inclusion.
+
+The protected `main` branch contains accepted project changes. The automated [`simulation-results` branch](https://github.com/redwing509/solid-state-fan-project/tree/simulation-results) records incoming simulation evidence every five minutes; these uploads do not mean numerical or experimental validation. Outside submissions are never automatically executed, imported into the research queue or merged. No external contributor receives direct write access by submitting.
