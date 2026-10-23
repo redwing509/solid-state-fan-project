@@ -26,6 +26,11 @@
   },
   {
     "path": "docs/Batch_Completion_Review.md",
+    "sha256": "ec199a2b3a917a850114003bfe51f3c4fc8e5b6462f5fa2b6c58f9421bde0fd1",
+    "size_bytes": 6600
+  },
+  {
+    "path": "docs/Batch_Completion_Review.md.bak-20261022-1745",
     "sha256": "616d9a0a635bb7a521e4783292eff40d3a9b1a718c7c09768962e9ba9a3f0410",
     "size_bytes": 4885
   },
@@ -56,6 +61,11 @@
   },
   {
     "path": "docs/Project_To_Do.md",
+    "sha256": "954b48cc08969d24a5de39d807d78487fa52a15cad415a84c76e730c7229c01e",
+    "size_bytes": 11591
+  },
+  {
+    "path": "docs/Project_To_Do.md.bak-20261022-1745",
     "sha256": "e8396d854e60649580a9441c426bf6b3b023cbbdb9616139def226b4b096f9a4",
     "size_bytes": 9876
   },
@@ -76,6 +86,11 @@
   },
   {
     "path": "docs/TASKS.md",
+    "sha256": "954b48cc08969d24a5de39d807d78487fa52a15cad415a84c76e730c7229c01e",
+    "size_bytes": 11591
+  },
+  {
+    "path": "docs/TASKS.md.bak-20261022-1745",
     "sha256": "e8396d854e60649580a9441c426bf6b3b023cbbdb9616139def226b4b096f9a4",
     "size_bytes": 9876
   },
@@ -3808,6 +3823,11 @@
     "path": "reports/Thermal_Mismatch_Report_2026-10-22.md",
     "sha256": "f890560e2e573d1412776423a828abe2a83889723d308b7a186891b049a206a9",
     "size_bytes": 10173
+  },
+  {
+    "path": "results/audit/validation_audit_v2.json",
+    "sha256": "4be6e5c80506477197e872735ebe4fa0605be76c7453aa89c06795a099101f28",
+    "size_bytes": 194626
   },
   {
     "path": "results/coaxial-01706d0f29/job.json",
