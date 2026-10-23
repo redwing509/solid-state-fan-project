@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "c5960b683a9346ae3b07b3c4f886c1591b830bc602c5c88ca1418cee26b972dd",
+  "archive_size_bytes": 911435,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-c43ee341db.tar.gz",
+      "sha256": "c5960b683a9346ae3b07b3c4f886c1591b830bc602c5c88ca1418cee26b972dd",
+      "size_bytes": 911435
+    }
+  ],
+  "source_file_count": 50
+}

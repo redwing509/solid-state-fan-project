@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "51adf8a3f1bf575ecc5f6ef7ad566796acf88c9f3fcbc24ace17c050ef411df7",
+  "archive_size_bytes": 944457,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-80bb420436.tar.gz",
+      "sha256": "51adf8a3f1bf575ecc5f6ef7ad566796acf88c9f3fcbc24ace17c050ef411df7",
+      "size_bytes": 944457
+    }
+  ],
+  "source_file_count": 51
+}

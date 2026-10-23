@@ -1,0 +1,15 @@
+{
+  "status": "executed",
+  "exit_code": 0,
+  "metrics": {
+    "last_time": 10.0,
+    "last_patch_metrics": {},
+    "end_marker": true,
+    "fatal_marker": false,
+    "validation_status": "not_assessed"
+  },
+  "job_hash": "d2ab5eb558fda54d8d27deb7a97cb2106bc1a6e9781f05755364c5aca90c9c27",
+  "finished_at": "2026-10-22T04:50:59.824087+00:00",
+  "elapsed_s": 2522.241,
+  "validation_status": "not_assessed"
+}
