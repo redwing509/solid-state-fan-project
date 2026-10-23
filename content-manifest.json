@@ -3776,13 +3776,13 @@
   },
   {
     "path": "raw-cases/legacy-91be60c7e7.manifest.json",
-    "sha256": "0f653107fd1a93d691e76d3499104e53dea4beb9daefa9c9dcc03260c2328b74",
+    "sha256": "0f7d30773126ced6432fda5708d61f79bcfaf34d2b74215ea89e7f50644f3dbd",
     "size_bytes": 427
   },
   {
     "path": "raw-cases/legacy-91be60c7e7.tar.gz",
-    "sha256": "c63a66d3847fa6e36d5da39849478c422c859c3a4a26b78c9d1c6c5bca66ec1a",
-    "size_bytes": 12556841
+    "sha256": "23362e9c05e7371b4e53fad4d0a5bb2162b1036602ac725dca42303b7aee0489",
+    "size_bytes": 20514581
   },
   {
     "path": "raw-cases/legacy-92814a16d6.manifest.json",
@@ -3803,6 +3803,11 @@
     "path": "raw-cases/legacy-bad9d0c386.tar.gz",
     "sha256": "6261d883e36d411d7baf27afd9734336ae5466d6b51a28ef92966a5411a816f8",
     "size_bytes": 2375736
+  },
+  {
+    "path": "reports/Thermal_Mismatch_Report_2026-10-22.md",
+    "sha256": "f890560e2e573d1412776423a828abe2a83889723d308b7a186891b049a206a9",
+    "size_bytes": 10173
   },
   {
     "path": "results/coaxial-01706d0f29/job.json",
@@ -7031,8 +7036,8 @@
   },
   {
     "path": "results/legacy-91be60c7e7/result.json",
-    "sha256": "11d49d536d774b036671b112ab63dcfa65f46e9071ff15b0855c18a331cb59e4",
-    "size_bytes": 412
+    "sha256": "ed2df1a96e03583d5323f458642cc389616005bf9cd9e8d48ae59e2c62c09710",
+    "size_bytes": 1000
   },
   {
     "path": "results/legacy-91be60c7e7-rerun/job.json",

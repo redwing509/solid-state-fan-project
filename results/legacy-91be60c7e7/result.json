@@ -1,15 +1,28 @@
 {
-  "status": "timeout",
-  "exit_code": 137,
+  "status": "executed",
+  "exit_code": 0,
   "metrics": {
-    "last_time": 6.34411,
+    "last_time": 10.0,
     "last_patch_metrics": {},
-    "end_marker": false,
+    "end_marker": true,
     "fatal_marker": false,
     "validation_status": "not_assessed"
   },
   "job_hash": "6f51e81cb0f73b4a2e2200838d0379bb6419270322e2f802ec721cedf2e6b32d",
   "finished_at": "2026-10-22T06:31:34.109034+00:00",
   "elapsed_s": 3611.697,
-  "validation_status": "not_assessed"
+  "validation_status": "not_assessed",
+  "regenerated_at": "2026-10-23T00:45:00Z",
+  "continuation": {
+    "from_time": 6.0,
+    "to_time": 10.0,
+    "case_dir": "legacy-91be60c7e7-rerun-active",
+    "log": "log.rerun-from6s",
+    "started": "2026-10-22T23:09:32Z",
+    "finished": "2026-10-22T23:28:30Z",
+    "solver_exit": 0,
+    "timeout_s": 28800,
+    "note": "Original run timed out at 3600 s (exit 137, t=6.344). Restarted from latest saved time 6.0 in an identical copy with no parameter changes; time dirs 6.5-10 copied back here. Original record kept as result.json.timeout-original."
+  },
+  "previous_status": "timeout"
 }
