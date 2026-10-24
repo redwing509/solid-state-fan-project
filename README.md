@@ -32,3 +32,7 @@ Mail runs one simulation job at a time, at most two CPU cores and 4 GB RAM, with
 Everyone may submit ideas, data, models, code or corrections through an [issue](https://github.com/redwing509/solid-state-fan-project/issues/new) or a pull request from a fork. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [VALIDATION.md](VALIDATION.md). Submission does not mean acceptance. The project owner reviews the evidence and approves inclusion.
 
 The protected `main` branch contains accepted project changes. The automated [`simulation-results` branch](https://github.com/redwing509/solid-state-fan-project/tree/simulation-results) records incoming simulation evidence every five minutes; these uploads do not mean numerical or experimental validation. Outside submissions are never automatically executed, imported into the research queue or merged. No external contributor receives direct write access by submitting.
+
+## License
+
+MIT — see `LICENSE`. Pinned third-party sources under `pinned_public_source/` keep their original licenses.
