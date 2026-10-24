@@ -1,3 +1,5 @@
+> **Verification status: not yet peer-review verified.** This applies to the coaxial reduced charge model (`scripts/coaxial_verification.py`, `scripts/compare_coaxial_engines.py`) and to the OpenFOAM EHD case setups and queue results. The only in-house engine that meets the peer-review standard is `engines/thermal1d`, which is code-verified: see its `VERIFICATION.md`. Its validation is partial (benchmark B1 passes, B2 fails as expected). For the per-model table, see `VERIFICATION_STATUS.md`.
+
 # Solid State Fan Project
 
 Public research project for an electricity-driven air mover without mechanically moving airflow components.
