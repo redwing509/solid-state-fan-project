@@ -2745,6 +2745,11 @@
     "size_bytes": 944219
   },
   {
+    "path": "reports/Coaxial_Engine_Comparison_2026-10-24.md",
+    "sha256": "74a09ab9330683219e2170ad2a974b6a8ac2b69c4ff99906e8da5aeec9d1145b",
+    "size_bytes": 2287
+  },
+  {
     "path": "results/coaxial-01706d0f29/job.json",
     "sha256": "4914632dc152b6ea4fd2a050d0eeab458ff45521d6ab6942491ce203dcd83ca0",
     "size_bytes": 449
@@ -4725,6 +4730,26 @@
     "size_bytes": 599
   },
   {
+    "path": "results/coaxial-electrical/coaxial_engine_comparison.csv",
+    "sha256": "2c6a8cbcd0520d9fbcc7e2924441e5ed0b7c11475285aafc6200007fa4561801",
+    "size_bytes": 8714
+  },
+  {
+    "path": "results/coaxial-electrical/coaxial_engine_comparison_summary.json",
+    "sha256": "117dd32e5f12c2f48da17316a50399bab1a7105e77d87d45f4f1d4f92b82b07d",
+    "size_bytes": 579
+  },
+  {
+    "path": "results/coaxial-electrical/coaxial_verification.json",
+    "sha256": "b84339a77c20a0916629b858ce6580e8bda774e26624195fd7832fcff19a82b9",
+    "size_bytes": 25141
+  },
+  {
+    "path": "results/coaxial-electrical/openfoam_v2412_coaxial_runs.json",
+    "sha256": "eca982c3f8c8d540bbd05293d94acab9bd82d4095a9defacccf6636636aeb69c",
+    "size_bytes": 314421
+  },
+  {
     "path": "results/coaxial-f010e168b9/job.json",
     "sha256": "139047238479e3808924941e42766f69062b492e2127beef25c6780760dd4ea1",
     "size_bytes": 449
@@ -4993,6 +5018,11 @@
     "path": "scripts/coaxial_verification.py",
     "sha256": "a3617e6f14d7221c02b8a6730575306c343c9cdf1b9dab331289fb9d65a44692",
     "size_bytes": 6086
+  },
+  {
+    "path": "scripts/compare_coaxial_engines.py",
+    "sha256": "3311958fed52b2ef3038f771ba9ebdc7a2574c9da09a5ff8030d15cac8f66aae",
+    "size_bytes": 4609
   },
   {
     "path": "scripts/compare_queue_snapshot.py",
