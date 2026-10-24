@@ -1,0 +1,16 @@
+{
+  "tolerance": {
+    "current_vs_exact": 0.01,
+    "engine_vs_engine": 0.01,
+    "gate": "primary (192/linearUpwind) and all 6 OpenFOAM variants per case"
+  },
+  "cases": 36,
+  "passed": 36,
+  "all_passed": true,
+  "max_rel_err_scipy_vs_exact": 6.757873883250569e-13,
+  "max_rel_err_openfoam_primary_vs_exact": 0.00012580251587567798,
+  "max_rel_diff_openfoam_primary_vs_scipy": 0.00012580251585314378,
+  "max_rel_err_any_openfoam_variant_vs_exact": 0.0066034477158994085,
+  "max_rel_diff_any_openfoam_variant_vs_scipy": 0.0066034477162544855,
+  "openfoam_runs_checked": 216
+}
