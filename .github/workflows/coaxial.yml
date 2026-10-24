@@ -1,0 +1,36 @@
+name: coaxial reduced-model verification
+
+on:
+  push:
+    paths: ["scripts/coaxial_verification.py", "tests/coaxial/**", "results/coaxial-electrical/coaxial_verification.json", ".github/workflows/coaxial.yml"]
+  pull_request:
+    paths: ["scripts/coaxial_verification.py", "tests/coaxial/**", "results/coaxial-electrical/coaxial_verification.json", ".github/workflows/coaxial.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install "numpy>=1.22" "scipy>=1.10" "pytest>=7"
+      - name: Tests (tests/coaxial/ACCEPTANCE.md C1-C7)
+        run: python -m pytest -v tests/coaxial
+      - name: Mesh study record
+        run: python tests/coaxial/mesh_study.py --out coaxial-mesh-study-ci.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coaxial-${{ matrix.python-version }}
+          path: coaxial-mesh-study-ci.json
