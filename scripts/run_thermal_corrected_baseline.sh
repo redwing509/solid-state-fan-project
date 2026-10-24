@@ -33,7 +33,7 @@ w.prepare(job, Path(sys.argv[1]))
 PY
 
 # Check the prepared inputs carry the committed overlay values (comments ignored).
-strip() { sed -e 's://.*$::' -e 's/[[:space:]]\+/ /g' -e 's/ *$//' "$1" | grep -v '^ *$'; }
+strip() { sed -e 's://.*$::' -e 's/[[:space:]]\+/ /g' -e 's/^ //' -e 's/ $//' "$1" | grep -v '^$'; }
 for f in constant/transportProperties 0.orig/T; do
   diff <(strip "$OVERLAY/$f") <(strip "$CASE/$f") || { echo "prepared $f differs from overlay"; exit 4; }
 done
