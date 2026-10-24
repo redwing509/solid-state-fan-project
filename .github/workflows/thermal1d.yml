@@ -1,0 +1,52 @@
+name: thermal1d verification
+
+on:
+  push:
+    paths: ["engines/thermal1d/**", ".github/workflows/thermal1d.yml"]
+  pull_request:
+    paths: ["engines/thermal1d/**", ".github/workflows/thermal1d.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+        scipy: ["with-scipy", "numpy-only"]
+    defaults:
+      run:
+        working-directory: engines/thermal1d
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install "numpy>=1.22" "pytest>=7"
+          if [ "${{ matrix.scipy }}" = "with-scipy" ]; then pip install "scipy>=1.8"; fi
+      - name: Verification suite (ACCEPTANCE_CRITERIA.md section A)
+        if: matrix.scipy == 'with-scipy'
+        run: python -m pytest -v tests
+      - name: Fallback-solver unit tests (pure-NumPy Thomas; full suite is slow without SciPy)
+        if: matrix.scipy == 'numpy-only'
+        run: python -m pytest -v tests/test_solver_basics.py
+      - name: Verification report
+        if: matrix.scipy == 'with-scipy'
+        run: python -m thermal1d verify --out verification-ci.json
+      - name: OpenFOAM cross-check from stored metrics (section B)
+        if: matrix.scipy == 'with-scipy'
+        run: python -m thermal1d compare --out comparison-ci.json
+      - uses: actions/upload-artifact@v4
+        if: matrix.scipy == 'with-scipy'
+        with:
+          name: thermal1d-${{ matrix.python-version }}-${{ matrix.scipy }}
+          path: |
+            engines/thermal1d/verification-ci.json
+            engines/thermal1d/comparison-ci.json
