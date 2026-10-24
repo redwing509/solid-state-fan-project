@@ -1,0 +1,27 @@
+{
+  "case": "legacy-air300 corrected thermal baseline (Pr 0.6125, up fixed 300 K)",
+  "sources": {
+    "repo_overlay": "simulation-results:benchmark/legacy-thermal-corrected-2026-10-24 (commits 2c1ecd0, 0565489)",
+    "pinned_case": "pinned_public_source/legacy-ehd/validationCase (system/blockMeshDict, constant/transportProperties, 0.orig/T)",
+    "note": "Only documented geometry, properties and boundary conditions are used. No OpenFOAM output field is read."
+  },
+  "geometry": {
+    "y_plate_mm": -20.04,
+    "y_top_mm": 60.0,
+    "x_extent_mm": 320.0,
+    "depth_mm": 300.0,
+    "wire_radius_mm": 0.0395,
+    "comment": "blockMeshDict convertToMeters 0.001: heated wall 'down' at y=-20.04 mm spans x=0..320 mm; open boundary 'up' at y=60 mm; 'left' symmetryPlane at x=0; 'right' zeroGradient at x=320 mm; emitter wire 'hole' (r=0.0395 mm, zeroGradient T) at the origin."
+  },
+  "properties": {
+    "rho0": 1.225, "Cp0": 1000.0, "nu": 1e-05, "Pr": 0.6125, "kf": 0.02,
+    "comment": "transportProperties. The solver TEqn uses alphaEff = nu/Pr (laminar), so k = rho0*Cp0*nu/Pr = 0.02 W/(m K) = kf."
+  },
+  "boundary_conditions": {
+    "plate_gradient_K_per_m": 9350.0,
+    "T_top_K": 300.0,
+    "comment": "0.orig/T: down fixedGradient 9350 K/m (inward flux k*9350 = 187 W/m^2); up fixedValue 300 K; left symmetry and right zeroGradient are adiabatic for conduction."
+  },
+  "initial": {"T_K": 300.0},
+  "time": {"t_end_s": 10.0}
+}
