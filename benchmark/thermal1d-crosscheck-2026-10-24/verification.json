@@ -1,0 +1,382 @@
+[
+ {
+  "id": "V1",
+  "name": "steady Dirichlet-Dirichlet",
+  "metric": "max |err| K",
+  "value": 1.1368683772161603e-12,
+  "tol": 1e-09,
+  "passed": true
+ },
+ {
+  "id": "V2",
+  "name": "steady flux + Dirichlet",
+  "metric": "max |err| K",
+  "value": 2.05773176276125e-11,
+  "tol": 1e-09,
+  "passed": true
+ },
+ {
+  "id": "V3",
+  "name": "steady convective BC Bi=0.1",
+  "metric": "max |err| K",
+  "value": 4.376943252282217e-12,
+  "tol": 1e-09,
+  "passed": true
+ },
+ {
+  "id": "V3",
+  "name": "steady convective BC Bi=1",
+  "metric": "max |err| K",
+  "value": 5.229594535194337e-12,
+  "tol": 1e-09,
+  "passed": true
+ },
+ {
+  "id": "V3",
+  "name": "steady convective BC Bi=10",
+  "metric": "max |err| K",
+  "value": 1.8758328224066645e-12,
+  "tol": 1e-09,
+  "passed": true
+ },
+ {
+  "id": "V4",
+  "name": "steady uniform generation",
+  "metric": "max |err| K",
+  "value": 7.16227077646181e-12,
+  "tol": 1e-08,
+  "passed": true
+ },
+ {
+  "id": "V5",
+  "name": "semi-infinite constant flux: surface rise",
+  "metric": "rel err",
+  "value": 5.625349661287255e-05,
+  "tol": 0.005,
+  "passed": true
+ },
+ {
+  "id": "V5",
+  "name": "semi-infinite constant flux: profile",
+  "metric": "max |err| / rise",
+  "value": 5.625349661287255e-05,
+  "tol": 0.005,
+  "passed": true
+ },
+ {
+  "id": "V6",
+  "name": "semi-infinite step surface temperature",
+  "metric": "max |err| / |Ts-Ti|",
+  "value": 1.8077959568927328e-05,
+  "tol": 0.01,
+  "passed": true
+ },
+ {
+  "id": "V7",
+  "name": "slab flux+Dirichlet Fourier series Fo=0.05",
+  "metric": "max |err| / (qL/k)",
+  "value": 4.617063373092384e-06,
+  "tol": 0.001,
+  "passed": true
+ },
+ {
+  "id": "V7",
+  "name": "slab flux+Dirichlet Fourier series Fo=0.2",
+  "metric": "max |err| / (qL/k)",
+  "value": 2.4620423388248474e-06,
+  "tol": 0.001,
+  "passed": true
+ },
+ {
+  "id": "V7",
+  "name": "slab flux+Dirichlet Fourier series Fo=1",
+  "metric": "max |err| / (qL/k)",
+  "value": 7.424392924530805e-07,
+  "tol": 0.001,
+  "passed": true
+ },
+ {
+  "id": "V7",
+  "name": "slab flux+Dirichlet Fourier series Fo=3",
+  "metric": "max |err| / (qL/k)",
+  "value": 1.2915086296521968e-08,
+  "tol": 0.001,
+  "passed": true
+ },
+ {
+  "id": "V8",
+  "name": "slab cooling Fourier series Fo=0.05",
+  "metric": "max |err| / |Ti-Tw|",
+  "value": 0.00010216950145661486,
+  "tol": 0.005,
+  "passed": true
+ },
+ {
+  "id": "V8",
+  "name": "slab cooling Fourier series Fo=0.2",
+  "metric": "max |err| / |Ti-Tw|",
+  "value": 8.829526622719186e-05,
+  "tol": 0.005,
+  "passed": true
+ },
+ {
+  "id": "V8",
+  "name": "slab cooling Fourier series Fo=1",
+  "metric": "max |err| / |Ti-Tw|",
+  "value": 1.6786126195711403e-07,
+  "tol": 0.005,
+  "passed": true
+ },
+ {
+  "id": "V9",
+  "name": "lumped capacitance exponential (CN, dt=tau/100)",
+  "metric": "max rel err of (T-Tinf)",
+  "value": 4.166642532402149e-05,
+  "tol": 0.0001,
+  "passed": true
+ },
+ {
+  "id": "V10",
+  "name": "lumped time order theta=1.0",
+  "metric": "observed order",
+  "value": 0.05287237536353251,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 1.0528723753635325,
+  "expected": 1.0,
+  "pairwise": [
+   1.0873189335298548,
+   1.0478773775925165,
+   1.0250858142252326
+  ],
+  "errors": [
+   0.8384719082220329,
+   0.39461437615122463,
+   0.19086679479380564,
+   0.09378832987795249
+  ]
+ },
+ {
+  "id": "V10",
+  "name": "lumped time order theta=0.5",
+  "metric": "observed order",
+  "value": 0.0016666453769960121,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 1.998333354623004,
+  "expected": 2.0,
+  "pairwise": [
+   1.9960099429731823,
+   1.9990109764829047,
+   1.9997532704596273
+  ],
+  "errors": [
+   0.030594019955941576,
+   0.0076696877135873365,
+   0.0019187368463065013,
+   0.00047976625413070906
+  ]
+ },
+ {
+  "id": "V11",
+  "name": "MMS space order (L_inf)",
+  "metric": "|p - 2|",
+  "value": 0.00054203991085644,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 1.9994579600891436,
+  "expected": 2.0,
+  "pairwise": [
+   1.9981464988914097,
+   2.000255001411114,
+   1.9997066995242525
+  ],
+  "errors": [
+   0.0008852670619960978,
+   0.00022160128473591723,
+   5.539052984815385e-05,
+   1.385044797741486e-05
+  ]
+ },
+ {
+  "id": "V11",
+  "name": "MMS space order (L_2)",
+  "metric": "|p - 2|",
+  "value": 0.000257490480955358,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 2.0002574904809554,
+  "expected": 2.0,
+  "pairwise": [
+   2.0006144244611392,
+   2.0001540114840584,
+   2.000038528496642
+  ],
+  "errors": [
+   0.000585893727080145,
+   0.00014641106398243786,
+   3.659885876277988e-05,
+   9.149470342420007e-06
+  ]
+ },
+ {
+  "id": "V12",
+  "name": "MMS time order theta=1.0",
+  "metric": "|p - 1|",
+  "value": 0.005982576138458984,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 0.994017423861541,
+  "expected": 1.0,
+  "pairwise": [
+   0.9889122949560196,
+   0.9949019306258248,
+   0.9979432104146827
+  ],
+  "errors": [
+   0.003088280133644705,
+   0.0015560531384253284,
+   0.00078078075474175,
+   0.00039094733742017773
+  ]
+ },
+ {
+  "id": "V12",
+  "name": "MMS time order theta=0.5",
+  "metric": "|p - 2|",
+  "value": 0.021866433686060782,
+  "tol": 0.1,
+  "passed": true,
+  "observed": 1.9781335663139392,
+  "expected": 2.0,
+  "pairwise": [
+   1.972896094338835,
+   1.9694515064644538,
+   1.9949471180883513
+  ],
+  "errors": [
+   2.6230774489821584e-05,
+   6.682057539286745e-06,
+   1.7062640187415212e-06,
+   4.2806262490202585e-07
+  ]
+ },
+ {
+  "id": "V13",
+  "name": "global energy conservation theta=0.5 (flux+Dirichlet+source)",
+  "metric": "|dE - Q| / scale",
+  "value": 3.8142646676818416e-14,
+  "tol": 1e-10,
+  "passed": true
+ },
+ {
+  "id": "V13",
+  "name": "global energy conservation theta=0.5 (flux+Robin+source)",
+  "metric": "|dE - Q| / scale",
+  "value": 3.567699597954637e-14,
+  "tol": 1e-10,
+  "passed": true
+ },
+ {
+  "id": "V13",
+  "name": "global energy conservation theta=1.0 (flux+Dirichlet+source)",
+  "metric": "|dE - Q| / scale",
+  "value": 4.873870920424902e-14,
+  "tol": 1e-10,
+  "passed": true
+ },
+ {
+  "id": "V13",
+  "name": "global energy conservation theta=1.0 (flux+Robin+source)",
+  "metric": "|dE - Q| / scale",
+  "value": 4.175204223133966e-14,
+  "tol": 1e-10,
+  "passed": true
+ },
+ {
+  "id": "V14",
+  "name": "Incropera Ex. 5.1: junction diameter D (book 0.706 mm)",
+  "metric": "rel err",
+  "value": 0.00016663889351762695,
+  "tol": 0.005,
+  "passed": true,
+  "computed_mm": 0.7058823529411765,
+  "Bi": 0.002352941176470588,
+  "Bi_ok": true
+ },
+ {
+  "id": "V14",
+  "name": "Incropera Ex. 5.1: time to 199 C (book 5.2 s)",
+  "metric": "abs err s",
+  "value": 0.035214029573058525,
+  "tol": 0.05,
+  "passed": true,
+  "computed_s": 5.164785970426942
+ },
+ {
+  "id": "V15",
+  "name": "baseline grid convergence T_wall_K",
+  "metric": "GCI_fine",
+  "value": 3.6248772591274984e-06,
+  "tol": 0.001,
+  "passed": true,
+  "observed": 2.000303807825274,
+  "asymptotic_ratio": 1.0000087022240938,
+  "f_ext": 434.8073658938321,
+  "values": [
+   434.80610499882243,
+   434.80232125158653,
+   434.7871830751278
+  ]
+ },
+ {
+  "id": "V15",
+  "name": "baseline grid convergence T_mean_K",
+  "metric": "GCI_fine",
+  "value": 1.8079760020668604e-10,
+  "tol": 0.001,
+  "passed": true,
+  "observed": 2.0046930845282342,
+  "asymptotic_ratio": 1.0000000004357992,
+  "f_ext": 319.072066798658,
+  "values": [
+   319.072066752508,
+   319.0720666134566,
+   319.07206605543877
+  ]
+ },
+ {
+  "id": "V16",
+  "name": "baseline time-step convergence T_wall",
+  "metric": "GCI_fine",
+  "value": 1.2103313997864858e-10,
+  "tol": 0.001,
+  "passed": true,
+  "observed": 2.0006479518965494,
+  "asymptotic_ratio": 0.9999999997093464,
+  "f_ext": 434.80610498776673,
+  "values": [
+   434.8061056619842,
+   434.8061051562454,
+   434.80610502986747
+  ]
+ },
+ {
+  "id": "V17",
+  "name": "baseline T_wall vs semi-infinite closed form",
+  "metric": "|err| K",
+  "value": 0.0012611776832613941,
+  "tol": 0.05,
+  "passed": true,
+  "exact": 434.8073661765057
+ },
+ {
+  "id": "V17",
+  "name": "baseline T_mean vs q t/(rho c H)",
+  "metric": "|err| K",
+  "value": 2.9852250804651703e-05,
+  "tol": 0.01,
+  "passed": true,
+  "exact": 319.0720966047588
+ }
+]

@@ -1,0 +1,173 @@
+{
+  "selection_status": "RETROSPECTIVE_REFERENCE_SELECTION_NOT_PREREGISTERED",
+  "selection_rule": "nominal electrical setting and low/high parameter-envelope corners; all meshes and schemes; nominal duct pair; all thermal controls",
+  "references": [
+    {
+      "family": "coaxial",
+      "electrode_voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 1e-05,
+      "case_ids": [
+        "coaxial-2af5472879",
+        "coaxial-bc9b183bce",
+        "coaxial-47a80b75c3",
+        "coaxial-9d6e72468c",
+        "coaxial-d7b595ef04",
+        "coaxial-e3ce5cc3d9"
+      ]
+    },
+    {
+      "family": "coaxial",
+      "electrode_voltage_v": 10000,
+      "mobility": 0.00015,
+      "injection": 5e-06,
+      "case_ids": [
+        "coaxial-9098e0e0ec",
+        "coaxial-b1157214c6",
+        "coaxial-6337bdbdef",
+        "coaxial-cbd48f1fb7",
+        "coaxial-3623b97afa",
+        "coaxial-66ee338e20"
+      ]
+    },
+    {
+      "family": "coaxial",
+      "electrode_voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 2e-05,
+      "case_ids": [
+        "coaxial-75449fc325",
+        "coaxial-7600e5fcf5",
+        "coaxial-4b0fbb7e8e",
+        "coaxial-29fd1dbd81",
+        "coaxial-2e2428d915",
+        "coaxial-fe85263d6d"
+      ]
+    },
+    {
+      "family": "esp",
+      "purpose": "matched force-on/off control, not measured fan validation",
+      "case_ids": [
+        "esp-f0f62e28a1",
+        "esp-9e9c07923c"
+      ]
+    },
+    {
+      "family": "legacy",
+      "purpose": "retain all thermal controls including incomplete timestep control",
+      "case_ids": [
+        "legacy-92814a16d6",
+        "legacy-828b718f0d",
+        "legacy-43ef982684",
+        "legacy-8266a66833",
+        "legacy-78246e4701",
+        "legacy-202fc5f9af",
+        "legacy-bad9d0c386",
+        "legacy-91be60c7e7"
+      ]
+    }
+  ],
+  "mesh_triplet_count": 72,
+  "strictly_decreasing_exact_error_triplets": {
+    "field_profile_relative_l2": 72,
+    "charge_profile_relative_l2": 72,
+    "current_relative_error": 57
+  },
+  "nonmonotonic_triplets": {
+    "field_profile_relative_l2": [],
+    "charge_profile_relative_l2": [],
+    "current_relative_error": [
+      [
+        30000,
+        0.00018,
+        1e-05,
+        "upwind"
+      ],
+      [
+        10000,
+        0.00015,
+        5e-06,
+        "upwind"
+      ],
+      [
+        10000,
+        0.00018,
+        5e-06,
+        "upwind"
+      ],
+      [
+        10000,
+        0.00023,
+        5e-06,
+        "upwind"
+      ],
+      [
+        20000,
+        0.00015,
+        1e-05,
+        "upwind"
+      ],
+      [
+        20000,
+        0.00018,
+        1e-05,
+        "upwind"
+      ],
+      [
+        20000,
+        0.00023,
+        1e-05,
+        "upwind"
+      ],
+      [
+        30000,
+        0.00015,
+        1e-05,
+        "upwind"
+      ],
+      [
+        30000,
+        0.00015,
+        2e-05,
+        "upwind"
+      ],
+      [
+        30000,
+        0.00018,
+        2e-05,
+        "upwind"
+      ],
+      [
+        30000,
+        0.00023,
+        1e-05,
+        "upwind"
+      ],
+      [
+        30000,
+        0.00023,
+        2e-05,
+        "upwind"
+      ],
+      [
+        40000,
+        0.00015,
+        2e-05,
+        "upwind"
+      ],
+      [
+        40000,
+        0.00018,
+        2e-05,
+        "upwind"
+      ],
+      [
+        40000,
+        0.00023,
+        2e-05,
+        "upwind"
+      ]
+    ]
+  },
+  "source_snapshot_sha256": "c000d16686147cc5ebcb9a928cf225d05f1bc8730d33350784e1f96df57bfc0a"
+}

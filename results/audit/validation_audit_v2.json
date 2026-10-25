@@ -1,0 +1,5070 @@
+{
+  "method": "independently coded closed-form voltage primitive + bisection; existing fields only; retrospective",
+  "electrical": [
+    {
+      "id": "coaxial-2af5472879",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012216943766215499,
+      "charge_relative_l2": 0.0020147579584083876,
+      "old_field_relative_l2": 0.0012231698037571438,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-bc9b183bce",
+      "time": 266.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008365849488752759,
+      "charge_relative_l2": 0.012704833723649748,
+      "old_field_relative_l2": 0.0008370339358518527,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-47a80b75c3",
+      "time": 449.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003064833026842302,
+      "charge_relative_l2": 0.0007392940362313268,
+      "old_field_relative_l2": 0.00030797927256232167,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9d6e72468c",
+      "time": 478.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00038112778517023426,
+      "charge_relative_l2": 0.0064950570859159595,
+      "old_field_relative_l2": 0.000380412206305003,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d7b595ef04",
+      "time": 862.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.933946910159085e-05,
+      "charge_relative_l2": 0.00022327152767862815,
+      "old_field_relative_l2": 7.072770709321829e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e3ce5cc3d9",
+      "time": 887.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.781170583957858e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00021418505756186634,
+      "charge_relative_l2": 0.0032582329973525706,
+      "old_field_relative_l2": 0.00021291394976970796,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9098e0e0ec",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357673113741586,
+      "charge_relative_l2": 0.0019813319447445584,
+      "old_field_relative_l2": 0.0011372212010292728,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-065c933908",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644256634154079,
+      "charge_relative_l2": 0.0018028109332321792,
+      "old_field_relative_l2": 0.0009657553145026727,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7cf1e7e1a2",
+      "time": 255.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008142459023231114,
+      "charge_relative_l2": 0.001638620531092335,
+      "old_field_relative_l2": 0.0008152097056526789,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-0f8dc8ab91",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357673113741586,
+      "charge_relative_l2": 0.001981331944744555,
+      "old_field_relative_l2": 0.0011372212010295221,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-8eb9ea0e42",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644256634154079,
+      "charge_relative_l2": 0.00180281093323212,
+      "old_field_relative_l2": 0.0009657553145026747,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a6645e51b3",
+      "time": 255.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008142459023231114,
+      "charge_relative_l2": 0.0016386205310923248,
+      "old_field_relative_l2": 0.0008152097056525647,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-21cf1981a2",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357673113741586,
+      "charge_relative_l2": 0.0019813319447445203,
+      "old_field_relative_l2": 0.0011372212010295221,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-aacd267677",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644256634154079,
+      "charge_relative_l2": 0.0018028109332321556,
+      "old_field_relative_l2": 0.0009657553145026727,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ec595e4f29",
+      "time": 255.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008142459023231114,
+      "charge_relative_l2": 0.0016386205310923163,
+      "old_field_relative_l2": 0.0008152097056526712,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-48a47247b4",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732037153458547,
+      "charge_relative_l2": 0.0019772154218961153,
+      "old_field_relative_l2": 0.0012746836897223864,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-62fade7fc7",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357722452853222,
+      "charge_relative_l2": 0.0019813301893878868,
+      "old_field_relative_l2": 0.001137226137304163,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-543115c3f8",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644226297163622,
+      "charge_relative_l2": 0.0018028106691207015,
+      "old_field_relative_l2": 0.0009657522727173623,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-962e05511e",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732037153458547,
+      "charge_relative_l2": 0.001977215421896083,
+      "old_field_relative_l2": 0.0012746836897223857,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2fbcf29ef5",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357722452853222,
+      "charge_relative_l2": 0.0019813301893878833,
+      "old_field_relative_l2": 0.0011372261373041631,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-0a630424b6",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644226297163622,
+      "charge_relative_l2": 0.0018028106691206423,
+      "old_field_relative_l2": 0.0009657522727173637,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-480952ba38",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732037153458547,
+      "charge_relative_l2": 0.0019772154218960793,
+      "old_field_relative_l2": 0.0012746836897223864,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-02ac512318",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357722452853222,
+      "charge_relative_l2": 0.001981330189387849,
+      "old_field_relative_l2": 0.001137226137304163,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-188288e249",
+      "time": 251.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009644226297163622,
+      "charge_relative_l2": 0.0018028106691206779,
+      "old_field_relative_l2": 0.0009657522727173623,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-df51b9bb46",
+      "time": 241.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001332167763769483,
+      "charge_relative_l2": 0.0018275004905365117,
+      "old_field_relative_l2": 0.0013336462545821804,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e4b39e6001",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012216943766215499,
+      "charge_relative_l2": 0.0020147579584084193,
+      "old_field_relative_l2": 0.0012231698037571438,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-50dea62c8c",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010669028882562693,
+      "charge_relative_l2": 0.0019160550535272964,
+      "old_field_relative_l2": 0.001068323409449407,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6f91d2c15f",
+      "time": 241.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001332167763769483,
+      "charge_relative_l2": 0.0018275004905364974,
+      "old_field_relative_l2": 0.0013336462545821804,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-793d62707d",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010669028882562693,
+      "charge_relative_l2": 0.0019160550535272788,
+      "old_field_relative_l2": 0.0010683234094494064,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-31c387e268",
+      "time": 241.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001332167763769483,
+      "charge_relative_l2": 0.001827500490536547,
+      "old_field_relative_l2": 0.0013336462545821804,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-df4b58eac8",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012216943766215499,
+      "charge_relative_l2": 0.002014757958408436,
+      "old_field_relative_l2": 0.0012231698037571438,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2affc0e2ae",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010669028882562693,
+      "charge_relative_l2": 0.0019160550535273308,
+      "old_field_relative_l2": 0.0010683234094491286,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5e7589bcd7",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0013649935857965713,
+      "charge_relative_l2": 0.0016621739905091583,
+      "old_field_relative_l2": 0.0013664682673795233,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-19e8ee84b1",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732111866390603,
+      "charge_relative_l2": 0.001977215444108492,
+      "old_field_relative_l2": 0.001274691160513185,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7f85d13ff9",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357681254415834,
+      "charge_relative_l2": 0.0019813297397409885,
+      "old_field_relative_l2": 0.0011372220131569738,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a58d6ab9dd",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0013649935857965713,
+      "charge_relative_l2": 0.0016621739905091975,
+      "old_field_relative_l2": 0.0013664682673795233,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ececb1c730",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732111866390603,
+      "charge_relative_l2": 0.0019772154441084593,
+      "old_field_relative_l2": 0.0012746911605131847,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-3695780857",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357681254415834,
+      "charge_relative_l2": 0.001981329739740985,
+      "old_field_relative_l2": 0.001137222013156974,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-20346cdd3a",
+      "time": 233.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0013649935857965713,
+      "charge_relative_l2": 0.001662173990509215,
+      "old_field_relative_l2": 0.0013664682673795233,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-17e800c771",
+      "time": 239.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012732111866390603,
+      "charge_relative_l2": 0.001977215444108456,
+      "old_field_relative_l2": 0.001274691160513185,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-75449fc325",
+      "time": 234.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011357681254415834,
+      "charge_relative_l2": 0.0019813297397409503,
+      "old_field_relative_l2": 0.0011372220131569738,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-b1157214c6",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216855535209656,
+      "charge_relative_l2": 0.01420947778386715,
+      "old_field_relative_l2": 0.0012161573115386745,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4cce6c756a",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640182534401145,
+      "charge_relative_l2": 0.015762386957761693,
+      "old_field_relative_l2": 0.0034627123126599007,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-bcea22f5d0",
+      "time": 272.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.007638583102287566,
+      "charge_relative_l2": 0.015878162490440443,
+      "old_field_relative_l2": 0.007637197419740749,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-386d4c110c",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216855535209656,
+      "charge_relative_l2": 0.014209477783867143,
+      "old_field_relative_l2": 0.001216157311538529,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-3c1d3bf5c6",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640182534401145,
+      "charge_relative_l2": 0.01576238695776157,
+      "old_field_relative_l2": 0.00346271231265991,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2106004164",
+      "time": 272.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.007638583102287566,
+      "charge_relative_l2": 0.015878162490440405,
+      "old_field_relative_l2": 0.007637197419740969,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-085bcc6100",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216855535209656,
+      "charge_relative_l2": 0.014209477783867087,
+      "old_field_relative_l2": 0.001216157311538529,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-489710ed47",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640182534401145,
+      "charge_relative_l2": 0.015762386957761637,
+      "old_field_relative_l2": 0.0034627123126599007,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-823a298694",
+      "time": 272.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.007638583102287566,
+      "charge_relative_l2": 0.015878162490440367,
+      "old_field_relative_l2": 0.007637197419740743,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a1525602bb",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027581507040573,
+      "charge_relative_l2": 0.011439382765101886,
+      "old_field_relative_l2": 0.0009038133349104886,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-adb2274db7",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216859171303347,
+      "charge_relative_l2": 0.014209478995801742,
+      "old_field_relative_l2": 0.001216160926236227,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a93834c5ba",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640223517179943,
+      "charge_relative_l2": 0.015762385219144488,
+      "old_field_relative_l2": 0.003462716409324122,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-33915c9787",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027581507040573,
+      "charge_relative_l2": 0.011439382765101834,
+      "old_field_relative_l2": 0.0009038133349104894,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-99df531bd6",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216859171303347,
+      "charge_relative_l2": 0.014209478995801736,
+      "old_field_relative_l2": 0.001216160926236233,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-bec761276a",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640223517179943,
+      "charge_relative_l2": 0.015762385219144363,
+      "old_field_relative_l2": 0.0034627164093241265,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9f47c30f82",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027581507040573,
+      "charge_relative_l2": 0.011439382765101829,
+      "old_field_relative_l2": 0.0009038133349104886,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-8106540acd",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001216859171303347,
+      "charge_relative_l2": 0.014209478995801682,
+      "old_field_relative_l2": 0.001216160926236227,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e0a21a34fc",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0034640223517179943,
+      "charge_relative_l2": 0.01576238521914443,
+      "old_field_relative_l2": 0.003462716409324122,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-fd650622ad",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010970471293070274,
+      "charge_relative_l2": 0.009503367772735211,
+      "old_field_relative_l2": 0.0010983937406413798,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ea8181c992",
+      "time": 266.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008365849488752759,
+      "charge_relative_l2": 0.012704833723649799,
+      "old_field_relative_l2": 0.0008370339358518527,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d188d3d2b6",
+      "time": 263.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0019177833417034027,
+      "charge_relative_l2": 0.01502289407800412,
+      "old_field_relative_l2": 0.001916689067963287,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f24a453f4f",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010970471293070274,
+      "charge_relative_l2": 0.009503367772735187,
+      "old_field_relative_l2": 0.0010983937406413798,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-48bfb83050",
+      "time": 263.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0019177833417034027,
+      "charge_relative_l2": 0.015022894078004083,
+      "old_field_relative_l2": 0.0019166890679632813,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a3e2e0af0d",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0010970471293070274,
+      "charge_relative_l2": 0.009503367772735262,
+      "old_field_relative_l2": 0.0010983937406413798,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-18ea397236",
+      "time": 266.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0008365849488752759,
+      "charge_relative_l2": 0.012704833723649823,
+      "old_field_relative_l2": 0.0008370339358518527,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-0a565c7d5a",
+      "time": 263.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0019177833417034027,
+      "charge_relative_l2": 0.015022894078004176,
+      "old_field_relative_l2": 0.0019166890679635244,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-51031a70ef",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012111142795692856,
+      "charge_relative_l2": 0.008114061772705065,
+      "old_field_relative_l2": 0.00121252399684724,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-96c6a9cc9f",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027578564004137,
+      "charge_relative_l2": 0.011439384043247347,
+      "old_field_relative_l2": 0.000903813044077204,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5c56c07f1d",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012168554654549775,
+      "charge_relative_l2": 0.014209475684068731,
+      "old_field_relative_l2": 0.0012161572355173919,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e07ceec0ba",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012111142795692856,
+      "charge_relative_l2": 0.008114061772705116,
+      "old_field_relative_l2": 0.00121252399684724,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7328f0a8a9",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027578564004137,
+      "charge_relative_l2": 0.011439384043247298,
+      "old_field_relative_l2": 0.0009038130440772053,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-84a560eca0",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012168554654549775,
+      "charge_relative_l2": 0.014209475684068723,
+      "old_field_relative_l2": 0.001216157235517398,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-bfcaa4bca2",
+      "time": 258.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012111142795692856,
+      "charge_relative_l2": 0.008114061772705143,
+      "old_field_relative_l2": 0.00121252399684724,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-164896e510",
+      "time": 267.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009027578564004137,
+      "charge_relative_l2": 0.011439384043247292,
+      "old_field_relative_l2": 0.000903813044077204,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7600e5fcf5",
+      "time": 265.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0012168554654549775,
+      "charge_relative_l2": 0.014209475684068669,
+      "old_field_relative_l2": 0.0012161572355173919,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6337bdbdef",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00028886185525177273,
+      "charge_relative_l2": 0.0007472129797314765,
+      "old_field_relative_l2": 0.00029032679443378925,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-0934d410f7",
+      "time": 480.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002539357346642251,
+      "charge_relative_l2": 0.0006978489215240602,
+      "old_field_relative_l2": 0.0002552638495068243,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6dc96a553e",
+      "time": 488.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002225031143897602,
+      "charge_relative_l2": 0.0006113725960945175,
+      "old_field_relative_l2": 0.0002234942321275967,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-8d52476412",
+      "time": 444.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002888636169603393,
+      "charge_relative_l2": 0.0007472053144678361,
+      "old_field_relative_l2": 0.00029032857286302765,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-df6cea03a4",
+      "time": 480.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00025393572436510105,
+      "charge_relative_l2": 0.0006978489865142031,
+      "old_field_relative_l2": 0.0002552638392694718,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4cc239a47d",
+      "time": 488.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002225031143897602,
+      "charge_relative_l2": 0.0006113725960945087,
+      "old_field_relative_l2": 0.00022349423212746566,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-765db84f0b",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00028886185525177273,
+      "charge_relative_l2": 0.0007472129797314475,
+      "old_field_relative_l2": 0.00029032679443400045,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c62e5e2d1a",
+      "time": 478.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002539352261037308,
+      "charge_relative_l2": 0.0006978543293150003,
+      "old_field_relative_l2": 0.00025526332986205964,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-50989a7db7",
+      "time": 488.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002225031143897602,
+      "charge_relative_l2": 0.000611372596094502,
+      "old_field_relative_l2": 0.0002234942321275896,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4d9578877f",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708676109139987,
+      "charge_relative_l2": 0.0007120676128834095,
+      "old_field_relative_l2": 0.00031859307178153405,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6f58bd59c5",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002888793695271833,
+      "charge_relative_l2": 0.0007472125753030423,
+      "old_field_relative_l2": 0.00029034432903021746,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d5d6193251",
+      "time": 480.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002539315074241416,
+      "charge_relative_l2": 0.0006978492572566204,
+      "old_field_relative_l2": 0.0002552595809291681,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5ea9afe2cd",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708676109139987,
+      "charge_relative_l2": 0.0007120676128833871,
+      "old_field_relative_l2": 0.0003185930717815341,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ab9c4bc327",
+      "time": 444.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.000288879919365169,
+      "charge_relative_l2": 0.0007472052204385041,
+      "old_field_relative_l2": 0.0002903448804272794,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f010e168b9",
+      "time": 480.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002539315894333294,
+      "charge_relative_l2": 0.0006978489686050453,
+      "old_field_relative_l2": 0.000255259662634018,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-af882c48be",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708676109139987,
+      "charge_relative_l2": 0.0007120676128833815,
+      "old_field_relative_l2": 0.00031859307178153405,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-01706d0f29",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002888793695271833,
+      "charge_relative_l2": 0.0007472125753030132,
+      "old_field_relative_l2": 0.00029034432903021746,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-83aabb06da",
+      "time": 478.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00025393156946678584,
+      "charge_relative_l2": 0.000697854003256564,
+      "old_field_relative_l2": 0.00025525964458084793,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9656313c66",
+      "time": 450.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00032930961271994576,
+      "charge_relative_l2": 0.000643817248362319,
+      "old_field_relative_l2": 0.00033082102902899614,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-de23725a7a",
+      "time": 449.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003064833026842302,
+      "charge_relative_l2": 0.0007392940362313491,
+      "old_field_relative_l2": 0.00030797927256232167,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-25bfa2f211",
+      "time": 448.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00027482413946430215,
+      "charge_relative_l2": 0.0007343817703762649,
+      "old_field_relative_l2": 0.00027624899383955827,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-35bb00b5af",
+      "time": 450.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003293096128333733,
+      "charge_relative_l2": 0.0006438172525880394,
+      "old_field_relative_l2": 0.00033082102914218923,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6bca0ced7c",
+      "time": 448.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00027482413946430215,
+      "charge_relative_l2": 0.0007343817703762488,
+      "old_field_relative_l2": 0.00027624899383955724,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-dfce1e5056",
+      "time": 450.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003293096128333733,
+      "charge_relative_l2": 0.0006438172525880866,
+      "old_field_relative_l2": 0.00033082102914218923,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-baddf03cf9",
+      "time": 449.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003064833026842302,
+      "charge_relative_l2": 0.0007392940362313584,
+      "old_field_relative_l2": 0.00030797927256232167,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6a0a3d8500",
+      "time": 453.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002748243972035481,
+      "charge_relative_l2": 0.000734383764245008,
+      "old_field_relative_l2": 0.00027624925036550497,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e4f798750b",
+      "time": 466.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003361571953164662,
+      "charge_relative_l2": 0.0005785811751460824,
+      "old_field_relative_l2": 0.0003376683545116577,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-386608efa0",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708219721213497,
+      "charge_relative_l2": 0.0007120689511210859,
+      "old_field_relative_l2": 0.0003185885178447604,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-06918cd069",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00028887275653983015,
+      "charge_relative_l2": 0.000747208675892952,
+      "old_field_relative_l2": 0.00029033769885460705,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-37061838fb",
+      "time": 466.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003361571953164662,
+      "charge_relative_l2": 0.0005785811751461142,
+      "old_field_relative_l2": 0.0003376683545116577,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f438956752",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708219721213497,
+      "charge_relative_l2": 0.0007120689511210634,
+      "old_field_relative_l2": 0.0003185885178447604,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-8c919f47e8",
+      "time": 444.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002888863529295269,
+      "charge_relative_l2": 0.0007472048424684025,
+      "old_field_relative_l2": 0.00029035133653948866,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-818dd1c1ce",
+      "time": 466.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0003361571953164662,
+      "charge_relative_l2": 0.0005785811751461308,
+      "old_field_relative_l2": 0.0003376683545116577,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f5c97de6ec",
+      "time": 446.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00031708219721213497,
+      "charge_relative_l2": 0.0007120689511210577,
+      "old_field_relative_l2": 0.0003185885178447604,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4b0fbb7e8e",
+      "time": 447.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00028887275653983015,
+      "charge_relative_l2": 0.0007472086758929229,
+      "old_field_relative_l2": 0.00029033769885460705,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-cbd48f1fb7",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285149193046838,
+      "charge_relative_l2": 0.007256552379023877,
+      "old_field_relative_l2": 0.0007273385190397975,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ad99b56d0f",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899421177221312,
+      "charge_relative_l2": 0.008030710375590602,
+      "old_field_relative_l2": 0.001888555471893497,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7ae20b0b3e",
+      "time": 506.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.003926400301051771,
+      "charge_relative_l2": 0.008069194152912861,
+      "old_field_relative_l2": 0.003924992112596769,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4adcdef036",
+      "time": 473.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285229131835221,
+      "charge_relative_l2": 0.007256550245856046,
+      "old_field_relative_l2": 0.0007273465165840261,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-748b9943b2",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899421177221312,
+      "charge_relative_l2": 0.008030710375590477,
+      "old_field_relative_l2": 0.0018885554718935057,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f6640f2a3c",
+      "time": 505.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00392642499161903,
+      "charge_relative_l2": 0.008069208516781739,
+      "old_field_relative_l2": 0.003925016802859604,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c3ed1a4348",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285149193046838,
+      "charge_relative_l2": 0.007256552398862951,
+      "old_field_relative_l2": 0.0007273385190395574,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-b31d23d4b0",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899421177221312,
+      "charge_relative_l2": 0.008030710375590543,
+      "old_field_relative_l2": 0.001888555471893497,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d7486e4c4d",
+      "time": 505.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0039264049607473815,
+      "charge_relative_l2": 0.008069206860500897,
+      "old_field_relative_l2": 0.0039249967726612016,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c168fdd5b9",
+      "time": 479.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00026531034845936596,
+      "charge_relative_l2": 0.005851196710078222,
+      "old_field_relative_l2": 0.00026531222525358355,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-942d4fdaa2",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285158422736572,
+      "charge_relative_l2": 0.007256552138288652,
+      "old_field_relative_l2": 0.0007273394491890849,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-146330c240",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899450461812876,
+      "charge_relative_l2": 0.008030709677303426,
+      "old_field_relative_l2": 0.0018885583968512708,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e7ed8e21a0",
+      "time": 477.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002653055858725494,
+      "charge_relative_l2": 0.005851170617901213,
+      "old_field_relative_l2": 0.0002653074735207777,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-02442945a0",
+      "time": 473.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285230398848745,
+      "charge_relative_l2": 0.007256550239472098,
+      "old_field_relative_l2": 0.0007273466387997261,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-46950dfa91",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899450461812876,
+      "charge_relative_l2": 0.0080307096773033,
+      "old_field_relative_l2": 0.0018885583968512745,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-be831aa40b",
+      "time": 478.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002653052296336897,
+      "charge_relative_l2": 0.005851177064951901,
+      "old_field_relative_l2": 0.0002653071177406666,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-0866f2187a",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285158422736572,
+      "charge_relative_l2": 0.007256552177173301,
+      "old_field_relative_l2": 0.0007273394491890849,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-16c4a2559b",
+      "time": 471.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0018899450461812876,
+      "charge_relative_l2": 0.008030709677303368,
+      "old_field_relative_l2": 0.0018885583968512708,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2436cc34e2",
+      "time": 467.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00024788211638820647,
+      "charge_relative_l2": 0.0048626728363419915,
+      "old_field_relative_l2": 0.0002488731924292624,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2439b3dd6d",
+      "time": 475.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00038112835448064194,
+      "charge_relative_l2": 0.006495045473631252,
+      "old_field_relative_l2": 0.0003804127761710422,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-408b62b906",
+      "time": 472.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011150326568027892,
+      "charge_relative_l2": 0.007664866524883569,
+      "old_field_relative_l2": 0.0011137274284588577,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-467e3408e0",
+      "time": 475.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002478839485618753,
+      "charge_relative_l2": 0.0048627194866024,
+      "old_field_relative_l2": 0.00024887512549519536,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-aca4f6fe58",
+      "time": 472.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011150326568027892,
+      "charge_relative_l2": 0.007664866524883532,
+      "old_field_relative_l2": 0.001113727428458853,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-961059e051",
+      "time": 475.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002478787389056367,
+      "charge_relative_l2": 0.004862701239267673,
+      "old_field_relative_l2": 0.0002488698877137096,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-eba17b830a",
+      "time": 475.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00038112835448064194,
+      "charge_relative_l2": 0.006495045473631275,
+      "old_field_relative_l2": 0.0003804127761710422,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6f2fa3612c",
+      "time": 472.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0011150326568027892,
+      "charge_relative_l2": 0.0076648665248836255,
+      "old_field_relative_l2": 0.0011137274284591374,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7f2df38f32",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00027431507033664413,
+      "charge_relative_l2": 0.004151922766493178,
+      "old_field_relative_l2": 0.0002755965332995882,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-fb364fd946",
+      "time": 479.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00026530863137382406,
+      "charge_relative_l2": 0.005851195634888953,
+      "old_field_relative_l2": 0.0002653105066248839,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-56cdfc3085",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285130431866424,
+      "charge_relative_l2": 0.007256552190674362,
+      "old_field_relative_l2": 0.0007273366453969496,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f21966c1de",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00027431507033664413,
+      "charge_relative_l2": 0.004151922766493228,
+      "old_field_relative_l2": 0.0002755965332995882,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9075ed3c83",
+      "time": 477.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00026530328843406655,
+      "charge_relative_l2": 0.005851170425801436,
+      "old_field_relative_l2": 0.00026530519993465354,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f94601afb7",
+      "time": 473.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285195266804541,
+      "charge_relative_l2": 0.007256553884229272,
+      "old_field_relative_l2": 0.0007273431349823898,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5b847134c4",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00027431507033664413,
+      "charge_relative_l2": 0.0041519227664932575,
+      "old_field_relative_l2": 0.0002755965332995882,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ecb8258782",
+      "time": 478.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00026530324875681554,
+      "charge_relative_l2": 0.005851176413511078,
+      "old_field_relative_l2": 0.0002653051599202099,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-29fd1dbd81",
+      "time": 474.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0007285130431866424,
+      "charge_relative_l2": 0.007256552592517109,
+      "old_field_relative_l2": 0.0007273366453969496,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-3623b97afa",
+      "time": 863.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.586685563090189e-05,
+      "charge_relative_l2": 0.00022864580156778153,
+      "old_field_relative_l2": 6.720289059582067e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-46eaa4f318",
+      "time": 922.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.857584415119259e-05,
+      "charge_relative_l2": 0.00021686976491615614,
+      "old_field_relative_l2": 5.9736069846956756e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-084a37596f",
+      "time": 946.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.194006343402487e-05,
+      "charge_relative_l2": 0.00018982227932830417,
+      "old_field_relative_l2": 5.273770923665946e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4ea415aa63",
+      "time": 861.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.587010782926236e-05,
+      "charge_relative_l2": 0.00022864550897488706,
+      "old_field_relative_l2": 6.720623053135653e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-189955c756",
+      "time": 919.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.856422075477906e-05,
+      "charge_relative_l2": 0.00021687637777804644,
+      "old_field_relative_l2": 5.972413774002048e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-932e68cbc6",
+      "time": 944.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.193401907152597e-05,
+      "charge_relative_l2": 0.00018982325833386145,
+      "old_field_relative_l2": 5.273125966990306e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-dfc223ed9a",
+      "time": 860.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.587034514264186e-05,
+      "charge_relative_l2": 0.0002286428112831535,
+      "old_field_relative_l2": 6.720638525723912e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7bb7737987",
+      "time": 922.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.855364519403971e-05,
+      "charge_relative_l2": 0.00021687228010744793,
+      "old_field_relative_l2": 5.971325805699166e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a54eb5548d",
+      "time": 945.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.193708859472262e-05,
+      "charge_relative_l2": 0.00018982296885112707,
+      "old_field_relative_l2": 5.2734634548418856e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-48df4c6543",
+      "time": 871.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.132717447617849e-05,
+      "charge_relative_l2": 0.00021301389057499113,
+      "old_field_relative_l2": 7.27395934412928e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d83d9b9f42",
+      "time": 863.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.586943197539972e-05,
+      "charge_relative_l2": 0.00022864685363043212,
+      "old_field_relative_l2": 6.720544914552633e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5f14b82f3c",
+      "time": 922.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.856562117625314e-05,
+      "charge_relative_l2": 0.00021687035234690814,
+      "old_field_relative_l2": 5.97257885650405e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c04d11f3ad",
+      "time": 866.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.134184962468573e-05,
+      "charge_relative_l2": 0.00021300831903342985,
+      "old_field_relative_l2": 7.275433945370487e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-21c018db60",
+      "time": 861.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.587567711624966e-05,
+      "charge_relative_l2": 0.00022864516216588118,
+      "old_field_relative_l2": 6.721180265197508e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4526cd87fd",
+      "time": 919.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.856591372396333e-05,
+      "charge_relative_l2": 0.00021687726298552691,
+      "old_field_relative_l2": 5.972574915939351e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7f839e245b",
+      "time": 872.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.133897704822156e-05,
+      "charge_relative_l2": 0.00021302374759425339,
+      "old_field_relative_l2": 7.275150687301208e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4adeb0b2d0",
+      "time": 860.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.587335236892635e-05,
+      "charge_relative_l2": 0.00022864273517409948,
+      "old_field_relative_l2": 6.720942042173969e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-b7d88ec7de",
+      "time": 922.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.8561151887710793e-05,
+      "charge_relative_l2": 0.00021687212422758192,
+      "old_field_relative_l2": 5.972091375812762e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-4cbfc04370",
+      "time": 895.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.351745449003492e-05,
+      "charge_relative_l2": 0.00019022682025628603,
+      "old_field_relative_l2": 7.495250671511268e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d3b8995771",
+      "time": 862.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.934592711581226e-05,
+      "charge_relative_l2": 0.0002232728395010591,
+      "old_field_relative_l2": 7.073438525033503e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6aedd855ed",
+      "time": 864.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.298183267070146e-05,
+      "charge_relative_l2": 0.00022653485391722843,
+      "old_field_relative_l2": 6.426180477381076e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5a67495936",
+      "time": 873.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.35199061060474e-05,
+      "charge_relative_l2": 0.00019022315669381919,
+      "old_field_relative_l2": 7.49550195273387e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e73a7d248f",
+      "time": 868.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.297641209339408e-05,
+      "charge_relative_l2": 0.00022653475682530403,
+      "old_field_relative_l2": 6.425634968456356e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-be339e309e",
+      "time": 888.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.350750477166583e-05,
+      "charge_relative_l2": 0.0001902351267090117,
+      "old_field_relative_l2": 7.494244946756344e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-83159e984c",
+      "time": 862.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.934283150585389e-05,
+      "charge_relative_l2": 0.0002232687860916419,
+      "old_field_relative_l2": 7.073113604935083e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-5c22b50af9",
+      "time": 863.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.297751432278658e-05,
+      "charge_relative_l2": 0.00022653396345824817,
+      "old_field_relative_l2": 6.425748571638313e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-67eb8afae6",
+      "time": 877.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.467841173745311e-05,
+      "charge_relative_l2": 0.0001696580722726601,
+      "old_field_relative_l2": 7.612399286055452e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-241a41edf4",
+      "time": 871.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.132889688150235e-05,
+      "charge_relative_l2": 0.00021301405326467284,
+      "old_field_relative_l2": 7.274129324555279e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a5638238ff",
+      "time": 863.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.586530138808436e-05,
+      "charge_relative_l2": 0.00022864734968634228,
+      "old_field_relative_l2": 6.720136299407219e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a24bedb1d8",
+      "time": 877.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.466412723758841e-05,
+      "charge_relative_l2": 0.00016966453187147404,
+      "old_field_relative_l2": 7.610965740810213e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a8c8c17ee4",
+      "time": 866.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.134056206422922e-05,
+      "charge_relative_l2": 0.0002130091880717253,
+      "old_field_relative_l2": 7.275306015636378e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c00b54a6fb",
+      "time": 861.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.58717261312198e-05,
+      "charge_relative_l2": 0.00022864636498265924,
+      "old_field_relative_l2": 6.720789569408902e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-cb11365668",
+      "time": 858.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.466005605420088e-05,
+      "charge_relative_l2": 0.00016965087343116204,
+      "old_field_relative_l2": 7.610541789000223e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-3c64f9d67a",
+      "time": 872.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 7.133624764299904e-05,
+      "charge_relative_l2": 0.00021302488685681108,
+      "old_field_relative_l2": 7.274877493825282e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2e2428d915",
+      "time": 860.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.587024173907113e-05,
+      "charge_relative_l2": 0.0002286418609338201,
+      "old_field_relative_l2": 6.720640178337593e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-66ee338e20",
+      "time": 884.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.084654297730718e-06,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00040102111632162626,
+      "charge_relative_l2": 0.003641522382884301,
+      "old_field_relative_l2": 0.00039963296601478913,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-81106dbb6e",
+      "time": 907.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.650591372735539e-05,
+      "previous_exact_current_relative_difference": 8.210710040007108e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009797486019694276,
+      "charge_relative_l2": 0.00403113705795225,
+      "old_field_relative_l2": 0.000978300281911085,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e409ba3a59",
+      "time": 958.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.813838443219955e-05,
+      "previous_exact_current_relative_difference": 4.816384248613885e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001983715980775714,
+      "charge_relative_l2": 0.0040503048412064355,
+      "old_field_relative_l2": 0.0019822841064786574,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-9a486b9ae6",
+      "time": 887.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.0901585157276864e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0004010317901370984,
+      "charge_relative_l2": 0.0036415346763456757,
+      "old_field_relative_l2": 0.00039964364835928904,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-a846974b8f",
+      "time": 908.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.980709647282647e-05,
+      "previous_exact_current_relative_difference": 5.131693775004442e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009797607156344392,
+      "charge_relative_l2": 0.004031137137085463,
+      "old_field_relative_l2": 0.0009783123946799901,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-6a29853cc3",
+      "time": 960.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.3766061318639465e-05,
+      "previous_exact_current_relative_difference": 6.020480310767354e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001983706840833983,
+      "charge_relative_l2": 0.004050287024747896,
+      "old_field_relative_l2": 0.0019822749642752773,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d33c1a0bb4",
+      "time": 882.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.3929803256520435e-05,
+      "previous_exact_current_relative_difference": 2.432289765062721e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00040102604409817603,
+      "charge_relative_l2": 0.0036415022188092906,
+      "old_field_relative_l2": 0.0003996378944328927,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f3b59ddcb1",
+      "time": 903.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.5309067715278268e-05,
+      "previous_exact_current_relative_difference": 6.693513619571012e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.000979800987217309,
+      "charge_relative_l2": 0.004031191430158091,
+      "old_field_relative_l2": 0.0009783526756076118,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-2d5dbc53c4",
+      "time": 959.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.314552279603931e-05,
+      "previous_exact_current_relative_difference": 4.711680243209235e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.001983712973189976,
+      "charge_relative_l2": 0.004050292878809372,
+      "old_field_relative_l2": 0.001982281094538405,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-23ada156ce",
+      "time": 889.0,
+      "status": "executed",
+      "exact_current_a_per_m": 1.9200355364242565e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00013057822750007445,
+      "charge_relative_l2": 0.002934166996679062,
+      "old_field_relative_l2": 0.0001295086161177981,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-15904da447",
+      "time": 884.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.633861719092287e-05,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0004010250663802435,
+      "charge_relative_l2": 0.0036415223998344007,
+      "old_field_relative_l2": 0.00039963690850741777,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-dd79870881",
+      "time": 907.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.602365490942156e-05,
+      "previous_exact_current_relative_difference": 2.052677510001777e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009797443531465646,
+      "charge_relative_l2": 0.004031143452380627,
+      "old_field_relative_l2": 0.0009782960415576389,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-92462ef4a1",
+      "time": 886.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.3040426437091083e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00013059596923911625,
+      "charge_relative_l2": 0.0029341590375804734,
+      "old_field_relative_l2": 0.00012952621424512322,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-203ffc6e0a",
+      "time": 887.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.3606340629107456e-05,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0004010361142127667,
+      "charge_relative_l2": 0.0036415351852495917,
+      "old_field_relative_l2": 0.00039964795381634556,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-e53c702591",
+      "time": 908.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.922838589130588e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.000979751437681007,
+      "charge_relative_l2": 0.004031140536362091,
+      "old_field_relative_l2": 0.0009783031239205232,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-93e24564bb",
+      "time": 886.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.9440544891838602e-05,
+      "previous_exact_current_relative_difference": 3.4525160469666917e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0001305893167904644,
+      "charge_relative_l2": 0.0029341506838354604,
+      "old_field_relative_l2": 0.00012951952469461946,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-3204ad48c0",
+      "time": 882.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.571921302608174e-05,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00040103100459518924,
+      "charge_relative_l2": 0.003641501330586477,
+      "old_field_relative_l2": 0.0003996428346673991,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-c7be2b76c9",
+      "time": 903.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00010123627086111307,
+      "previous_exact_current_relative_difference": 1.3387027239142022e-16,
+      "voltage_residual_v": 7.275957614183426e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0009798029553652846,
+      "charge_relative_l2": 0.00403119405130681,
+      "old_field_relative_l2": 0.0009783546368295963,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-ad191cba4f",
+      "time": 882.0,
+      "status": "executed",
+      "exact_current_a_per_m": 2.938350538501147e-05,
+      "previous_exact_current_relative_difference": 1.1530727000140318e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.791236593381084e-05,
+      "charge_relative_l2": 0.002436864258293466,
+      "old_field_relative_l2": 6.760641457533152e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f22037d036",
+      "time": 890.0,
+      "status": "executed",
+      "exact_current_a_per_m": 5.650975486631547e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0002141647478147861,
+      "charge_relative_l2": 0.0032582677916606134,
+      "old_field_relative_l2": 0.00021289363975539715,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-7b6347a96f",
+      "time": 884.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001053983919184186,
+      "previous_exact_current_relative_difference": 1.2858381337125954e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0005956120702743687,
+      "charge_relative_l2": 0.0038470362515760467,
+      "old_field_relative_l2": 0.0005941867946797694,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-58616ffab2",
+      "time": 882.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.526020646201377e-05,
+      "previous_exact_current_relative_difference": 1.921787833356719e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.791550291089013e-05,
+      "charge_relative_l2": 0.0024368370880260373,
+      "old_field_relative_l2": 6.760953279107844e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-14d3c67dce",
+      "time": 881.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00012647807030210235,
+      "previous_exact_current_relative_difference": 2.1430635561876582e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0005956044936737779,
+      "charge_relative_l2": 0.003847031309244015,
+      "old_field_relative_l2": 0.0005941792140376524,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-1d20e73bbd",
+      "time": 879.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.5054708257017595e-05,
+      "previous_exact_current_relative_difference": 1.5040078695835193e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 6.791305894353308e-05,
+      "charge_relative_l2": 0.002436840378253449,
+      "old_field_relative_l2": 6.760713006869696e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-18a8bd3918",
+      "time": 887.0,
+      "status": "executed",
+      "exact_current_a_per_m": 8.664829079501707e-05,
+      "previous_exact_current_relative_difference": 0.0,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00021418947661073638,
+      "charge_relative_l2": 0.003258237869166216,
+      "old_field_relative_l2": 0.00021291832464868484,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-33f8de7c78",
+      "time": 880.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.0001616108676082419,
+      "previous_exact_current_relative_difference": 5.031540523223198e-16,
+      "voltage_residual_v": 3.637978807091713e-12,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0005955884582670169,
+      "charge_relative_l2": 0.0038470250259819315,
+      "old_field_relative_l2": 0.0005941631850176766,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-545e5c4106",
+      "time": 880.0,
+      "status": "executed",
+      "exact_current_a_per_m": 3.958853700422163e-05,
+      "previous_exact_current_relative_difference": 1.7116731485459535e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.626828797512259e-05,
+      "charge_relative_l2": 0.0020794906619101008,
+      "old_field_relative_l2": 5.679919806410118e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f63d7845f4",
+      "time": 889.0,
+      "status": "executed",
+      "exact_current_a_per_m": 7.680142145697026e-05,
+      "previous_exact_current_relative_difference": 3.5292386257881743e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00013058672829294944,
+      "charge_relative_l2": 0.0029341660844273212,
+      "old_field_relative_l2": 0.00012951703505511623,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-d577d5b577",
+      "time": 884.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00014535446876369148,
+      "previous_exact_current_relative_difference": 1.864755486548086e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0004010233376499574,
+      "charge_relative_l2": 0.0036415231961753037,
+      "old_field_relative_l2": 0.00039963517776092096,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-48f2a4b331",
+      "time": 884.0,
+      "status": "executed",
+      "exact_current_a_per_m": 4.750624440506597e-05,
+      "previous_exact_current_relative_difference": 2.8527885809099214e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.626533186726248e-05,
+      "charge_relative_l2": 0.0020794987603874964,
+      "old_field_relative_l2": 5.679642424425733e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-f25cb4b63b",
+      "time": 886.0,
+      "status": "executed",
+      "exact_current_a_per_m": 9.216170574836433e-05,
+      "previous_exact_current_relative_difference": 2.941032188156811e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00013059782720815176,
+      "charge_relative_l2": 0.002934160615508249,
+      "old_field_relative_l2": 0.00012952806642085873,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-65a951229c",
+      "time": 887.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00017442536251642982,
+      "previous_exact_current_relative_difference": 1.5539629054567382e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.0004010334159469945,
+      "charge_relative_l2": 0.0036415345329800625,
+      "old_field_relative_l2": 0.00039964526106158583,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-252d65ebbf",
+      "time": 874.0,
+      "status": "executed",
+      "exact_current_a_per_m": 6.070242340647318e-05,
+      "previous_exact_current_relative_difference": 2.23261715027733e-16,
+      "voltage_residual_v": 1.4551915228366852e-11,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 5.6267381821634296e-05,
+      "charge_relative_l2": 0.00207948612843243,
+      "old_field_relative_l2": 5.6798069104130195e-05,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-8590f5e5e9",
+      "time": 886.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00011776217956735441,
+      "previous_exact_current_relative_difference": 2.3016773646444613e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00013058984753965062,
+      "charge_relative_l2": 0.0029341518191506604,
+      "old_field_relative_l2": 0.0001295201339391565,
+      "quarter_depth_factor_m": 0.0025
+    },
+    {
+      "id": "coaxial-fe85263d6d",
+      "time": 882.0,
+      "status": "executed",
+      "exact_current_a_per_m": 0.00022287685210432696,
+      "previous_exact_current_relative_difference": 1.2161448825313606e-16,
+      "voltage_residual_v": 0.0,
+      "sample_start_radius_m": 0.001100003593085041,
+      "field_relative_l2": 0.00040102539791240377,
+      "charge_relative_l2": 0.003641501556471157,
+      "old_field_relative_l2": 0.00039963724284447575,
+      "quarter_depth_factor_m": 0.0025
+    }
+  ],
+  "duct": [
+    {
+      "id": "esp-331665dc77",
+      "time": 436.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000004,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.5999998635024548e-12,
+        "relative_imbalance": 1.3998249009822089e-09
+      },
+      "max_cell_speed_m_s": 1.2638385155082736,
+      "relative_patch_current_imbalance": 9.986707557806827e-07
+    },
+    {
+      "id": "esp-7e49313151",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000018,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.9999995583275254e-13,
+        "relative_imbalance": 1.7497808880165719e-10
+      },
+      "max_cell_speed_m_s": 1.3286306296678954,
+      "relative_patch_current_imbalance": 5.118916498664696e-07
+    },
+    {
+      "id": "esp-9a387e1994",
+      "time": 438.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000007,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.2999998213331088e-12,
+        "relative_imbalance": 1.1373576726138898e-09
+      },
+      "max_cell_speed_m_s": 1.2638387273539309,
+      "relative_patch_current_imbalance": 1.2928050168381037e-06
+    },
+    {
+      "id": "esp-ac864dfd73",
+      "time": 447.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999993,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.6999999458432455e-12,
+        "relative_imbalance": 2.3622046756848756e-09
+      },
+      "max_cell_speed_m_s": 1.2783693298855232,
+      "relative_patch_current_imbalance": 1.0328387870006366e-06
+    },
+    {
+      "id": "esp-429e85e276",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999997,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.999999980020986e-12,
+        "relative_imbalance": 4.374453177784963e-09
+      },
+      "max_cell_speed_m_s": 1.2638395778331335,
+      "relative_patch_current_imbalance": 5.865752618509446e-07
+    },
+    {
+      "id": "esp-46d08aeeba",
+      "time": 455.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999998,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.199999947841147e-12,
+        "relative_imbalance": 1.924759357925515e-09
+      },
+      "max_cell_speed_m_s": 1.2890539249733513,
+      "relative_patch_current_imbalance": 5.320367557094995e-07
+    },
+    {
+      "id": "esp-b13a4e357a",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000026,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 6.000000843386921e-13,
+        "relative_imbalance": 5.249344559329334e-10
+      },
+      "max_cell_speed_m_s": 1.2638397772924967,
+      "relative_patch_current_imbalance": 1.4339710343553323e-06
+    },
+    {
+      "id": "esp-7b41b7b0b4",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000029,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 9.000001265080382e-13,
+        "relative_imbalance": 7.874016837960666e-10
+      },
+      "max_cell_speed_m_s": 1.301033674557569,
+      "relative_patch_current_imbalance": 1.3211593043455902e-06
+    },
+    {
+      "id": "esp-c838b1d1d4",
+      "time": 438.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000007,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.2999998213331088e-12,
+        "relative_imbalance": 1.1373576726138898e-09
+      },
+      "max_cell_speed_m_s": 1.2638387273539309,
+      "relative_patch_current_imbalance": 1.2743487223420098e-06
+    },
+    {
+      "id": "esp-67c99fc36f",
+      "time": 445.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000013,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -6.999999538348511e-13,
+        "relative_imbalance": 6.124234057955841e-10
+      },
+      "max_cell_speed_m_s": 1.2782937191664598,
+      "relative_patch_current_imbalance": 1.0789838340253326e-06
+    },
+    {
+      "id": "esp-1866401e01",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999997,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.999999980020986e-12,
+        "relative_imbalance": 4.374453177784963e-09
+      },
+      "max_cell_speed_m_s": 1.2638395778331335,
+      "relative_patch_current_imbalance": 5.730303626633681e-07
+    },
+    {
+      "id": "esp-4cdef27593",
+      "time": 451.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999984,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.5999998555108492e-12,
+        "relative_imbalance": 3.1496061722492806e-09
+      },
+      "max_cell_speed_m_s": 1.289029172046732,
+      "relative_patch_current_imbalance": 7.757948548957219e-07
+    },
+    {
+      "id": "esp-80bb420436",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000026,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 6.000000843386921e-13,
+        "relative_imbalance": 5.249344559329334e-10
+      },
+      "max_cell_speed_m_s": 1.2638397772924967,
+      "relative_patch_current_imbalance": 1.4419152720469185e-06
+    },
+    {
+      "id": "esp-86c9e28977",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999989,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.0999998575087506e-12,
+        "relative_imbalance": 2.7121608541454753e-09
+      },
+      "max_cell_speed_m_s": 1.3011801239153888,
+      "relative_patch_current_imbalance": 1.3820105088904837e-06
+    },
+    {
+      "id": "esp-aae1b61018",
+      "time": 439.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000002,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.7999998193352074e-12,
+        "relative_imbalance": 1.574802990028805e-09
+      },
+      "max_cell_speed_m_s": 1.2638387366436514,
+      "relative_patch_current_imbalance": 1.1810106742160001e-06
+    },
+    {
+      "id": "esp-d56da820c7",
+      "time": 443.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999967,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.2999998053498976e-12,
+        "relative_imbalance": 4.636920217291248e-09
+      },
+      "max_cell_speed_m_s": 1.2782067161598376,
+      "relative_patch_current_imbalance": 1.1906509632420214e-06
+    },
+    {
+      "id": "esp-6eb3c591fb",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000023,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 3.0000004216934606e-13,
+        "relative_imbalance": 2.6246722800091124e-10
+      },
+      "max_cell_speed_m_s": 1.2638395747365598,
+      "relative_patch_current_imbalance": 6.536452156027171e-07
+    },
+    {
+      "id": "esp-91ae79ac6d",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999998,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.999999984016789e-12,
+        "relative_imbalance": 3.499562540697103e-09
+      },
+      "max_cell_speed_m_s": 1.2889959669490025,
+      "relative_patch_current_imbalance": 6.351020753890483e-07
+    },
+    {
+      "id": "esp-8a30e08e7d",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000026,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 6.000000843386921e-13,
+        "relative_imbalance": 5.249344559329334e-10
+      },
+      "max_cell_speed_m_s": 1.2638397772924967,
+      "relative_patch_current_imbalance": 1.4231718181045226e-06
+    },
+    {
+      "id": "esp-a9d8df4c8a",
+      "time": 459.0,
+      "status": "executed",
+      "voltage_v": 20000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000024,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 4.000001285059396e-13,
+        "relative_imbalance": 3.499563672231282e-10
+      },
+      "max_cell_speed_m_s": 1.3013346577544103,
+      "relative_patch_current_imbalance": 1.3907192291868894e-06
+    },
+    {
+      "id": "esp-68b0c1a9c3",
+      "time": 435.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638384111337317,
+      "relative_patch_current_imbalance": 1.0190244718097861e-07
+    },
+    {
+      "id": "esp-1f8f7f8a19",
+      "time": 451.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000021,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 1.0000008633659352e-13,
+        "relative_imbalance": 8.748913924518006e-11
+      },
+      "max_cell_speed_m_s": 1.28570937018359,
+      "relative_patch_current_imbalance": 2.1320027862994159e-07
+    },
+    {
+      "id": "esp-0cfebe8db7",
+      "time": 443.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999959,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -6.099999845521342e-12,
+        "relative_imbalance": 5.336832765638685e-09
+      },
+      "max_cell_speed_m_s": 1.2638390559604242,
+      "relative_patch_current_imbalance": 1.7738382499482231e-06
+    },
+    {
+      "id": "esp-c7c0b759ae",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999995,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.499999990010493e-12,
+        "relative_imbalance": 2.1872265865005016e-09
+      },
+      "max_cell_speed_m_s": 1.3054777487326763,
+      "relative_patch_current_imbalance": 1.0975135345619848e-06
+    },
+    {
+      "id": "esp-ed51b1ef6d",
+      "time": 456.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000014,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.999998674982576e-13,
+        "relative_imbalance": 5.249342664968237e-10
+      },
+      "max_cell_speed_m_s": 1.2638396791111015,
+      "relative_patch_current_imbalance": 5.004809336607923e-07
+    },
+    {
+      "id": "esp-9e469a59ae",
+      "time": 455.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999976,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.399999895682294e-12,
+        "relative_imbalance": 3.8495187195557286e-09
+      },
+      "max_cell_speed_m_s": 1.3321018672041423,
+      "relative_patch_current_imbalance": 1.8807951104941392e-07
+    },
+    {
+      "id": "esp-17f7e77071",
+      "time": 435.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638384111337317,
+      "relative_patch_current_imbalance": 1.3168992512985394e-07
+    },
+    {
+      "id": "esp-032b0d71a2",
+      "time": 445.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.285578400834796,
+      "relative_patch_current_imbalance": 2.0155686421852512e-07
+    },
+    {
+      "id": "esp-f0f62e28a1",
+      "time": 441.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999995,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.499999990010493e-12,
+        "relative_imbalance": 2.1872265865005016e-09
+      },
+      "max_cell_speed_m_s": 1.263838945392735,
+      "relative_patch_current_imbalance": 1.8949686495570395e-06
+    },
+    {
+      "id": "esp-9e9c07923c",
+      "time": 451.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000009,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.0999998655003562e-12,
+        "relative_imbalance": 9.623795836438372e-10
+      },
+      "max_cell_speed_m_s": 1.305361911011825,
+      "relative_patch_current_imbalance": 1.1269229233034108e-06
+    },
+    {
+      "id": "esp-222aa0abb3",
+      "time": 456.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000014,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.999998674982576e-13,
+        "relative_imbalance": 5.249342664968237e-10
+      },
+      "max_cell_speed_m_s": 1.2638396791111015,
+      "relative_patch_current_imbalance": 5.903599161435788e-07
+    },
+    {
+      "id": "esp-8245f42c56",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000002,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.7999998193352074e-12,
+        "relative_imbalance": 1.574802990028805e-09
+      },
+      "max_cell_speed_m_s": 1.3321195404547899,
+      "relative_patch_current_imbalance": 7.295929295921014e-08
+    },
+    {
+      "id": "esp-2a886854ff",
+      "time": 435.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638384111337317,
+      "relative_patch_current_imbalance": 1.51957481081248e-07
+    },
+    {
+      "id": "esp-2ba67b8863",
+      "time": 446.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000012,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -7.999998233310102e-13,
+        "relative_imbalance": 6.999123553903328e-10
+      },
+      "max_cell_speed_m_s": 1.285433933136826,
+      "relative_patch_current_imbalance": 2.515095532746859e-07
+    },
+    {
+      "id": "esp-8683609c49",
+      "time": 442.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000022,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 2.0000017267318704e-13,
+        "relative_imbalance": 1.7497827848270574e-10
+      },
+      "max_cell_speed_m_s": 1.2638389515858823,
+      "relative_patch_current_imbalance": 1.9005313958923328e-06
+    },
+    {
+      "id": "esp-1e5b725745",
+      "time": 448.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999981,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.899999897680195e-12,
+        "relative_imbalance": 3.41207340114575e-09
+      },
+      "max_cell_speed_m_s": 1.305231119928198,
+      "relative_patch_current_imbalance": 1.3732301158921427e-06
+    },
+    {
+      "id": "esp-c808aa6d24",
+      "time": 456.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000014,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.999998674982576e-13,
+        "relative_imbalance": 5.249342664968237e-10
+      },
+      "max_cell_speed_m_s": 1.2638396791111015,
+      "relative_patch_current_imbalance": 3.90025392891026e-07
+    },
+    {
+      "id": "esp-8699e5f8af",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 30000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999985,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.49999998601469e-12,
+        "relative_imbalance": 3.0621172224402107e-09
+      },
+      "max_cell_speed_m_s": 1.3321377727139525,
+      "relative_patch_current_imbalance": 2.4963482021780595e-07
+    },
+    {
+      "id": "esp-f8422cbc48",
+      "time": 433.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000017,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.9999982532891156e-13,
+        "relative_imbalance": 2.624670383581343e-10
+      },
+      "max_cell_speed_m_s": 1.2638381961915013,
+      "relative_patch_current_imbalance": 6.140082805488665e-07
+    },
+    {
+      "id": "esp-7c2df46bb5",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999987,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.299999813341503e-12,
+        "relative_imbalance": 2.8871389434217015e-09
+      },
+      "max_cell_speed_m_s": 1.2922432008782867,
+      "relative_patch_current_imbalance": 1.114418865988574e-07
+    },
+    {
+      "id": "esp-d9eb59fc3c",
+      "time": 436.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000004,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.5999998635024548e-12,
+        "relative_imbalance": 1.3998249009822089e-09
+      },
+      "max_cell_speed_m_s": 1.2638385155082736,
+      "relative_patch_current_imbalance": 1.2498545129358088e-06
+    },
+    {
+      "id": "esp-9ef068ac7a",
+      "time": 457.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000017,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.9999982532891156e-13,
+        "relative_imbalance": 2.624670383581343e-10
+      },
+      "max_cell_speed_m_s": 1.3212577009745479,
+      "relative_patch_current_imbalance": 5.940957748091539e-07
+    },
+    {
+      "id": "esp-880dbc10f5",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999997,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.999999980020986e-12,
+        "relative_imbalance": 4.374453177784963e-09
+      },
+      "max_cell_speed_m_s": 1.2638395778331335,
+      "relative_patch_current_imbalance": 5.638379472335496e-07
+    },
+    {
+      "id": "esp-e6b3dba446",
+      "time": 456.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999982,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.799999811343602e-12,
+        "relative_imbalance": 3.32458426160205e-09
+      },
+      "max_cell_speed_m_s": 1.3647628383101311,
+      "relative_patch_current_imbalance": 5.692838759156535e-07
+    },
+    {
+      "id": "esp-4b8c444632",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 6.760177326619036e-07
+    },
+    {
+      "id": "esp-856dc3880d",
+      "time": 449.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999998,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.199999947841147e-12,
+        "relative_imbalance": 1.924759357925515e-09
+      },
+      "max_cell_speed_m_s": 1.2920709563202788,
+      "relative_patch_current_imbalance": 1.231351886040995e-07
+    },
+    {
+      "id": "esp-de04ecb4f6",
+      "time": 437.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999991,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.899999901675998e-12,
+        "relative_imbalance": 2.5371827648998664e-09
+      },
+      "max_cell_speed_m_s": 1.263838622979389,
+      "relative_patch_current_imbalance": 1.3177535118235044e-06
+    },
+    {
+      "id": "esp-27374018fe",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999948,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -7.199999927862133e-12,
+        "relative_imbalance": 6.299212544130248e-09
+      },
+      "max_cell_speed_m_s": 1.3210682485171945,
+      "relative_patch_current_imbalance": 7.775220900932315e-07
+    },
+    {
+      "id": "esp-46ff1788a2",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000023,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 3.0000004216934606e-13,
+        "relative_imbalance": 2.6246722800091124e-10
+      },
+      "max_cell_speed_m_s": 1.2638395747365598,
+      "relative_patch_current_imbalance": 6.494471375937108e-07
+    },
+    {
+      "id": "esp-aa6123f411",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999997,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.999999980020986e-12,
+        "relative_imbalance": 4.374453177784963e-09
+      },
+      "max_cell_speed_m_s": 1.364662899030252,
+      "relative_patch_current_imbalance": 6.839255071756706e-07
+    },
+    {
+      "id": "esp-0c2be2e8d0",
+      "time": 433.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000017,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.9999982532891156e-13,
+        "relative_imbalance": 2.624670383581343e-10
+      },
+      "max_cell_speed_m_s": 1.2638381961915013,
+      "relative_patch_current_imbalance": 5.955892986528774e-07
+    },
+    {
+      "id": "esp-fff860c939",
+      "time": 444.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000018,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.9999995583275254e-13,
+        "relative_imbalance": 1.7497808880165719e-10
+      },
+      "max_cell_speed_m_s": 1.2918803388017044,
+      "relative_patch_current_imbalance": 2.691381081987804e-07
+    },
+    {
+      "id": "esp-4d27e2a655",
+      "time": 438.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000007,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.2999998213331088e-12,
+        "relative_imbalance": 1.1373576726138898e-09
+      },
+      "max_cell_speed_m_s": 1.2638387273539309,
+      "relative_patch_current_imbalance": 1.358118045716945e-06
+    },
+    {
+      "id": "esp-67bfab7737",
+      "time": 450.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999988,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.199999943845344e-12,
+        "relative_imbalance": 2.7996499936355946e-09
+      },
+      "max_cell_speed_m_s": 1.320859809322035,
+      "relative_patch_current_imbalance": 8.277547967153314e-07
+    },
+    {
+      "id": "esp-459f9a1037",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999988,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.199999943845344e-12,
+        "relative_imbalance": 2.7996499936355946e-09
+      },
+      "max_cell_speed_m_s": 1.263839676014528,
+      "relative_patch_current_imbalance": 4.2244674952177075e-07
+    },
+    {
+      "id": "esp-5511e6b491",
+      "time": 454.0,
+      "status": "executed",
+      "voltage_v": 40000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000007,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.2999998213331088e-12,
+        "relative_imbalance": 1.1373576726138898e-09
+      },
+      "max_cell_speed_m_s": 1.3645536105225604,
+      "relative_patch_current_imbalance": 6.175080735220791e-07
+    },
+    {
+      "id": "esp-07f32f4c17",
+      "time": 431.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999997,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.299999817337306e-12,
+        "relative_imbalance": 2.0122483076350783e-09
+      },
+      "max_cell_speed_m_s": 1.2638379812492708,
+      "relative_patch_current_imbalance": 9.054218605227869e-07
+    },
+    {
+      "id": "esp-7f1b80825f",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999975,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.499999982018887e-12,
+        "relative_imbalance": 3.937007859145354e-09
+      },
+      "max_cell_speed_m_s": 1.295253978566397,
+      "relative_patch_current_imbalance": 2.2935719936694117e-07
+    },
+    {
+      "id": "esp-507815e91c",
+      "time": 436.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000004,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.5999998635024548e-12,
+        "relative_imbalance": 1.3998249009822089e-09
+      },
+      "max_cell_speed_m_s": 1.2638385155082736,
+      "relative_patch_current_imbalance": 8.802570457201923e-07
+    },
+    {
+      "id": "esp-69b5b3c531",
+      "time": 461.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999969,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.099999849517145e-12,
+        "relative_imbalance": 4.461942127708848e-09
+      },
+      "max_cell_speed_m_s": 1.3288545307199717,
+      "relative_patch_current_imbalance": 4.0554413326419834e-07
+    },
+    {
+      "id": "esp-1eb265f97a",
+      "time": 449.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001143,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.9999999920083944e-12,
+        "relative_imbalance": 1.7497812688176845e-09
+      },
+      "max_cell_speed_m_s": 1.2638393721806234,
+      "relative_patch_current_imbalance": 1.2767952773536516e-06
+    },
+    {
+      "id": "esp-bc060b3512",
+      "time": 458.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000041,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 2.100000078344988e-12,
+        "relative_imbalance": 1.8372704048480433e-09
+      },
+      "max_cell_speed_m_s": 1.3813059595148136,
+      "relative_patch_current_imbalance": 5.734083889936081e-07
+    },
+    {
+      "id": "esp-e3447846c6",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 8.235551944763576e-07
+    },
+    {
+      "id": "esp-657d983793",
+      "time": 452.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999993,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.6999999458432455e-12,
+        "relative_imbalance": 2.3622046756848756e-09
+      },
+      "max_cell_speed_m_s": 1.295068299780203,
+      "relative_patch_current_imbalance": 2.2310501655091406e-07
+    },
+    {
+      "id": "esp-5594c04586",
+      "time": 450.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638394734585916,
+      "relative_patch_current_imbalance": 1.1481732225853325e-06
+    },
+    {
+      "id": "esp-891dcedbcb",
+      "time": 457.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999981,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.899999897680195e-12,
+        "relative_imbalance": 3.41207340114575e-09
+      },
+      "max_cell_speed_m_s": 1.3811522155103442,
+      "relative_patch_current_imbalance": 5.988995298805881e-07
+    },
+    {
+      "id": "esp-e22887ef27",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 7.929334679790708e-07
+    },
+    {
+      "id": "esp-5dce3bc638",
+      "time": 444.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000012,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -7.999998233310102e-13,
+        "relative_imbalance": 6.999123553903328e-10
+      },
+      "max_cell_speed_m_s": 1.2948571350968208,
+      "relative_patch_current_imbalance": 3.742116341762388e-07
+    },
+    {
+      "id": "esp-f38b1ac9ee",
+      "time": 436.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000004,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.5999998635024548e-12,
+        "relative_imbalance": 1.3998249009822089e-09
+      },
+      "max_cell_speed_m_s": 1.2638385155082736,
+      "relative_patch_current_imbalance": 8.832759842091231e-07
+    },
+    {
+      "id": "esp-d8c514e373",
+      "time": 450.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000013,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -6.999999538348511e-13,
+        "relative_imbalance": 6.124234057955841e-10
+      },
+      "max_cell_speed_m_s": 1.3283869957798935,
+      "relative_patch_current_imbalance": 6.48433760131946e-07
+    },
+    {
+      "id": "esp-30188d27a2",
+      "time": 449.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001143,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.9999999920083944e-12,
+        "relative_imbalance": 1.7497812688176845e-09
+      },
+      "max_cell_speed_m_s": 1.2638393721806234,
+      "relative_patch_current_imbalance": 1.229684077984613e-06
+    },
+    {
+      "id": "esp-4c3804e243",
+      "time": 457.0,
+      "status": "executed",
+      "voltage_v": 45000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999966,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.399999891686491e-12,
+        "relative_imbalance": 4.724409356949762e-09
+      },
+      "max_cell_speed_m_s": 1.3809831554776084,
+      "relative_patch_current_imbalance": 6.051671336380258e-07
+    },
+    {
+      "id": "esp-e51b164aa9",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 9.081615182114444e-07
+    },
+    {
+      "id": "esp-98fb72aa72",
+      "time": 453.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001142999998,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.999999984016789e-12,
+        "relative_imbalance": 3.499562540697103e-09
+      },
+      "max_cell_speed_m_s": 1.2981203705575584,
+      "relative_patch_current_imbalance": 2.994399635189773e-07
+    },
+    {
+      "id": "esp-af377817f0",
+      "time": 435.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638384111337317,
+      "relative_patch_current_imbalance": 6.25221898798787e-07
+    },
+    {
+      "id": "esp-6162abef2b",
+      "time": 462.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999988,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.199999943845344e-12,
+        "relative_imbalance": 2.7996499936355946e-09
+      },
+      "max_cell_speed_m_s": 1.3362519318606794,
+      "relative_patch_current_imbalance": 3.225101710798528e-07
+    },
+    {
+      "id": "esp-a001ca3c14",
+      "time": 447.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999966,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.399999891686491e-12,
+        "relative_imbalance": 4.724409356949762e-09
+      },
+      "max_cell_speed_m_s": 1.2638392678060815,
+      "relative_patch_current_imbalance": 1.5488084945128712e-06
+    },
+    {
+      "id": "esp-8f6577fa93",
+      "time": 464.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00015,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999989,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.0999998575087506e-12,
+        "relative_imbalance": 2.7121608541454753e-09
+      },
+      "max_cell_speed_m_s": 1.3979008000892588,
+      "relative_patch_current_imbalance": 4.149051666289465e-07
+    },
+    {
+      "id": "esp-da75828700",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 9.219002361651425e-07
+    },
+    {
+      "id": "esp-a54a4ec55c",
+      "time": 448.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999992,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.7999998153394046e-12,
+        "relative_imbalance": 2.4496936254327105e-09
+      },
+      "max_cell_speed_m_s": 1.2979152069309072,
+      "relative_patch_current_imbalance": 3.745600817540659e-07
+    },
+    {
+      "id": "esp-c43ee341db",
+      "time": 436.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000004,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.5999998635024548e-12,
+        "relative_imbalance": 1.3998249009822089e-09
+      },
+      "max_cell_speed_m_s": 1.2638385155082736,
+      "relative_patch_current_imbalance": 6.383294405363882e-07
+    },
+    {
+      "id": "esp-01095861de",
+      "time": 458.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999994,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -2.599999859506652e-12,
+        "relative_imbalance": 2.2747155362330283e-09
+      },
+      "max_cell_speed_m_s": 1.3360019714229006,
+      "relative_patch_current_imbalance": 3.426750175015444e-07
+    },
+    {
+      "id": "esp-bb60a53d53",
+      "time": 446.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000039,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 1.9000001225122354e-12,
+        "relative_imbalance": 1.662292316367868e-09
+      },
+      "max_cell_speed_m_s": 1.2638392647095078,
+      "relative_patch_current_imbalance": 1.6538730166946076e-06
+    },
+    {
+      "id": "esp-479ca3b023",
+      "time": 464.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00018,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999973,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -4.69999993785164e-12,
+        "relative_imbalance": 4.111985948635902e-09
+      },
+      "max_cell_speed_m_s": 1.3976953655115212,
+      "relative_patch_current_imbalance": 3.6242646890864146e-07
+    },
+    {
+      "id": "esp-855d23ed2e",
+      "time": 432.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.899999905671801e-12,
+        "relative_imbalance": 1.6622921294194177e-09
+      },
+      "max_cell_speed_m_s": 1.263838088720386,
+      "relative_patch_current_imbalance": 8.918713960899891e-07
+    },
+    {
+      "id": "esp-0c6e868027",
+      "time": 445.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 2.2325e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000024,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": 4.000001285059396e-13,
+        "relative_imbalance": 3.499563672231282e-10
+      },
+      "max_cell_speed_m_s": 1.297691522609534,
+      "relative_patch_current_imbalance": 4.1031878730024124e-07
+    },
+    {
+      "id": "esp-7221b85cc5",
+      "time": 435.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011430000008,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -1.1999999518369497e-12,
+        "relative_imbalance": 1.0498687229808693e-09
+      },
+      "max_cell_speed_m_s": 1.2638384111337317,
+      "relative_patch_current_imbalance": 6.377074474246137e-07
+    },
+    {
+      "id": "esp-4c2804f094",
+      "time": 456.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 4.465e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.001143000001,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -9.999999960041972e-13,
+        "relative_imbalance": 8.748906340261254e-10
+      },
+      "max_cell_speed_m_s": 1.3357296626122646,
+      "relative_patch_current_imbalance": 3.9298088353561894e-07
+    },
+    {
+      "id": "esp-03e72e9b99",
+      "time": 447.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": false,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999966,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -5.399999891686491e-12,
+        "relative_imbalance": 4.724409356949762e-09
+      },
+      "max_cell_speed_m_s": 1.2638392678060815,
+      "relative_patch_current_imbalance": 1.6168128986368617e-06
+    },
+    {
+      "id": "esp-fd3b9bed6c",
+      "time": 464.0,
+      "status": "executed",
+      "voltage_v": 50000,
+      "mobility": 0.00023,
+      "injection": 8.93e-05,
+      "electric_force": true,
+      "volume_flux": {
+        "patch_m3_s": {
+          "inlet": -0.001143000002,
+          "outlet": 0.0011429999987,
+          "plate": 0.0,
+          "wire": 0.0,
+          "sym": 0.0
+        },
+        "net_m3_s": -3.299999813341503e-12,
+        "relative_imbalance": 2.8871389434217015e-09
+      },
+      "max_cell_speed_m_s": 1.397468816531032,
+      "relative_patch_current_imbalance": 3.1868019503381425e-07
+    }
+  ],
+  "thermal": [
+    {
+      "id": "legacy-92814a16d6",
+      "time": 10.0,
+      "status": "executed",
+      "label": "consistent_Pr",
+      "Pr": 0.6125,
+      "ambient_fixed": false,
+      "maxCo": 2,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.019999999999999997,
+      "laminar_imposed_heat_flux_w_m2": 186.99999999999997,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.951999999999998,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        347.0
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486104739,
+          "down": 0.0,
+          "up": -0.0048610490344,
+          "hole": 0.0
+        },
+        "net_m3_s": -1.6444000007151405e-09,
+        "relative_imbalance": 3.382809486620834e-07
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.6125;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-828b718f0d",
+      "time": 10.0,
+      "status": "executed",
+      "label": "corrected_wall_flux",
+      "Pr": 0.9,
+      "ambient_fixed": false,
+      "maxCo": 2,
+      "gradient_k_m": 13738.775510204081,
+      "laminar_effective_conductivity_w_m_k": 0.013611111111111112,
+      "laminar_imposed_heat_flux_w_m2": 187.0,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.952,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        359.475
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486104739,
+          "down": 0.0,
+          "up": -0.0048610490344,
+          "hole": 0.0
+        },
+        "net_m3_s": -1.6444000007151405e-09,
+        "relative_imbalance": 3.382809486620834e-07
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.9;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-43ef982684",
+      "time": 10.0,
+      "status": "executed",
+      "label": "ambient_control",
+      "Pr": 0.9,
+      "ambient_fixed": true,
+      "maxCo": 2,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.013611111111111112,
+      "laminar_imposed_heat_flux_w_m2": 127.2638888888889,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 12.217333333333334,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        340.412
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486104739,
+          "down": 0.0,
+          "up": -0.0048610490344,
+          "hole": 0.0
+        },
+        "net_m3_s": -1.6444000007151405e-09,
+        "relative_imbalance": 3.382809486620834e-07
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.9;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-8266a66833",
+      "time": 10.0,
+      "status": "executed",
+      "label": "consistent_Pr_ambient",
+      "Pr": 0.6125,
+      "ambient_fixed": true,
+      "maxCo": 2,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.019999999999999997,
+      "laminar_imposed_heat_flux_w_m2": 186.99999999999997,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.951999999999998,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        346.913
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486104739,
+          "down": 0.0,
+          "up": -0.0048610490344,
+          "hole": 0.0
+        },
+        "net_m3_s": -1.6444000007151405e-09,
+        "relative_imbalance": 3.382809486620834e-07
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.6125;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-78246e4701",
+      "time": 10.0,
+      "status": "executed",
+      "label": "corrected_wall_flux_ambient",
+      "Pr": 0.9,
+      "ambient_fixed": true,
+      "maxCo": 2,
+      "gradient_k_m": 13738.775510204081,
+      "laminar_effective_conductivity_w_m_k": 0.013611111111111112,
+      "laminar_imposed_heat_flux_w_m2": 187.0,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.952,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        359.38
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486104739,
+          "down": 0.0,
+          "up": -0.0048610490344,
+          "hole": 0.0
+        },
+        "net_m3_s": -1.6444000007151405e-09,
+        "relative_imbalance": 3.382809486620834e-07
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.9;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-202fc5f9af",
+      "time": 10.0,
+      "status": "executed",
+      "label": "zero_injection_original",
+      "Pr": 0.9,
+      "ambient_fixed": false,
+      "maxCo": 2,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.013611111111111112,
+      "laminar_imposed_heat_flux_w_m2": 127.2638888888889,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 12.217333333333334,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        408.59
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.0,
+          "down": 0.0,
+          "up": 0.0,
+          "hole": 0.0
+        },
+        "net_m3_s": 0.0,
+        "relative_imbalance": 0.0
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.9;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-bad9d0c386",
+      "time": 10.0,
+      "status": "executed",
+      "label": "consistent_Pr_ambient_zero_injection",
+      "Pr": 0.6125,
+      "ambient_fixed": true,
+      "maxCo": 2,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.019999999999999997,
+      "laminar_imposed_heat_flux_w_m2": 186.99999999999997,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.951999999999998,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.001,
+        432.159
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.0,
+          "down": 0.0,
+          "up": 0.0,
+          "hole": 0.0
+        },
+        "net_m3_s": 0.0,
+        "relative_imbalance": 0.0
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.6125;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    },
+    {
+      "id": "legacy-91be60c7e7",
+      "time": 10.0,
+      "status": "executed",
+      "label": "consistent_Pr_ambient_timestep",
+      "Pr": 0.6125,
+      "ambient_fixed": true,
+      "maxCo": 1,
+      "gradient_k_m": 9350,
+      "laminar_effective_conductivity_w_m_k": 0.019999999999999997,
+      "laminar_imposed_heat_flux_w_m2": 186.99999999999997,
+      "heated_area_m2": 0.096,
+      "laminar_wall_heat_input_w": 17.951999999999998,
+      "wall_area_weighted_temperature_k": null,
+      "internal_temperature_range_k": [
+        300.0,
+        347.198
+      ],
+      "volume_flux": {
+        "patch_m3_s": {
+          "left": 0.0,
+          "right": 0.00486580699,
+          "down": 0.0,
+          "up": -0.0048658067306,
+          "hole": 0.0
+        },
+        "net_m3_s": 2.593999997441143e-10,
+        "relative_imbalance": 5.3310788362882347e-08
+      },
+      "transport_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    object      transportProperties;\n}\n\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\ntransportModel Newtonian;\n\n// Laminar viscosity\nnu              [0 2 -1 0 0 0 0] 1e-05;\n\nrho0\t\t[1 -3 0 0 0 0 0] 1.225;\n\nCp0\t\t[0 2 -2 -1 0 0 0] 1000;\n\nkf\t\t[1 1 -3 -1 0 0 0] 0.02;\n\n\n\n// Thermal expansion coefficient\nbeta            [0 0 0 -1 0 0 0] 3e-03;\n\n// Reference temperature\nTRef            [0 0 0 1 0 0 0] 300;\n\n// Laminar Prandtl number\nPr              [0 0 0 0 0 0 0] 0.6125;\n\n// Turbulent Prandtl number\nPrt             [0 0 0 0 0 0 0] 0.7;\n\n// ************************************************************************* //\n",
+      "turbulence_properties": "/*--------------------------------*- C++ -*----------------------------------*\\\n| =========                 |                                                 |\n| \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |\n|  \\\\    /   O peration     | Version:  4.x                                   |\n|   \\\\  /    A nd           | Web:      www.OpenFOAM.org                      |\n|    \\\\/     M anipulation  |                                                 |\n\\*---------------------------------------------------------------------------*/\nFoamFile\n{\n    version     2.0;\n    format      ascii;\n    class       dictionary;\n    location    \"constant\";\n    object      turbulenceProperties;\n}\n// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\n\nsimulationType laminar;\n\n/*\nRAS\n{\n    RASModel        kEpsilon;\n\n    turbulence      on;\n\n    printCoeffs     on;\n}\n\n*/\n// ************************************************************************* //\n",
+      "wall_temperature_note": "fixedGradient field does not store patch values; exact wall reconstruction pending",
+      "alphat_internal_max_m2_s": 0.0
+    }
+  ],
+  "errors": []
+}

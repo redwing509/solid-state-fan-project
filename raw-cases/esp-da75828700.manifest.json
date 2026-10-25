@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "2ff958adb23b35f1ab76e36accf9b0c9b6ef147beb2131a179eef7cade8493ec",
+  "archive_size_bytes": 908876,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-da75828700.tar.gz",
+      "sha256": "2ff958adb23b35f1ab76e36accf9b0c9b6ef147beb2131a179eef7cade8493ec",
+      "size_bytes": 908876
+    }
+  ],
+  "source_file_count": 50
+}

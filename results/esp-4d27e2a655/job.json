@@ -1,0 +1,15 @@
+{
+  "hash": "3b24ce1aee33f196358e8d730fd0c9f9968e5adc0a5ea2a01fc4aa422e7b923d",
+  "job": {
+    "family": "esp",
+    "voltage_v": 40000,
+    "mobility": 0.00023,
+    "injection": 4.465e-05,
+    "scheme": "upwind",
+    "electric_force": false,
+    "timeout_s": 900,
+    "classification": "FIXED_INJECTION_FLOW_SENSITIVITY_NOT_CALIBRATED_CORONA",
+    "supply_mapping_status": "UNAVAILABLE_NO_CONVERTER_MODEL",
+    "id": "esp-4d27e2a655"
+  }
+}

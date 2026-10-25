@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "021ffbc0d9c8f41d26e60d0f3e1611136db86e11996cdf049894af2b8ef4856c",
+  "archive_size_bytes": 941855,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-c808aa6d24.tar.gz",
+      "sha256": "021ffbc0d9c8f41d26e60d0f3e1611136db86e11996cdf049894af2b8ef4856c",
+      "size_bytes": 941855
+    }
+  ],
+  "source_file_count": 51
+}
