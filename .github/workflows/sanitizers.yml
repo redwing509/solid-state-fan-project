@@ -59,7 +59,7 @@ jobs:
           sed -i "s|^EXE_INC = \\\\|EXE_INC = $SAN \\\\|; s|^EXE_LIBS = \\\\|EXE_LIBS = $SAN \\\\|" "$opts"
           cat "$opts"
           cd "$RUNNER_TEMP/modern-ehd"
-          ./Allwmake 2>&1 | tee "$RUNNER_TEMP/build.log"
+          sh ./Allwmake 2>&1 | tee "$RUNNER_TEMP/build.log"
           test -x "$FOAM_USER_APPBIN/electrostaticSimpleFoam"
           ldd "$FOAM_USER_APPBIN/electrostaticSimpleFoam" | grep -E "asan|ubsan"
       - name: Run coaxialCorona smoke case under ASan/UBSan
