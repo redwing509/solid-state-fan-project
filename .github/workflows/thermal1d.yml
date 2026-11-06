@@ -2,9 +2,19 @@ name: thermal1d verification
 
 on:
   push:
-    paths: ["engines/thermal1d/**", ".github/workflows/thermal1d.yml"]
+    paths:
+      - "engines/thermal1d/**"
+      - ".github/workflows/thermal1d.yml"
+      - ".github/dependabot.yml"
+      - "tests/test_dependabot_coverage.py"
+      - "tests/test_dependency_floors.py"
   pull_request:
-    paths: ["engines/thermal1d/**", ".github/workflows/thermal1d.yml"]
+    paths:
+      - "engines/thermal1d/**"
+      - ".github/workflows/thermal1d.yml"
+      - ".github/dependabot.yml"
+      - "tests/test_dependabot_coverage.py"
+      - "tests/test_dependency_floors.py"
   workflow_dispatch:
 
 permissions:
@@ -26,6 +36,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Repository security tests
+        working-directory: ${{ github.workspace }}
+        run: |
+          python tests/test_dependabot_coverage.py
+          python tests/test_dependency_floors.py
       - name: Install
         run: |
           python -m pip install --upgrade pip
