@@ -1,6 +1,6 @@
 # Contributing to Solid State Fan Project
 
-Contributions are welcome: research references, corrections, material properties, geometries, simulations, measurements, analysis and code.
+Contributions are welcome: research references, corrections, material properties, geometries, simulations, measurements, analysis, code, and improvements to IonForge (`ionforge/ehd_bipolar.py`, the box finite-volume solver).
 
 Open an issue to discuss your contribution, or fork the repository and open a pull request targeting `main`. Include a clear description, why the contribution helps, its sources and the validation evidence described in [VALIDATION.md](VALIDATION.md). For large datasets, discuss size and a durable source before uploading. Do not submit secrets, personal information or material you lack permission to share. Identify authorship, licenses and third-party terms; public visibility alone does not grant a new license over project or upstream material.
 
