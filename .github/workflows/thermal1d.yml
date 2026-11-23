@@ -43,7 +43,7 @@ jobs:
       - name: OpenFOAM cross-check from stored metrics (section B)
         if: matrix.scipy == 'with-scipy'
         run: python -m thermal1d compare --out comparison-ci.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: matrix.scipy == 'with-scipy'
         with:
           name: thermal1d-${{ matrix.python-version }}-${{ matrix.scipy }}
