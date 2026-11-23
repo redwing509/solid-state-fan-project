@@ -15,6 +15,9 @@ I_BOX = 8.218217e-05  # box FV Richardson (infinite half-plane), context only
 CURRENT_ABS_MIN = 1e-18  # A/m; below this is treated as no current
 SETTLE_WINDOW = 100      # steps (t 0.05 -> 0.06 s at dt = 1e-4 s); METHOD.md
 SETTLE_TOL = 1e-3        # 0.1% relative change of I_vol over the window
+EXPECTED_STEPS = 600     # dt = 1e-4 s to t = 0.06 s (METHOD.md); dt check uses 1200
+A2_EXACT = 6.78117058395794e-05  # coaxial known solution, A/m (METHOD.md A2)
+A2_SAMPLES = ("002", "005", "01", "02", "05")
 
 
 def usable_current(I):
@@ -104,7 +107,27 @@ def last_scalar(path: Path):
     n = nums(path.read_text().strip().splitlines()[-1])
     return n[-1] if n else None
 
-def one(d: Path):
+def a2_r2_pass(verify_dir: Path, expected_steps=EXPECTED_STEPS):
+    """Rule 1 gate: A2 re-solved with the current formulation passes its band."""
+    means = []
+    for t in ("f1", "f0p5", "f0p25"):
+        d = Path(verify_dir) / f"uni_{t}"
+        vals = []
+        for r in A2_SAMPLES:
+            v = last_scalar(d / f"I_r{r}.dat")
+            if v is None or not math.isfinite(v):
+                return False
+            vals.append(v)
+        mon = monitor_series(d / "monitor_I.dat")
+        if len(mon) != expected_steps or not monitor_settled(mon)[0]:
+            return False
+        means.append(sum(vals) / len(vals))
+    fine, med = means[-1], means[-2]
+    return (abs(fine - A2_EXACT) / A2_EXACT <= 0.01
+            and abs(fine - med) / abs(fine) <= 0.02)
+
+
+def one(d: Path, expected_steps=EXPECTED_STEPS):
     pts = load_pairs(d / "ctr_e.dat", d / "ctr_r.dat") if (d/"ctr_e.dat").is_file() else []
     I = current(pts) if pts else None
     rec = dict(
@@ -121,6 +144,7 @@ def one(d: Path):
     )
     mon = monitor_series(d / "monitor_I.dat")
     ok, change = monitor_settled(mon)
+    ok = ok and len(mon) == expected_steps
     rec.update(
         n_steps=len(mon),
         I_vol=mon[-1] if mon else None,
@@ -129,18 +153,25 @@ def one(d: Path):
     )
     return rec
 
-def main():
-    root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent / "results" / "smoke"
-    tags = sys.argv[2:] or ["f1", "f0p5", "f0p25"]
-    rows = []
+def score(root: Path, tags, verify_dir=None, expected_steps=EXPECTED_STEPS):
+    """Apply the frozen E-01 rule. Every requested mesh must exist."""
+    root = Path(root)
+    verify_dir = Path(verify_dir) if verify_dir else root.parent / "verify-r2"
+    rows, missing = [], []
     for t in tags:
         d = root / f"wp_{t}" if (root / f"wp_{t}").is_dir() else root / t
         if not d.is_dir():
+            missing.append(t)
             continue
-        rows.append(dict(tag=t, **one(d)))
-    report = dict(openfoam_I=I_OF, meshes=rows)
-    if len(rows) >= 3 and all(usable_current(r["I_contour"]) for r in rows[:3]):
-        Ic, Im, If_ = (rows[0]["I_contour"], rows[1]["I_contour"], rows[2]["I_contour"])
+        rows.append(dict(tag=t, **one(d, expected_steps)))
+    a2_ok = a2_r2_pass(verify_dir)
+    report = dict(openfoam_I=I_OF, meshes=rows, missing=missing,
+                  a2_r2_pass=a2_ok, e01_pass=False)
+    if missing:
+        print(f"missing mesh directories: {missing}", file=sys.stderr)
+    if (not missing and len(rows) == 3
+            and all(usable_current(r["I_contour"]) for r in rows)):
+        Ic, Im, If_ = (r["I_contour"] for r in rows)
         change = abs(If_ - Im) / abs(If_)
         try:
             p = math.log(abs((Ic - Im) / (Im - If_))) / math.log(2)
@@ -148,15 +179,34 @@ def main():
         except (ValueError, ZeroDivisionError):
             p, Iinf = None, None
         gap = None if Iinf is None else abs(Iinf - I_OF) / I_OF
-        settled = all(r["settled"] for r in rows[:3])
-        ok = (settled and Iinf is not None and gap <= 0.05 and p is not None
-              and p > 0.5 and change <= 0.02)
+        osc = oscillatory(Ic, Im, If_)
+        mesh_gaps = [abs(r["I_contour"] - I_OF) / I_OF for r in rows]
+        # Richardson assumes monotone convergence; when the differences change
+        # sign, every mesh must also be inside the same 5% band (stricter only).
+        band_ok = (not osc) or max(mesh_gaps) <= 0.05
+        settled = all(r["settled"] for r in rows)
+        ok = (a2_ok and settled and band_ok and Iinf is not None and gap <= 0.05
+              and p is not None and p > 0.5 and change <= 0.02)
         report.update(p=p, I_inf=Iinf, rel_gap_OF=gap, finest_two_change=change,
-                      oscillatory=oscillatory(Ic, Im, If_), all_settled=settled,
+                      oscillatory=osc, max_mesh_gap_OF=max(mesh_gaps),
+                      all_settled=settled,
                       rel_gap_box_fv=None if Iinf is None else abs(Iinf - I_BOX) / I_BOX,
                       e01_pass=ok)
+    return report
+
+
+def main():
+    args = sys.argv[1:]
+    steps = EXPECTED_STEPS
+    if len(args) >= 2 and args[0] == "--steps":
+        steps = int(args[1])
+        args = args[2:]
+    root = Path(args[0]) if args else Path(__file__).resolve().parent / "results" / "study-r2"
+    tags = args[1:] or ["f1", "f0p5", "f0p25"]
+    report = score(root, tags, expected_steps=steps)
     (root / "E01_SUMMARY.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
+
 
 if __name__ == "__main__":
     main()

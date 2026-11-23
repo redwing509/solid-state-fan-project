@@ -50,8 +50,8 @@ Re-solving the meshes needs Gmsh 4.15.2 and GetDP 3.5.0 (`run_verify.sh`, nice 1
 # E-01 Nov 1 wire–plate third-engine result (t1300u)
 
 **Host:** the box (8 CPU), `nice 19`, the same pinned binaries as mail (`getdp` SHA-256 `a357510b…2fcd`, `gmsh` `9dccade5…2c7f`, identical to `/opt/fan-tools/bin` on mail). No Fan runner slot on mail or vps3 was used; running OpenFOAM jobs were not touched.
-**When:** wire–plate study 22 Nov 2026, 11:02–11:27 PM Pacific Time; A2 re-verification finished 23 Nov 2026, 12:38 AM Pacific Time.
-**Rules:** written in `METHOD.md` ("Wire–plate start-up fix and study rules") and committed at `211787b` before any scored run. Bands were not moved.
+**When:** wire–plate study 22 Nov 2026, 11:01:51–11:24:25 PM Pacific Time (`results/logs-r2/`); A2 re-verification finished 23 Nov 2026, 12:38 AM Pacific Time.
+**Rules:** written in `METHOD.md` ("Wire–plate start-up fix and study rules") and committed at `efe4a2f` (11:01:42 PM; the same commit was `211787b` before the rebase onto `e29696f`, with an identical `engines/getdp-e01` tree) before any scored run. Bands were not moved.
 
 ## Why the earlier wire–plate run was rejected
 
@@ -83,11 +83,13 @@ Identical to the frozen plain-Picard A2 (relative difference < 1e-9), as expecte
 - Gap to OpenFOAM `8.226752e-05`: **−0.174%** (rule ≤ 5%). Gap to box FV `8.218217e-05` (infinite half-plane, context only): −0.070%.
 - Convergence is **oscillatory** (coarse→medium down, medium→fine up). Richardson is therefore only indicative. Every mesh is within 0.25% of OpenFOAM, and the full three-mesh range is 0.39%, so the verdict does not depend on the extrapolation.
 - On the finest mesh the contour current and the independent weak current differ by 0.12%.
+- The settle column refers to the near-wire current `I_vol` (rule 2). The total domain charge is still rising slowly at `t = 0.06` s (about +0.47% to +0.51% over the last 100 steps on each mesh) because far-field ions are still filling the slow-drift corners. That is the same sample time as OpenFOAM. The wire current has settled (`I_vol` change 1.8e-5; the `Δt` check agrees to 3.4e-7).
+- Scorer gates (added after review r1, stricter only): `e01_pass` also requires the A2 r2 gate (`a2_r2_pass`), exactly 600 monitored steps on each mesh, every requested mesh present, and, because convergence is oscillatory, every mesh inside the same 5% band (max mesh gap 0.249%). Re-score unchanged: PASS.
 - **Frozen E-01 rule: PASS.** Scorer: `python3 check_e01.py results/study-r2` (writes `E01_SUMMARY.json`).
 
 ## Rule 4 — time-step check (coarse mesh, reported only)
 
-`Δt = 5e-5` s, 1200 steps (`results/dtcheck-r2/`, wrapper `wireplate-dt5e-5.pro`): `I_contour` 8.238094e-05 vs 8.238091e-05, relative difference 3.4e-7 (≤ 0.5%).
+`Δt = 5e-5` s, 1200 steps (`results/dtcheck-r2/`, wrapper `results/dtcheck-r2/wireplate-dt5e-5.pro`, which differs from `study/wireplate.pro` only in `n_steps = 1200` and `inv_dt = 2.0e4`; run in a scratch copy of this tree and copied in; score with `python3 check_e01.py --steps 1200 results/dtcheck-r2 f1`): `I_contour` 8.238094e-05 vs 8.238091e-05, relative difference 3.4e-7 (≤ 0.5%).
 
 ## What this is and is not
 

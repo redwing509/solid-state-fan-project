@@ -65,7 +65,7 @@ def test_oscillatory_convergence_is_flagged():
 
 
 # Official scored results (results/study-r2, results/verify-r2), written after
-# the runs; the bands come from METHOD.md and were frozen at 211787b.
+# the runs; the bands come from METHOD.md and were frozen at efe4a2f (211787b before the rebase).
 STUDY = E01 / "results" / "study-r2"
 VERIFY_R2 = E01 / "results" / "verify-r2"
 
@@ -118,3 +118,69 @@ def test_A2_reverified_with_changed_formulation():
     for got, frozen in zip(means, (6.888718348211323e-05, 6.782031007714363e-05,
                                    6.803515005094431e-05)):
         assert abs(got - frozen) / frozen < 1e-9
+
+
+# Review follow-ups (Claude r1 findings 5/6, CodeRabbit r1 majors 2/3).
+def _fake_mesh(d: Path, I: float, steps: int = 600):
+    """Write a minimal settled mesh directory with a uniform radial current."""
+    import math
+    d.mkdir(parents=True)
+    el, rl = [], []
+    for k in range(37):
+        th = -math.pi / 2 + math.pi * k / 36
+        x, y = ce.RP * math.cos(th), ce.RP * math.sin(th)
+        E = 1e6
+        rho = I / (math.pi * ce.RP * ce.MU * E)
+        el.append(f"15 1  {x} {y} 0  0 0 0   {E*math.cos(th)} {E*math.sin(th)} 0")
+        rl.append(f"15 1  {x} {y} 0  0 0 0   {rho}")
+    (d / "ctr_e.dat").write_text("\n".join(el) + "\n")
+    (d / "ctr_r.dat").write_text("\n".join(rl) + "\n")
+    (d / "monitor_I.dat").write_text("".join(f" 0 {I}\n" for _ in range(steps)))
+
+
+def _a2_ok(monkeypatch, ok=True):
+    monkeypatch.setattr(ce, "a2_r2_pass", lambda *_a, **_k: ok)
+
+
+def test_scorer_requires_expected_step_count(tmp_path):
+    _fake_mesh(tmp_path / "wp_f1", 8.2e-5, steps=300)
+    assert ce.one(tmp_path / "wp_f1")["settled"] is False
+
+
+def test_scorer_fails_when_a_requested_mesh_is_missing(tmp_path, monkeypatch):
+    _a2_ok(monkeypatch)
+    _fake_mesh(tmp_path / "wp_f1", 8.30e-5)
+    _fake_mesh(tmp_path / "wp_f0p25", 8.22e-5)
+    rep = ce.score(tmp_path, ["f1", "f0p5", "f0p25"])
+    assert rep["e01_pass"] is False
+    assert rep["missing"] == ["f0p5"]
+
+
+def test_scorer_requires_a2_reverification(tmp_path, monkeypatch):
+    for t, f in (("f1", 1.010), ("f0p5", 1.004), ("f0p25", 1.002)):
+        _fake_mesh(tmp_path / f"wp_{t}", f * ce.I_OF)
+    _a2_ok(monkeypatch, True)
+    assert ce.score(tmp_path, ["f1", "f0p5", "f0p25"])["e01_pass"] is True
+    _a2_ok(monkeypatch, False)
+    assert ce.score(tmp_path, ["f1", "f0p5", "f0p25"])["e01_pass"] is False
+
+
+def test_oscillatory_study_needs_every_mesh_in_band(tmp_path, monkeypatch):
+    """CodeRabbit r1 example: (1.029, 1.059, 1.049) * I_OF must not pass."""
+    _a2_ok(monkeypatch)
+    for t, f in (("f1", 1.029), ("f0p5", 1.059), ("f0p25", 1.049)):
+        _fake_mesh(tmp_path / f"wp_{t}", f * ce.I_OF)
+    rep = ce.score(tmp_path, ["f1", "f0p5", "f0p25"])
+    assert rep["oscillatory"] is True
+    assert rep["e01_pass"] is False
+
+
+def test_official_a2_r2_gate_passes_on_saved_files():
+    assert ce.a2_r2_pass(VERIFY_R2) is True
+
+
+def test_runner_clears_all_old_outputs_before_solve():
+    src = (E01 / "run_e01.sh").read_text()
+    assert "rm -f monitor_" in src
+    for name in ("ctr_e.dat", "ctr_r.dat", "I_vol.dat", "Q_rho.dat"):
+        assert name in src.split("--- Unipolar solve ---", 1)[1].split("nice -n 19", 1)[0], name

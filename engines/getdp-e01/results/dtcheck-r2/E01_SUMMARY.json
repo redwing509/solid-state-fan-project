@@ -3,7 +3,7 @@
   "meshes": [
     {
       "tag": "f1",
-      "dir": "/workspace/fan-e01-third/dtcheck-out/wp_f1",
+      "dir": "results/dtcheck-r2/wp_f1",
       "n_pts": 37,
       "I_contour": 8.238094211408524e-05,
       "rel_OF": 0.001378698593141491,
@@ -19,5 +19,8 @@
       "settled": true,
       "settle_change": 7.73781276122389e-06
     }
-  ]
+  ],
+  "missing": [],
+  "a2_r2_pass": true,
+  "e01_pass": false
 }

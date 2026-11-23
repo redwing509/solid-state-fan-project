@@ -56,12 +56,15 @@
       "settle_change": 1.765226401359804e-05
     }
   ],
+  "missing": [],
+  "a2_r2_pass": true,
+  "e01_pass": true,
   "p": 2.616228309624484,
   "I_inf": 8.212437387293692e-05,
   "rel_gap_OF": 0.0017400078070066393,
   "finest_two_change": 0.0006328646004725926,
   "oscillatory": true,
+  "max_mesh_gap_OF": 0.0024947940915600654,
   "all_settled": true,
-  "rel_gap_box_fv": 0.0007032684469524326,
-  "e01_pass": true
+  "rel_gap_box_fv": 0.0007032684469524326
 }

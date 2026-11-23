@@ -45,6 +45,9 @@ print(p.read_text())
   echo "--- Unipolar solve ---"
   # The monitor appends one line per step; never mix two runs in one file.
   rm -f monitor_Q.dat monitor_I.dat
+  # Never score a table left over from an earlier run in this directory.
+  rm -f ctr_e.dat ctr_r.dat I_vol.dat Q_rho.dat I_emitter.dat I_collector.dat \
+    v_probe.dat e_probe.dat r_probe.dat ./*_r0*.dat
   if [[ -f "$ROOT/${SRC}/contour.pro" ]]; then
     echo 'Include "contour.pro";' >> case.pro
     ln -sfn "$ROOT/${SRC}/contour.pro" contour.pro
