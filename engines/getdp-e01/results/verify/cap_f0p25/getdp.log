@@ -1,0 +1,36 @@
+Info    : Running '/opt/fan-tools/bin/getdp case.pro -msh case.msh -solve Electrostatics -pos Map' [GetDP 3.5.0, 1 node, max. 1 thread]
+Info    : Started (Sun Nov 22 08:01:09 2026, Wall = 0.000265121s, CPU = 0.002013s, Mem = 7Mb)
+Info    : Initializing Gmsh
+Info    : Loading problem definition 'case.pro'
+Info    : Selected Resolution 'Electrostatics'
+Info    : Loading Geometric data 'case.msh'
+Info    : System 'A' : Real
+P r e - P r o c e s s i n g . . .
+Info    : Treatment Formulation 'Electrostatics'
+Info    :   Generate ExtendedGroup '_CO_Entity_5' (NodesOf, None)
+Info    :   Generate ExtendedGroup '_CO_Entity_6' (NodesOf, None)
+Info    : System 1/1: 201253 Dofs
+Info    : (Wall = 2.6908s, CPU = 2.53419s, Mem = 90.7891Mb)
+E n d   P r e - P r o c e s s i n g
+P r o c e s s i n g . . .
+Info    : Generate[A]
+Info    : Solve[A]
+Info    : N: 201253 - preonly lu mumps
+Info    : SaveSolution[A]
+Info    : (Wall = 11.5338s, CPU = 10.2752s, Mem = 538.984Mb)
+E n d   P r o c e s s i n g
+P o s t - P r o c e s s i n g . . .
+Info    : NameOfSystem not set in PostProcessing: selected 'A'
+Info    : Selected PostProcessing 'Electrostatics'
+Info    : Selected Mesh 'case.msh'
+Info    : PostOperation 'Map' 1/3
+          > 'energy.dat'
+Info    : PostOperation 'Map' 2/3
+          > 'v_probe.dat'
+Info    : Initializing rapid search grid...
+Info    : ...done: 20x20x1
+Info    : PostOperation 'Map' 3/3
+          > 'e_probe.dat'
+Info    : (Wall = 14.0668s, CPU = 12.7975s, Mem = 539.234Mb)
+E n d   P o s t - P r o c e s s i n g
+Info    : Stopped (Sun Nov 22 08:01:23 2026, Wall = 14.1704s, CPU = 12.8047s, Mem = 539.234Mb)

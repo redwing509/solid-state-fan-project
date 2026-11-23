@@ -1,0 +1,8 @@
+# Large GetDP/Gmsh solve artifacts (meshes, binary solutions). Small probe
+# tables and logs are kept so the official scorer can be re-run.
+results/**/*.msh
+results/**/*.pre
+results/**/*.res
+results/**/*.pos
+__pycache__/
+.pytest_cache/
