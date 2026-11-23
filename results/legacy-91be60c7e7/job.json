@@ -1,0 +1,18 @@
+{
+  "hash": "6f51e81cb0f73b4a2e2200838d0379bb6419270322e2f802ec721cedf2e6b32d",
+  "job": {
+    "family": "legacy",
+    "label": "consistent_Pr_ambient_timestep",
+    "voltage_v": 7540,
+    "mobility": 0.00023,
+    "injection": 0.0001743,
+    "Pr": 0.6125,
+    "gradient": 9350,
+    "ambient_fixed": true,
+    "maxCo": 1,
+    "timeout_s": 3600,
+    "classification": "THERMAL_AND_BOUNDARY_CONTROL_NOT_EXPERIMENTALLY_VALIDATED",
+    "supply_mapping_status": "UNAVAILABLE_NO_CONVERTER_MODEL",
+    "id": "legacy-91be60c7e7"
+  }
+}

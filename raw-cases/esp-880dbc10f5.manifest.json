@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "1ee86b4c0e7f772bd59b18e9de08f3a1585e25fb71398bfad224a907f013bdfa",
+  "archive_size_bytes": 942051,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-880dbc10f5.tar.gz",
+      "sha256": "1ee86b4c0e7f772bd59b18e9de08f3a1585e25fb71398bfad224a907f013bdfa",
+      "size_bytes": 942051
+    }
+  ],
+  "source_file_count": 51
+}

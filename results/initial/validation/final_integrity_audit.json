@@ -1,0 +1,22 @@
+{
+  "manifest_sha256": "d16eb3fa5f4f1e3bf9ba4bec4e49fbbcdf1c2e3b47365dd458b39f49c3508ad2",
+  "comparison_sha256": "c000d16686147cc5ebcb9a928cf225d05f1bc8730d33350784e1f96df57bfc0a",
+  "job_count": 314,
+  "families": {
+    "coaxial": {
+      "executed": 216
+    },
+    "esp": {
+      "executed": 90
+    },
+    "legacy": {
+      "executed": 7,
+      "timeout": 1
+    }
+  },
+  "input_result_hash_and_status_issues": [],
+  "archive_manifest_entries_checked": 630,
+  "archive_bytes_checked": 400821666,
+  "verified_remote_commit_before_note_update": "334f55e2990c4e2a8ed1f029aae7ecf8bd541e66",
+  "validation_status": "RETROSPECTIVE_METADATA_AND_EXPORT_INTEGRITY_AUDIT_NOT_PHYSICAL_VALIDATION"
+}

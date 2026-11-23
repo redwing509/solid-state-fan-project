@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "6261d883e36d411d7baf27afd9734336ae5466d6b51a28ef92966a5411a816f8",
+  "archive_size_bytes": 2375736,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/legacy-bad9d0c386.tar.gz",
+      "sha256": "6261d883e36d411d7baf27afd9734336ae5466d6b51a28ef92966a5411a816f8",
+      "size_bytes": 2375736
+    }
+  ],
+  "source_file_count": 324
+}

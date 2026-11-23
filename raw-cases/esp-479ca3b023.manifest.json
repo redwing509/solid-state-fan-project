@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "90fd99f87eeb76b3842a1226cb8af2c90de709865f9beacf2a973a9719e7d5aa",
+  "archive_size_bytes": 947222,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-479ca3b023.tar.gz",
+      "sha256": "90fd99f87eeb76b3842a1226cb8af2c90de709865f9beacf2a973a9719e7d5aa",
+      "size_bytes": 947222
+    }
+  ],
+  "source_file_count": 51
+}

@@ -1,0 +1,113 @@
+{
+ "thermal1d": {
+  "n_cells": 1024,
+  "dt": 0.0005,
+  "theta": 0.5,
+  "t_end_s": 10.0,
+  "wall_heat_flux_W_m2": 187.0,
+  "T_wall_K": 434.80705089295606,
+  "T_max_K": 434.80705089295606,
+  "T_mean_K": 319.07206678739345,
+  "heat_out_top_J_m2": 0.0029236171329292803,
+  "energy_residual_J_m2": 5.44450813322328e-08,
+  "derived": {
+   "H_m": 0.08004,
+   "rho_c": 1225.0,
+   "k": 0.02,
+   "alpha": 1.6326530612244897e-05,
+   "q_wall_W_m2": 187.0,
+   "k_declared": 0.02,
+   "plate_area_m2": 0.096
+  }
+ },
+ "ehd-off-control": {
+  "rows": [
+   {
+    "quantity": "wall heat flux (W/m2)",
+    "thermal1d": 187.0,
+    "openfoam": 187.0,
+    "rel_diff": 0.0,
+    "tol": 0.01,
+    "passed": true
+   },
+   {
+    "quantity": "peak (plate) T rise (K)",
+    "thermal1d": 134.80705089295606,
+    "openfoam": 134.8521367925,
+    "rel_diff": 0.00033433581859606426,
+    "tol": 0.02,
+    "passed": true
+   },
+   {
+    "quantity": "mean T rise (K)",
+    "thermal1d": 19.072066787393453,
+    "openfoam": 19.071488787876945,
+    "rel_diff": 3.030699506144018e-05,
+    "tol": 0.01,
+    "passed": true
+   },
+   {
+    "quantity": "OF plate T uniformity (max-min)/rise",
+    "thermal1d": 0.0,
+    "openfoam": 0.0009742321604319893,
+    "rel_diff": 0.0009742321604319893,
+    "tol": 0.02,
+    "passed": true
+   }
+  ],
+  "all_pass": true,
+  "info": {
+   "thermal1d_T_wall_K": 434.80705089295606,
+   "thermal1d_T_mean_K": 319.07206678739345,
+   "openfoam_plate_T_max_K": 434.8521367925,
+   "openfoam_plate_T_areamean_K": 434.82668431656083,
+   "openfoam_cell_T_max_K": 432.217,
+   "openfoam_T_mean_K": 319.07148878787694
+  }
+ },
+ "corrected-baseline": {
+  "rows": [
+   {
+    "quantity": "wall heat flux (W/m2)",
+    "thermal1d": 187.0,
+    "openfoam": 187.0,
+    "rel_diff": 0.0,
+    "tol": 0.01,
+    "passed": true
+   },
+   {
+    "quantity": "peak (plate) T rise (K)",
+    "thermal1d": 134.80705089295606,
+    "openfoam": 49.5951367925,
+    "rel_diff": 1.7181506012771435,
+    "tol": 0.02,
+    "passed": false
+   },
+   {
+    "quantity": "mean T rise (K)",
+    "thermal1d": 19.072066787393453,
+    "openfoam": 1.0621455026225703,
+    "rel_diff": 16.95617148526462,
+    "tol": 0.01,
+    "passed": false
+   },
+   {
+    "quantity": "OF plate T uniformity (max-min)/rise",
+    "thermal1d": 0.0,
+    "openfoam": 0.8619357844321237,
+    "rel_diff": 0.8619357844321237,
+    "tol": 0.02,
+    "passed": false
+   }
+  ],
+  "all_pass": false,
+  "info": {
+   "thermal1d_T_wall_K": 434.80705089295606,
+   "thermal1d_T_mean_K": 319.07206678739345,
+   "openfoam_plate_T_max_K": 349.5951367925,
+   "openfoam_plate_T_areamean_K": 331.7034447406708,
+   "openfoam_cell_T_max_K": 346.913,
+   "openfoam_T_mean_K": 301.06214550262257
+  }
+ }
+}

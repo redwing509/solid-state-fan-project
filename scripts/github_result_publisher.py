@@ -186,18 +186,18 @@ def git(*args, allowed=(0,)):
 
 
 def publish_git():
-    if git('branch', '--show-current').stdout.strip() != 'main':
-        raise SafeStop('Export checkout must be on main')
+    if git('branch', '--show-current').stdout.strip() != 'simulation-results':
+        raise SafeStop('Export checkout must be on simulation-results')
     remote = git('remote', 'get-url', 'origin').stdout.strip()
     if remote not in ('git@github.com:redwing509/solid-state-fan-project.git',
                       'https://github.com/redwing509/solid-state-fan-project.git',
                       'ssh://git@github.com/redwing509/solid-state-fan-project.git'):
         raise SafeStop('Unexpected export remote; push refused')
-    tracking = git('rev-parse', '--verify', 'refs/remotes/origin/main', allowed=(0, 128))
+    tracking = git('rev-parse', '--verify', 'refs/remotes/origin/simulation-results', allowed=(0, 128))
     if tracking.returncode == 0:
-        behind, ahead = map(int, git('rev-list', '--left-right', '--count', 'origin/main...HEAD').stdout.split())
+        behind, ahead = map(int, git('rev-list', '--left-right', '--count', 'origin/simulation-results...HEAD').stdout.split())
         if behind:
-            raise SafeStop('Export main diverged or is behind origin/main; manual review required')
+            raise SafeStop('Export results branch diverged or is behind origin/simulation-results; manual review required')
     tracked = git('ls-files', '-z').stdout.split('\0')
     for relative in filter(None, tracked):
         if excluded(Path(relative)):
@@ -214,7 +214,7 @@ def publish_git():
     if changes:
         git('commit', '-m', 'Publish completed fan research results ' + now())
     # Always attempt push, even if no file changed: retries unpublished commits.
-    git('push', 'origin', 'main')
+    git('push', 'origin', 'simulation-results')
     return git('rev-parse', 'HEAD').stdout.strip()
 
 

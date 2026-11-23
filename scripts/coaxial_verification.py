@@ -16,6 +16,42 @@ A, B, EPS = 0.001, 0.1, 8.854e-12
 SOURCE = "https://github.com/swtbkim/electrostaticSimpleFoam/blob/main/examples/coaxialCorona/exact_coaxial.py"
 
 
+
+def solve_log_radius_bvp(voltage, injected_charge, n_mesh=200, tol=1e-9,
+                         bc_tol=1e-11, max_nodes=20000, allow_max_nodes=False):
+    """Method 2 on its own (used by compare() and by the mesh study in tests/coaxial).
+
+    t=log(r/a), v=V/V0, y=rE/V0, k=I' a^2/(2 pi eps mu V0^2).
+    v'=-y; y'=k exp(2t)/y. No shooting result enters the initial guess.
+    Returns (scipy solution, length = ln(b/a)).
+    allow_max_nodes=True accepts scipy status 1 (node limit reached): the Newton solve on
+    the given mesh has converged, only further mesh refinement was refused. Used for the
+    fixed-mesh study, never by compare().
+    """
+    length = np.log(B / A)
+    coefficient = injected_charge * A ** 2 / (EPS * voltage)
+
+    def ode(t, state, parameter):
+        return np.vstack((-state[1], parameter[0] * np.exp(2 * t) / state[1]))
+
+    def boundary(left, right, parameter):
+        return np.array([left[0] - 1, right[0],
+                         parameter[0] - coefficient * left[1]])
+
+    mesh = np.linspace(0, length, n_mesh)
+    guess = np.vstack((1 - mesh / length, np.full(mesh.size, 1 / length)))
+    solution = solve_bvp(ode, boundary, mesh, guess,
+                         p=[coefficient / length], tol=tol,
+                         bc_tol=bc_tol, max_nodes=max_nodes)
+    if not solution.success and not (allow_max_nodes and solution.status == 1):
+        raise RuntimeError(solution.message)
+    return solution, length
+
+
+def bvp_current_from_solution(solution, voltage, mobility):
+    return float(solution.p[0] * 2 * np.pi * EPS * mobility * voltage ** 2 / A ** 2)
+
+
 def compare(voltage, injected_charge, mobility):
     # Method 1: radial closed-form field, adaptive quadrature and scalar shooting.
     def field(radius, emitter_field):
@@ -32,25 +68,7 @@ def compare(voltage, injected_charge, mobility):
     current = 2 * np.pi * A * mobility * injected_charge * emitter_field
 
     # Method 2: solve Poisson + charge conservation directly, with current unknown.
-    # t=log(r/a), v=V/V0, y=rE/V0, k=I' a²/(2π eps mu V0²).
-    # v'=-y; y'=k exp(2t)/y. No shooting result enters initial guess.
-    length = np.log(B / A)
-    coefficient = injected_charge * A ** 2 / (EPS * voltage)
-
-    def ode(t, state, parameter):
-        return np.vstack((-state[1], parameter[0] * np.exp(2 * t) / state[1]))
-
-    def boundary(left, right, parameter):
-        return np.array([left[0] - 1, right[0],
-                         parameter[0] - coefficient * left[1]])
-
-    mesh = np.linspace(0, length, 200)
-    guess = np.vstack((1 - mesh / length, np.full(mesh.size, 1 / length)))
-    solution = solve_bvp(ode, boundary, mesh, guess,
-                         p=[coefficient / length], tol=1e-9,
-                         bc_tol=1e-11, max_nodes=20000)
-    if not solution.success:
-        raise RuntimeError(solution.message)
+    solution, length = solve_log_radius_bvp(voltage, injected_charge)
 
     t = np.linspace(0, length, 401)
     radius = A * np.exp(t)

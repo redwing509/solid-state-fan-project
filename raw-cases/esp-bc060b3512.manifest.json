@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "8aadcde9d43042e623d6a11bd267065ad7778657e63a0e1d1f1222d1a9aa2206",
+  "archive_size_bytes": 945749,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-bc060b3512.tar.gz",
+      "sha256": "8aadcde9d43042e623d6a11bd267065ad7778657e63a0e1d1f1222d1a9aa2206",
+      "size_bytes": 945749
+    }
+  ],
+  "source_file_count": 51
+}

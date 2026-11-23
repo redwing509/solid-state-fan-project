@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "a5928f722ac4b4ba8dda5e4a918fce1a0674b31f47a14950eea76cf5db789ae4",
+  "archive_size_bytes": 14000554,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/legacy-92814a16d6.tar.gz",
+      "sha256": "a5928f722ac4b4ba8dda5e4a918fce1a0674b31f47a14950eea76cf5db789ae4",
+      "size_bytes": 14000554
+    }
+  ],
+  "source_file_count": 324
+}

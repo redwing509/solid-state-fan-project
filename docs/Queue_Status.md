@@ -1,6 +1,8 @@
 # Mail VPS simulation queue
 
-Submitted October 21, 2026. **314 distinct jobs are loaded and the queue is running.** This document is a saved snapshot; read the live server status before reporting current counts.
+Latest completion review: see Batch_Completion_Review.md and Validation_Plan.md. All 314 terminal records are backed up; the batch worker, watcher and uploader completed normally. The hourly batch monitor is being paused after final notes are verified. Earlier progress descriptions below are retained historical context.
+
+Submitted October 21, 2026. **314 jobs are terminal: 313 executed, one thermal timeout, none waiting/running.** This document is a saved snapshot; read the live server status before reporting current counts.
 
 ## Job inventory
 

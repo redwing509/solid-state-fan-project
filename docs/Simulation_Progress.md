@@ -4,7 +4,7 @@ Date: October 21, 2026.
 
 Latest continuation: see `Voltage_and_Materials_Campaign.md` for 300 completed dielectric parameter cases across 110/220/330/440 V, plus 36 reduced coaxial electrical comparisons. All passed their numerical comparison thresholds; none establishes fan/material performance. The 10,800-candidate material register remains pending EHD simulation. Read `Project_To_Do.md`, `Simulator_Comparison_Register.md` and `Project_Parameters.md` before scheduling more work. Local CPU/GPU use is limited to 50%; notify the user before heavy-load simulations and choose additional compute together.
 
-New status: the original full EHD case completed at time 10 s, exit 0. Numerical review is saved in `Legacy_Benchmark_Review.md`. The implied wall heat flux is 127.264 W/m² versus the documented 187 W/m², so experimental validation remains open. A second EHD implementation is now built in OpenCFD v2412; its initial coarse/medium reference runs completed and the finest hit its initial cap. A **314-job serial queue is running on mail**; see `Queue_Status.md` and `queue/manifest.json`. All 314 input preparations passed before launch. Retrieve live status before stating completion counts.
+New status: the original full EHD case completed at time 10 s, exit 0. Numerical review is saved in `Legacy_Benchmark_Review.md`. The implied wall heat flux is 127.264 W/m² versus the documented 187 W/m², so experimental validation remains open. A second EHD implementation is now built in OpenCFD v2412; its initial coarse/medium reference runs completed and the finest hit its initial cap. The **314-job serial queue on mail is terminal: 313 executed and one thermal timeout**; see `Queue_Status.md` and `queue/manifest.json`. All 314 input preparations passed before launch. Retrieve live status before stating completion counts.
 
 ## Verified outcome
 
@@ -48,3 +48,11 @@ An additional open-source candidate is https://github.com/swtbkim/electrostaticS
 ## Mobile access
 
 The lab URL can be opened from a phone with the same account. The user subsequently confirmed successful phone-to-PC access through the ChatGPT app. This completes the phone → PC → mail working route. The earlier Windows CLI attempt did not establish pairing; the user completed access through the app. Further instructions and connection details are in `Phone_Access_and_Server_Connection.md`.
+
+## Completed batch review
+
+See Batch_Completion_Review.md for final counts, integrity audit, electrical error/convergence summaries and the incomplete thermal control. All 314 terminal case records are backed up. Validation_Plan.md revision 0.1 defines the working evidence gates and future acceptance protocol; it is not a retroactive validation certificate.
+
+## October 22 validation continuation
+
+See Validation_Audit_2026-10-22.md. Independently coded exact-current calculation agrees with the previous reference to 8.21e-16 relative difference; sample-start rounding correction is retained separately. All 90 duct final fields passed through a boundary-flux audit, but a fixed 1 m/s inlet means they do not predict self-generated airflow. Thermal input/control fields now distinguish the two 187 W/m² corrections; wall-temperature reconstruction and full transient energy closure remain pending. No solver was launched.

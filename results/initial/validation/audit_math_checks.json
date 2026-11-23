@@ -1,0 +1,7 @@
+{
+  "settings_checked": 36,
+  "check": "closed-form voltage primitive checked against 4096-interval log-radius Simpson integration",
+  "worst_relative_voltage_difference": 5.638867150992155e-15,
+  "required_relative_agreement": 1e-08,
+  "analysis_script_sha256": "55e928544a2dca01ff1315b68e83d8c2006e59aea3aa5c325571450af02b576e"
+}

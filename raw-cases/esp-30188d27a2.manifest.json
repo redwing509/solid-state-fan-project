@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "6d90b4304e7fe4208ecdec7e3a966e8d4102435b797dc2fa2ccf17d3e0b91049",
+  "archive_size_bytes": 914046,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-30188d27a2.tar.gz",
+      "sha256": "6d90b4304e7fe4208ecdec7e3a966e8d4102435b797dc2fa2ccf17d3e0b91049",
+      "size_bytes": 914046
+    }
+  ],
+  "source_file_count": 50
+}

@@ -1,0 +1,15 @@
+{
+  "status": "timeout",
+  "exit_code": 137,
+  "metrics": {
+    "last_time": 6.34411,
+    "last_patch_metrics": {},
+    "end_marker": false,
+    "fatal_marker": false,
+    "validation_status": "not_assessed"
+  },
+  "job_hash": "6f51e81cb0f73b4a2e2200838d0379bb6419270322e2f802ec721cedf2e6b32d",
+  "finished_at": "2026-10-22T06:31:34.109034+00:00",
+  "elapsed_s": 3611.697,
+  "validation_status": "not_assessed"
+}

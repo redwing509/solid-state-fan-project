@@ -27,3 +27,9 @@ The recurring publisher checks every five minutes and survives chat/SSH closure 
 ## Public contributions
 
 The user requested public participation with validation before inclusion. Outside contributions use issues or fork pull requests. Protected main requires an approving owner review, dismisses stale approvals and requires resolved discussions. CODEOWNERS names @redwing509 for all files. No bypass is granted to the mail deploy key; the uploader instead writes the separate simulation-results evidence branch. Submitted code is never executed automatically. CONTRIBUTING.md and VALIDATION.md define the intake and evidence review. Previously uploaded snapshots remain labeled research evidence rather than experimentally validated designs.
+
+Verified October 21, 2026 (Pacific): repository API reports public visibility; main ruleset 25606775 is active, has no bypass actors, requires one approving code-owner review, dismisses stale approvals, resolves review threads, and blocks branch deletion and non-fast-forward updates. The existing server publisher was moved to simulation-results. Historical main snapshots include earlier research evidence and do not retroactively acquire validation.
+
+## Batch terminal backup
+
+All 314 terminal queue records were backed up, verified against remote simulation-results commit 334f55e2990c4e2a8ed1f029aae7ecf8bd541e66 before this note update. The publisher completed its three terminal refreshes and exited normally. A one-off final documentation refresh may advance the branch. It will not run continuously after this completed batch. The hourly batch monitor is paused once that final backup is verified. No main promotion or protection change is authorized by a result upload.

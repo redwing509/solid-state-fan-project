@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "793ea8c5696d6984293471711c22a8988fe86454d35dc98c956028b779be8f3a",
+  "archive_size_bytes": 944624,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-d8c514e373.tar.gz",
+      "sha256": "793ea8c5696d6984293471711c22a8988fe86454d35dc98c956028b779be8f3a",
+      "size_bytes": 944624
+    }
+  ],
+  "source_file_count": 51
+}

@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "42f7101b25c77836f5ed8606ba4635c63fca4c114bfb9769e070cb12c1c50d49",
+  "archive_size_bytes": 910839,
+  "format": "concatenate parts in listed order to restore exact tar.gz bytes",
+  "parts": [
+    {
+      "path": "raw-cases/esp-de04ecb4f6.tar.gz",
+      "sha256": "42f7101b25c77836f5ed8606ba4635c63fca4c114bfb9769e070cb12c1c50d49",
+      "size_bytes": 910839
+    }
+  ],
+  "source_file_count": 50
+}
