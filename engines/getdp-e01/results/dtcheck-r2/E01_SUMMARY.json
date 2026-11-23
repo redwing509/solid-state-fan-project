@@ -21,6 +21,8 @@
     }
   ],
   "missing": [],
+  "expected_steps": 1200,
+  "tags_halving": true,
   "a2_r2_pass": true,
   "e01_pass": false
 }

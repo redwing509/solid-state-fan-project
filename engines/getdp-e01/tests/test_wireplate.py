@@ -184,3 +184,43 @@ def test_runner_clears_all_old_outputs_before_solve():
     assert "rm -f monitor_" in src
     for name in ("ctr_e.dat", "ctr_r.dat", "I_vol.dat", "Q_rho.dat"):
         assert name in src.split("--- Unipolar solve ---", 1)[1].split("nice -n 19", 1)[0], name
+
+
+# Review r2 follow-ups (Claude r2 findings 1-3).
+def _fake_a2(root: Path, means, steps=600):
+    for t, m in zip(("f1", "f0p5", "f0p25"), means):
+        d = root / f"uni_{t}"
+        d.mkdir(parents=True)
+        for r in ce.A2_SAMPLES:
+            (d / f"I_r{r}.dat").write_text(f"15 1  0.01 0 0  0 0 0   {m}\n")
+        (d / "monitor_I.dat").write_text("".join(f" 0 {m}\n" for _ in range(steps)))
+
+
+def test_a2_gate_requires_apparent_order(tmp_path):
+    ex = ce.A2_EXACT
+    _fake_a2(tmp_path / "bad", [ex * 1.001, ex * 1.005, ex * 1.004])
+    assert ce.a2_r2_pass(tmp_path / "bad") is False
+    _fake_a2(tmp_path / "good", [ex * 1.016, ex * 1.0001, ex * 1.0033])
+    assert ce.a2_r2_pass(tmp_path / "good") is True
+
+
+def test_summary_records_expected_steps(tmp_path, monkeypatch):
+    _a2_ok(monkeypatch)
+    _fake_mesh(tmp_path / "wp_f1", 8.2e-5, steps=1200)
+    rep = ce.score(tmp_path, ["f1"], expected_steps=1200)
+    assert rep["expected_steps"] == 1200
+
+
+def test_tags_must_run_coarse_to_fine_by_halving(tmp_path, monkeypatch):
+    _a2_ok(monkeypatch)
+    for t, f in (("f1", 1.010), ("f0p5", 1.004), ("f0p25", 1.002)):
+        _fake_mesh(tmp_path / f"wp_{t}", f * ce.I_OF)
+    assert ce.score(tmp_path, ["f0p25", "f0p5", "f1"])["e01_pass"] is False
+    assert ce.score(tmp_path, ["f1", "f1", "f0p25"])["e01_pass"] is False
+    assert ce.score(tmp_path, ["f1", "f0p5", "f0p25"])["e01_pass"] is True
+
+
+def test_runner_removes_old_laplace_guess_before_presolve():
+    src = (E01 / "run_e01.sh").read_text()
+    pre = src.split('echo "--- Laplace pre-solve ---"', 1)[1].split("nice -n 19", 1)[0]
+    assert "rm -f v_init.pos" in pre

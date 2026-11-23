@@ -123,8 +123,30 @@ def a2_r2_pass(verify_dir: Path, expected_steps=EXPECTED_STEPS):
             return False
         means.append(sum(vals) / len(vals))
     fine, med = means[-1], means[-2]
-    return (abs(fine - A2_EXACT) / A2_EXACT <= 0.01
-            and abs(fine - med) / abs(fine) <= 0.02)
+    if abs(fine - A2_EXACT) / A2_EXACT > 0.01 or abs(fine - med) / abs(fine) > 0.02:
+        return False
+    # Same apparent-order condition as check_uni.py (METHOD.md A2).
+    e0 = abs(means[0] - A2_EXACT) / A2_EXACT
+    e1 = abs(means[1] - A2_EXACT) / A2_EXACT
+    if e0 > 0 and e1 > 0:
+        return math.log(e0 / e1) / math.log(2) > 0.5
+    return e1 < e0
+
+
+def tag_factor(tag: str):
+    """'f0p25' -> 0.25; None if the tag is not an lc_factor tag."""
+    try:
+        return float(tag.lstrip("f").replace("p", "."))
+    except ValueError:
+        return None
+
+
+def halving_order(tags) -> bool:
+    """Tags must run coarse -> fine with the mesh size halved each step."""
+    f = [tag_factor(t) for t in tags]
+    if any(x is None or x <= 0 for x in f):
+        return False
+    return all(abs(a / b - 2.0) < 1e-9 for a, b in zip(f, f[1:]))
 
 
 def one(d: Path, expected_steps=EXPECTED_STEPS):
@@ -165,11 +187,13 @@ def score(root: Path, tags, verify_dir=None, expected_steps=EXPECTED_STEPS):
             continue
         rows.append(dict(tag=t, **one(d, expected_steps)))
     a2_ok = a2_r2_pass(verify_dir)
+    order_ok = halving_order(tags)
     report = dict(openfoam_I=I_OF, meshes=rows, missing=missing,
+                  expected_steps=expected_steps, tags_halving=order_ok,
                   a2_r2_pass=a2_ok, e01_pass=False)
     if missing:
         print(f"missing mesh directories: {missing}", file=sys.stderr)
-    if (not missing and len(rows) == 3
+    if (order_ok and not missing and len(rows) == 3
             and all(usable_current(r["I_contour"]) for r in rows)):
         Ic, Im, If_ = (r["I_contour"] for r in rows)
         change = abs(If_ - Im) / abs(If_)

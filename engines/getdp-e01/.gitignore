@@ -6,3 +6,6 @@ results/**/*.res
 results/**/*.pos
 __pycache__/
 .pytest_cache/
+# Absolute symlinks the runners create in each result directory
+results/**/unipolar.pro
+results/**/contour.pro

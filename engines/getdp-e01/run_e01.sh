@@ -28,6 +28,7 @@ run_one() {
   python3 -c "import pathlib,re; p=pathlib.Path('$dest/laplace.pro'); t=p.read_text(); f=float('$fac'); t=re.sub(r'^h_mesh = .*', 'h_mesh = %.6e;'%(8e-6*f), t, count=1, flags=re.M); p.write_text(t)"
   cd "$dest"
   echo "--- Laplace pre-solve ---"
+  rm -f v_init.pos   # never start from an older run's Laplace guess
   nice -n 19 "$GETDP" laplace.pro -msh case.msh -solve Laplace -pos LaplaceMap > laplace.log 2>&1
   [[ -f v_init.pos ]]
   # Coupled wrapper: Init from v_init.pos
