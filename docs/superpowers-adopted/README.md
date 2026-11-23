@@ -1,20 +1,25 @@
-# Adapted Superpowers guides (trial only)
+# Adapted Superpowers guides (adopted Nov 22, 2026, t1288u)
 
 <!--
 Adapted from obra/superpowers, https://github.com/obra/superpowers
 pinned at 22f0b463e7a5e579904dd6211a520321035526f7 (v7.0.2).
 MIT License, Copyright (c) 2025 Jesse Vincent.
 The original copyright notice and permission notice are in ./LICENSE.
-These guides are our shortened adaptations for a trial. They do not install
+These guides are our shortened adaptations, adopted Nov 22, 2026 (t1288u). They do not install
 the Superpowers plugin and they do not replace our review set or James's
 merge approval.
 -->
 
 These are short, pipeline-specific adaptations of selected
-[obra/superpowers](https://github.com/obra/superpowers) skills. They are
-proposals under evaluation. They have not been installed as agent skills,
-have not been added to any repo's `CLAUDE.md` or `AGENTS.md`, and have
-not been wired into any live routine.
+[obra/superpowers](https://github.com/obra/superpowers) skills. James
+adopted them on Nov 22, 2026 (t1288u). They are now pointed to from this
+repo's `docs/AGENTS.md` and `CONTRIBUTING.md`. They are not installed as
+the upstream Superpowers plugin, and they do not replace the official
+review set or James's merge approval.
+
+Toolchain example lines in the brief templates are for the security
+suite. For this Fan repo, use this repository's own test and solver
+commands.
 
 Source pin: `22f0b463e7a5e579904dd6211a520321035526f7` (v7.0.2).
 License: MIT, see `LICENSE`.
@@ -31,7 +36,7 @@ Our hard constraints still win:
   2.0, `forbid(unsafe)` outside suite-sys, rustc 1.89.0 `--offline --locked -j 2`.
 - Never print secrets. Never sign external CLAs.
 
-## Guides kept for trial
+## Adopted guides
 
 | File | Source skill | Intended use |
 |---|---|---|
@@ -42,7 +47,7 @@ Our hard constraints still win:
 
 ## Deliberately not adapted
 
-See the proposal after the A/B. In short: plugin/hooks, visual companion,
+The historical proposal is in `BRIEF-TEXT.md`. In short, not adopted: plugin/hooks, visual companion,
 mandatory brainstorming, git worktrees (we already have them),
 finish-branch / auto-push, subagent-driven development as a default,
 using-superpowers mandatory invocation, diagnosing-superpowers,

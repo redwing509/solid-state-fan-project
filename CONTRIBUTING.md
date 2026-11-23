@@ -12,6 +12,10 @@ Validation may establish numerical correctness without establishing experimental
 
 ## Coding process (adopted Nov 22, 2026)
 
+This section is the maintainer and coding-agent process. Outside pull
+requests are still reviewed under the existing rules above; these
+practices do not add extra tools that outside contributors must run.
+
 These four practices apply to coding work on this project. They do not
 replace or weaken the full review set, frozen pass rules, or James's
 merge approval, which still come first. Following them does not

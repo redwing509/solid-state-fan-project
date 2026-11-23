@@ -1,5 +1,10 @@
 # Proposal: adopt a few Superpowers habits, not the plugin
 
+**Historical proposal.** Adopted by James t1288u on Nov 22, 2026.
+Current text: `CODING-PROCESS.md`. The paragraphs below are the original
+proposal as written before that adoption; they are kept for provenance
+and are not the live status.
+
 Sunday, Nov 22, 2026, 9:40 PM PST (America/Los_Angeles)
 
 This is a proposal only. No live routine, review-set step, repo
