@@ -62,3 +62,59 @@ def test_runner_clears_stale_monitor_files():
 def test_oscillatory_convergence_is_flagged():
     assert ce.oscillatory(1.0, 2.0, 1.5)
     assert not ce.oscillatory(1.0, 1.5, 1.6)
+
+
+# Official scored results (results/study-r2, results/verify-r2), written after
+# the runs; the bands come from METHOD.md and were frozen at 211787b.
+STUDY = E01 / "results" / "study-r2"
+VERIFY_R2 = E01 / "results" / "verify-r2"
+
+
+def _study_report():
+    rows = [ce.one(STUDY / f"wp_{t}") for t in ("f1", "f0p5", "f0p25")]
+    return rows
+
+
+def test_official_wireplate_meshes_are_settled_600_steps():
+    for rec in _study_report():
+        assert rec["n_steps"] == 600, rec["dir"]
+        assert rec["settled"], rec
+        assert rec["n_pts"] == 37, rec["dir"]
+
+
+def test_official_wireplate_study_passes_frozen_rule():
+    import math
+    Ic, Im, If_ = (r["I_contour"] for r in _study_report())
+    p = math.log(abs((Ic - Im) / (Im - If_))) / math.log(2)
+    Iinf = If_ + (If_ - Im) / (2 ** p - 1)
+    assert abs(Iinf - ce.I_OF) / ce.I_OF <= 0.05
+    assert p > 0.5
+    assert abs(If_ - Im) / abs(If_) <= 0.02
+    # Reported, not part of the rule: convergence is oscillatory.
+    assert ce.oscillatory(Ic, Im, If_)
+
+
+def test_contour_and_volume_currents_agree_on_finest_mesh():
+    fin = _study_report()[-1]
+    assert abs(fin["I_contour"] - fin["I_vol"]) / fin["I_contour"] < 0.005
+
+
+def test_A2_reverified_with_changed_formulation():
+    """Rule 1: A2 re-solved with the time term still passes the frozen band."""
+    exact = 6.78117058395794e-05
+    means = []
+    for t in ("f1", "f0p5", "f0p25"):
+        d = VERIFY_R2 / f"uni_{t}"
+        vals = []
+        for r in ("002", "005", "01", "02", "05"):
+            lines = [ln for ln in (d / f"I_r{r}.dat").read_text().splitlines() if ln.strip()]
+            vals.append(ce.floats_in(lines[-1])[-1])
+        means.append(sum(vals) / len(vals))
+        mon = ce.monitor_series(d / "monitor_I.dat")
+        assert len(mon) == 600 and ce.monitor_settled(mon)[0], t
+    assert abs(means[-1] - exact) / exact <= 0.01
+    assert abs(means[-1] - means[-2]) / abs(means[-1]) <= 0.02
+    # Same steady answer as the frozen plain-Picard A2 (time term cancels).
+    for got, frozen in zip(means, (6.888718348211323e-05, 6.782031007714363e-05,
+                                   6.803515005094431e-05)):
+        assert abs(got - frozen) / frozen < 1e-9

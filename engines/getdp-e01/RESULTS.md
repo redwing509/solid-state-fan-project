@@ -46,3 +46,49 @@ python3 -m pytest -q tests/test_known_solution.py
 ```
 
 Re-solving the meshes needs Gmsh 4.15.2 and GetDP 3.5.0 (`run_verify.sh`, nice 19) on a host that already has `/opt/fan-tools`. Do not start a duplicate if a verify or smoke job is already running.
+
+# E-01 Nov 1 wire–plate third-engine result (t1300u)
+
+**Host:** the box (8 CPU), `nice 19`, the same pinned binaries as mail (`getdp` SHA-256 `a357510b…2fcd`, `gmsh` `9dccade5…2c7f`, identical to `/opt/fan-tools/bin` on mail). No Fan runner slot on mail or vps3 was used; running OpenFOAM jobs were not touched.
+**When:** wire–plate study 22 Nov 2026, 11:02–11:27 PM Pacific Time; A2 re-verification finished 23 Nov 2026, 12:38 AM Pacific Time.
+**Rules:** written in `METHOD.md` ("Wire–plate start-up fix and study rules") and committed at `211787b` before any scored run. Bands were not moved.
+
+## Why the earlier wire–plate run was rejected
+
+`study-t1277u` on mail (22 Nov 2026, 6:46 PM Pacific Time) ended rc=0 but was never scored. Its domain charge alternated between about `9.1e-14` and `4.46e-6` C/m on every other Picard step (a period-2 limit cycle of the lagged reaction term), and step 40 landed on the collapsed branch (`I_contour ≈ 1e-16` A/m). Re-scored with `check_e01.py` it fails. The accepted fix adds the backward-Euler time term `(ρ − ρ_prev)/Δt`, which vanishes at steady state.
+
+## Rule 1 — A2 re-verified with the changed formulation: PASS
+
+`results/verify-r2/`, 600 steps of `Δt = 1e-4` s, every mesh settled (`I_vol` change over the last 100 steps ≤ 5e-13).
+
+| Mesh | Nodes | Mean `I'` (A/m) | Rel. error vs exact `6.78117058395794e-05` |
+|---|---:|---:|---:|
+| lc_factor 1 | 7,975 | 6.888718e-05 | 1.586% |
+| lc_factor 0.5 | 30,927 | 6.782031e-05 | 0.0127% |
+| lc_factor 0.25 | 119,025 | 6.803515e-05 | **0.330%** |
+
+Identical to the frozen plain-Picard A2 (relative difference < 1e-9), as expected when the time term cancels at steady state. Finest-two change 0.316%. The independent weak current `I_vol` on the finest mesh is 6.781317e-05 A/m (0.002% from exact).
+
+## Rules 2 and 3 — wire–plate study: PASS
+
+`results/study-r2/`, OpenFOAM original half-domain (`x = 0…0.32` m, `y = −0.02004…0.06` m, symmetry at `x = 0`), wire 39.5 µm at 7540 V and `ρ = 1.743e-4` C/m³, plate at 0 V, natural/outflow right and top, `μ = 2.3e-4`, `ε0 = 8.85419e-12`. Same BCs and domain as OpenFOAM.
+
+| Mesh | Nodes | `I_contour` at r = 5 r_w (A/m) | `I_vol` (A/m) | Domain charge (C/m) | Settle change (last 100 steps) |
+|---|---:|---:|---:|---:|---:|
+| lc_factor 1 | 2,297 | 8.238091e-05 | 8.200263e-05 | 9.4353e-08 | 1.8e-05 |
+| lc_factor 0.5 | 8,670 | 8.206228e-05 | 8.224772e-05 | 9.4164e-08 | 1.8e-05 |
+| lc_factor 0.25 | 33,671 | 8.211425e-05 | 8.221098e-05 | 9.4123e-08 | 1.8e-05 |
+
+- Richardson `I_inf` = **8.212437e-05 A/m**; observed order 2.62; finest-two change 0.063%.
+- Gap to OpenFOAM `8.226752e-05`: **−0.174%** (rule ≤ 5%). Gap to box FV `8.218217e-05` (infinite half-plane, context only): −0.070%.
+- Convergence is **oscillatory** (coarse→medium down, medium→fine up). Richardson is therefore only indicative. Every mesh is within 0.25% of OpenFOAM, and the full three-mesh range is 0.39%, so the verdict does not depend on the extrapolation.
+- On the finest mesh the contour current and the independent weak current differ by 0.12%.
+- **Frozen E-01 rule: PASS.** Scorer: `python3 check_e01.py results/study-r2` (writes `E01_SUMMARY.json`).
+
+## Rule 4 — time-step check (coarse mesh, reported only)
+
+`Δt = 5e-5` s, 1200 steps (`results/dtcheck-r2/`, wrapper `wireplate-dt5e-5.pro`): `I_contour` 8.238094e-05 vs 8.238091e-05, relative difference 3.4e-7 (≤ 0.5%).
+
+## What this is and is not
+
+Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, GetDP finite-element) now give the Nov 1 fixed-injection unipolar half-domain current within 0.18% of each other. GetDP and OpenFOAM used an identical domain and BCs. This is numerical verification of the fixed-injection model only. It is not experimental validation, a Kaptzov/Peek corona-onset result, thrust, airflow, or efficiency. A supplemental fourth mesh (`lc_factor 0.125`) is reported separately if it finishes; it is not part of the rule.

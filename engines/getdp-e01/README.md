@@ -9,6 +9,6 @@ Gmsh 4.15.2 + GetDP 3.5.0 verification of the fixed-injection unipolar formulati
 - Inputs: `verify/`, `unipolar.pro`
 - Solver runner (mail or vps3 `/opt/fan-tools`, nice 19): `run_verify.sh`
 
-This is model-only numerical verification. It is not a fan, corona, airflow, or commercial result. **PUSH=0.** No Fan PR until James asks. The project owner reviews evidence before any inclusion. The Fan job-ownership warning is unchanged; do not disturb running `fan-grokbot-*` OpenFOAM containers.
+This is model-only numerical verification. It is not a fan, corona, airflow, or commercial result. Fan PUSH=0 is the default; this branch is pushed only under James t1301u after the full review set, and merging needs his yes. The project owner reviews evidence before any inclusion. The Fan job-ownership warning is unchanged; do not disturb running `fan-grokbot-*` OpenFOAM containers.
 
-The Nov 1 wire–plate agreement study (steps B and C) is not complete. See `RESULTS.md`.
+The Nov 1 wire–plate study (steps B and C) is done: GetDP `I_inf` = 8.212437e-05 A/m, −0.174% from OpenFOAM on the identical domain, frozen ≤ 5% rule **PASS** after the backward-Euler start-up fix and an A2 re-verification. Runner: `run_e01.sh` (`SRC=study`); scorer: `check_e01.py`; tests: `tests/test_wireplate.py`. See `RESULTS.md`.

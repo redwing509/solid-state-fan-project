@@ -1,0 +1,23 @@
+{
+  "openfoam_I": 8.226752e-05,
+  "meshes": [
+    {
+      "tag": "f1",
+      "dir": "/workspace/fan-e01-third/dtcheck-out/wp_f1",
+      "n_pts": 37,
+      "I_contour": 8.238094211408524e-05,
+      "rel_OF": 0.001378698593141491,
+      "I_emitter": 0.0,
+      "I_collector": 0.0,
+      "Q_rho": 9.43458827947501e-08,
+      "v_probe": 2616.073918418424,
+      "r_probe": 0.0001065738313386363,
+      "v_laplace_probe": 1222.013458753728,
+      "finite": true,
+      "n_steps": 1200,
+      "I_vol": 8.200265590162818e-05,
+      "settled": true,
+      "settle_change": 7.73781276122389e-06
+    }
+  ]
+}
