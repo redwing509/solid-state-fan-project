@@ -224,3 +224,36 @@ def test_runner_removes_old_laplace_guess_before_presolve():
     src = (E01 / "run_e01.sh").read_text()
     pre = src.split('echo "--- Laplace pre-solve ---"', 1)[1].split("nice -n 19", 1)[0]
     assert "rm -f v_init.pos" in pre
+
+
+# Review r3 follow-ups (CodeRabbit r3, Claude r3 low).
+def test_halving_order_directly():
+    assert ce.halving_order(["f1", "f0p5", "f0p25"])
+    assert ce.halving_order(["f0p5", "f0p25", "f0p125"])
+    assert not ce.halving_order(["f1", "f0p25", "f0p5"])
+    assert not ce.halving_order(["f1", "f1", "f0p5"])
+    assert not ce.halving_order(["f1", "fnan", "f0p25"])
+
+
+def test_empty_a2_sample_file_is_rejected_not_raised(tmp_path):
+    ex = ce.A2_EXACT
+    _fake_a2(tmp_path, [ex * 1.016, ex * 1.0001, ex * 1.0033])
+    (tmp_path / "uni_f0p5" / "I_r002.dat").write_text("\n  \n")
+    assert ce.a2_r2_pass(tmp_path) is False
+
+
+def test_nan_final_field_in_a2_sample_is_rejected(tmp_path):
+    ex = ce.A2_EXACT
+    _fake_a2(tmp_path, [ex * 1.016, ex * 1.0001, ex * 1.0033])
+    (tmp_path / "uni_f0p25" / "I_r002.dat").write_text(
+        f"15 1  0.01 0 0  0 0 0   {ex * 1.25} nan\n")
+    assert ce.a2_r2_pass(tmp_path) is False
+
+
+def test_settle_window_is_the_last_0p01_s_for_any_step_count(tmp_path):
+    """dt check (1200 steps): the window must cover 200 steps, not 100."""
+    d = tmp_path / "wp_f1"
+    _fake_mesh(d, 8.2e-5, steps=1200)
+    vals = [1.02 * 8.2e-5] * 1099 + [8.2e-5] * 101
+    (d / "monitor_I.dat").write_text("".join(f" 0 {v}\n" for v in vals))
+    assert ce.one(d, expected_steps=1200)["settled"] is False

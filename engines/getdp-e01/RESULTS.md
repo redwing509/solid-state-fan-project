@@ -93,4 +93,19 @@ Identical to the frozen plain-Picard A2 (relative difference < 1e-9), as expecte
 
 ## What this is and is not
 
-Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, GetDP finite-element) now give the Nov 1 fixed-injection unipolar half-domain current within 0.18% of each other. GetDP and OpenFOAM used an identical domain and BCs. This is numerical verification of the fixed-injection model only. It is not experimental validation, a Kaptzov/Peek corona-onset result, thrust, airflow, or efficiency. A supplemental fourth mesh (`lc_factor 0.125`) is reported separately if it finishes; it is not part of the rule.
+Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, GetDP finite-element) now give the Nov 1 fixed-injection unipolar half-domain current within 0.18% of each other. GetDP and OpenFOAM used an identical domain and BCs. This is numerical verification of the fixed-injection model only. It is not experimental validation, a Kaptzov/Peek corona-onset result, thrust, airflow, or efficiency. A supplemental fourth mesh is reported below; it is not part of the rule.
+
+## Supplemental fourth mesh (lc_factor 0.125, outside the frozen rule)
+
+`results/study-r2-extra/wp_f0p125` (132,230 nodes, 600 steps, settled; box, nice 19, finished 23 Nov 2026 ~1:30 AM Pacific Time). Same inputs and scorer.
+
+| Mesh | `I_contour` (A/m) | `I_vol` (A/m) |
+|---|---:|---:|
+| lc_factor 1 | 8.238091e-05 | 8.200263e-05 |
+| lc_factor 0.5 | 8.206228e-05 | 8.224772e-05 |
+| lc_factor 0.25 | 8.211425e-05 | 8.221098e-05 |
+| lc_factor 0.125 | 8.218815e-05 | 8.221054e-05 |
+
+- The weak current `I_vol` is mesh-converged: the change from lc 0.25 to 0.125 is 0.0005%. Its converged value 8.2211e-05 A/m is −0.069% from OpenFOAM and +0.035% from box FV.
+- The official point-sampled contour current is **not** in the asymptotic range. Its last three values rise with growing differences (apparent order negative), so a Richardson value from lc 0.5/0.25/0.125 is not meaningful. It stays within 0.25% of OpenFOAM on all four meshes (−0.096% on the finest), and it approaches the converged `I_vol` as the mesh is refined.
+- So the frozen-rule PASS above stands, and the honest error statement for GetDP is: wire current 8.221e-05 A/m with a mesh uncertainty of about ±0.1% (spread of the two estimators on the two finest meshes). All three engines agree within 0.11% on that basis.

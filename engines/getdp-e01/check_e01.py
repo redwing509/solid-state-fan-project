@@ -104,7 +104,10 @@ def current(pts):
 def last_scalar(path: Path):
     if not path.is_file():
         return None
-    n = nums(path.read_text().strip().splitlines()[-1])
+    lines = [ln for ln in path.read_text().splitlines() if ln.strip()]
+    if not lines:
+        return None
+    n = nums(lines[-1])
     return n[-1] if n else None
 
 def a2_r2_pass(verify_dir: Path, expected_steps=EXPECTED_STEPS):
@@ -165,7 +168,10 @@ def one(d: Path, expected_steps=EXPECTED_STEPS):
         finite=usable_current(I),
     )
     mon = monitor_series(d / "monitor_I.dat")
-    ok, change = monitor_settled(mon)
+    # Settle window = the last 0.01 s (100 steps at dt = 1e-4 s, scaled
+    # with the step count so the dt check covers the same interval).
+    window = max(SETTLE_WINDOW, expected_steps * SETTLE_WINDOW // EXPECTED_STEPS)
+    ok, change = monitor_settled(mon, window=window)
     ok = ok and len(mon) == expected_steps
     rec.update(
         n_steps=len(mon),
