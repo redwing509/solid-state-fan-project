@@ -29,7 +29,7 @@ run_one() {
   cd "$dest"
   echo "--- Laplace pre-solve ---"
   nice -n 19 "$GETDP" laplace.pro -msh case.msh -solve Laplace -pos LaplaceMap > laplace.log 2>&1
-  test -f v_init.pos
+  [[ -f v_init.pos ]]
   # Coupled wrapper: Init from v_init.pos
   cp laplace.pro case.pro
   python3 -c "
@@ -43,14 +43,14 @@ p.write_text(t)
 print(p.read_text())
 "
   echo "--- Unipolar solve ---"
-  if [ -f "$ROOT/${SRC}/contour.pro" ]; then
+  if [[ -f "$ROOT/${SRC}/contour.pro" ]]; then
     echo 'Include "contour.pro";' >> case.pro
     ln -sfn "$ROOT/${SRC}/contour.pro" contour.pro
   fi
   # GetDP 3.5.0 keeps only the last repeated -pos flag; pass both names after one -pos
   # so Map and Contour run in the same process on the final in-memory solution.
   # A second getdp -res case.res pass would post every saved Picard step (wrong I_contour).
-  if [ -f contour.pro ]; then
+  if [[ -f contour.pro ]]; then
     nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map Contour > getdp.log 2>&1
   else
     nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map > getdp.log 2>&1
@@ -59,7 +59,7 @@ print(p.read_text())
   echo "=== done $dest $(date -Is) ==="
   tail -5 "$dest/getdp.log"
   for f in I_contour.dat I_emitter.dat I_collector.dat Q_rho.dat v_probe.dat r_probe.dat e_probe.dat v_laplace_probe.dat ctr_e.dat ctr_r.dat; do
-    if [ -f "$dest/$f" ]; then echo "== $f =="; tail -2 "$dest/$f"; else echo "== $f MISSING =="; fi
+    if [[ -f "$dest/$f" ]]; then echo "== $f =="; tail -2 "$dest/$f"; else echo "== $f MISSING =="; fi
   done
 }
 

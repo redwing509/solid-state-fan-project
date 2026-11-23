@@ -5,8 +5,10 @@ This file still reports capacitor energy/V and the Dirichlet-edge I_emitter,
 which is identically zero on these first-order meshes and is not the pass metric.
 """
 from __future__ import annotations
-import json, math, re, sys
+import json, math, sys
 from pathlib import Path
+
+from getdp_tables import floats_in
 
 ROOT = Path(__file__).resolve().parent
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "results" / "verify"
@@ -36,8 +38,8 @@ def last_number(path: Path):
     if not text:
         return None
     line = text[-1].strip()
-    nums = re.findall(r"[-+]?(?:\d+\.\d*|\.\d+|\d+)(?:[eE][-+]?\d+)?", line)
-    return float(nums[-1]) if nums else None
+    nums = floats_in(line)
+    return nums[-1] if nums else None
 
 def probe_scalar(path: Path):
     # v_probe.dat: several columns, last is the value (see smoke)
@@ -47,7 +49,7 @@ def probe_ex(path: Path):
     if not path.is_file():
         return None
     line = path.read_text().strip().splitlines()[-1]
-    nums = [float(x) for x in re.findall(r"[-+]?(?:\d+\.\d*|\.\d+|\d+)(?:[eE][-+]?\d+)?", line)]
+    nums = floats_in(line)
     # after coordinates, the vector Ex Ey Ez — take the first vector component if present
     # smoke: 15 18214  0.03 0 0  0 0 0   20.74 ...
     if len(nums) >= 9:

@@ -1,16 +1,25 @@
 #!/usr/bin/env python3
 """Half-domain current from a sampled semicircle at r=5*r_wire."""
 from __future__ import annotations
-import json, math, re, sys
+import json, math, sys
 from pathlib import Path
+
+from getdp_tables import floats_in
 
 RW = 39.5e-6
 RP = 5 * RW
 MU = 2.3e-4
 I_OF = 8.226752e-05  # OpenFOAM Richardson, A/m, half-domain
 
+CURRENT_ABS_MIN = 1e-18  # A/m; below this is treated as no current
+
+
+def usable_current(I):
+    return I is not None and math.isfinite(I) and abs(I) > CURRENT_ABS_MIN
+
+
 def nums(line: str):
-    return [float(x) for x in re.findall(r"[-+]?(?:\d+\.\d*|\.\d+|\d+)(?:[eE][-+]?\d+)?", line)]
+    return floats_in(line)
 
 def load_pairs(e_path: Path, r_path: Path):
     elines = [ln for ln in e_path.read_text().splitlines() if ln.strip()]
@@ -70,7 +79,7 @@ def one(d: Path):
         v_probe=last_scalar(d / "v_probe.dat"),
         r_probe=last_scalar(d / "r_probe.dat"),
         v_laplace_probe=last_scalar(d / "v_laplace_probe.dat"),
-        finite=I is not None and math.isfinite(I) and I != 0.0,
+        finite=usable_current(I),
     )
     return rec
 

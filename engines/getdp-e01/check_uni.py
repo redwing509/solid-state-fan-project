@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Coaxial unipolar current from volume samples I(r)=2*pi*r*mu*rho*|E| vs exact I'."""
 from __future__ import annotations
-import json, math, re, sys
+import json, math, sys
 from pathlib import Path
+
+from getdp_tables import floats_in
 
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent / "results" / "verify"
 I_EX = 6.78117058395794e-05
@@ -20,7 +22,7 @@ def last_nums(path: Path):
     if not path.is_file():
         return []
     line = path.read_text().strip().splitlines()[-1]
-    return [float(x) for x in re.findall(r"[-+]?(?:\d+\.\d*|\.\d+|\d+)(?:[eE][-+]?\d+)?", line)]
+    return floats_in(line)
 
 def last_scalar(path: Path):
     n = last_nums(path)

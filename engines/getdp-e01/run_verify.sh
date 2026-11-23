@@ -76,7 +76,7 @@ run_uni() {
   echo "done $dest"
 }
 
-if [ "${UNI_ONLY:-0}" != 1 ]; then
+if [[ "${UNI_ONLY:-0}" != 1 ]]; then
   for f in $FACTORS; do
     run_cap "$f"
   done

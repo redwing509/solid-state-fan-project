@@ -10,9 +10,10 @@ from __future__ import annotations
 
 import json
 import math
-import re
 import sys
 from pathlib import Path
+
+from getdp_tables import floats_in, node_count
 
 I_EX = 6.78117058395794e-05
 EA_EX = 5.995871213257002e6
@@ -44,7 +45,7 @@ def last_nums(path: Path):
     text = path.read_text().strip().splitlines()
     if not text:
         return []
-    return [float(x) for x in re.findall(r"[-+]?(?:\d+\.\d*|\.\d+|\d+)(?:[eE][-+]?\d+)?", text[-1])]
+    return floats_in(text[-1])
 
 
 def last_scalar(path: Path):
@@ -112,8 +113,7 @@ def score_capacitor(out: Path):
 def _nodes(path: Path):
     if not path.is_file():
         return None
-    m = re.search(r"(\d+)\s+nodes", path.read_text())
-    return int(m.group(1)) if m else None
+    return node_count(path.read_text())
 
 
 def score_unipolar(out: Path):
