@@ -97,7 +97,7 @@ Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, 
 
 ## Supplemental fourth mesh (lc_factor 0.125, outside the frozen rule)
 
-`results/study-r2-extra/wp_f0p125` (132,230 nodes, 600 steps, settled; box, nice 19, finished 23 Nov 2026 ~1:30 AM Pacific Time). Same inputs and scorer.
+`results/study-r2-extra/wp_f0p125` (132,230 nodes, 600 steps, settled; box, nice 19, 22 Nov 2026 11:25:59 PM to 23 Nov 2026 1:01:41 AM Pacific Time, per `results/logs-r2/wp_0.125.log`). Same inputs and scorer.
 
 | Mesh | `I_contour` (A/m) | `I_vol` (A/m) |
 |---|---:|---:|
