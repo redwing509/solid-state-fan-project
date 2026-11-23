@@ -1,0 +1,159 @@
+{
+  "title": "EHD current two-engine verification (E-01, 2026-11-01)",
+  "status": "executed_numerical_verification_not_validated",
+  "not": [
+    "thrust",
+    "efficiency",
+    "free_fan_airflow",
+    "performance_gain",
+    "experimental_validation",
+    "formal_two_engine_agreement_under_nov1_rule"
+  ],
+  "units_nov1": "A/m, half-domain wire current per unit length",
+  "pre_registered_tolerance": {
+    "source": "fan-ehd-agree-20261101/AGREEMENT-PLAN.md",
+    "set_at": "2026-11-01 20:45 PST",
+    "richardson_current_rel_pct": 5.0,
+    "mesh_observed_order_min": 0.5,
+    "finest_two_grid_pct_max": 2.0,
+    "require_analytic_tests": true,
+    "require_identical_domain_and_bc": true
+  },
+  "openfoam": {
+    "version_from_checkMesh": "4.1",
+    "build_from_checkMesh": "4.1",
+    "image": "gpuq/fan-11-ehd-convergence:20261024",
+    "headline_solver": "ehdOnlyFoam",
+    "control_solver": "buoyantBoussinesqPimpleEHDFoam",
+    "deltaT_s": 2e-05,
+    "e_series_endTime_s": 0.06,
+    "elecPot_chargeDens_tolerance": 1e-06,
+    "epsilon0": 8.85419e-12,
+    "mobil": 0.00023,
+    "V_wire_V": 7540,
+    "V_plate_V": 0,
+    "rho_wire_C_m3": 0.0001743,
+    "r_wire_m": 3.95e-05,
+    "plate_y_m": -0.02004,
+    "orig_domain_mm": {
+      "x": 320,
+      "y_up": 60,
+      "z_depth": 300
+    },
+    "far_domain_mm": {
+      "x": 3200,
+      "y_up": 600,
+      "z_depth": 300
+    },
+    "depth_m": 0.3,
+    "meshes_orig": {
+      "E2": {
+        "cells": 18800,
+        "I_wire_A_per_m_t0.06": 7.859547575875263e-05,
+        "I_plate_A_per_m_t0.06": 7.855149653292896e-05
+      },
+      "E4": {
+        "cells": 75200,
+        "I_wire_A_per_m_t0.06": 8.111873724384423e-05,
+        "I_plate_A_per_m_t0.06": 8.107737519048302e-05
+      },
+      "E8": {
+        "cells": 300800,
+        "I_wire_A_per_m_t0.06": 8.190812961504308e-05,
+        "I_plate_A_per_m_t0.06": 8.186985587440794e-05
+      }
+    },
+    "richardson_E2_E4_E8_t0.06": {
+      "p": 1.6764752382656987,
+      "I_inf_A_per_m": 8.226752255348001e-05,
+      "finest_two_pct_of_fine_as_in_summary_txt": 0.964,
+      "source": "analysis-2120/summary.txt and currents.json"
+    },
+    "e8_plate_wire_balance_rel": 0.00046727645735561527
+  },
+  "box_fv": {
+    "script": "fan-ehd-2nd-engine-20261101/ehd_bipolar.py",
+    "result": "fan-ehd-2nd-engine-20261101/result.json",
+    "run_finished": "2026-11-01T17:57:17-08:00",
+    "domain": "infinite_half_plane_bipolar_conformal",
+    "eps0": 8.8541878128e-12,
+    "V": 7540.0,
+    "mu": 0.00023,
+    "rho_wire": 0.0001743,
+    "r_wire_m": 3.95e-05,
+    "plate_distance_m": 0.02004,
+    "grids": [
+      {
+        "N": 50,
+        "I_wire": 8.289654357830299e-05,
+        "I_plate": 8.289653888709143e-05,
+        "balance": 5.6591159958805054e-08,
+        "iters": 286
+      },
+      {
+        "N": 100,
+        "I_wire": 8.254712905417516e-05,
+        "I_plate": 8.254712375663017e-05,
+        "balance": 6.417600534564675e-08,
+        "iters": 300
+      },
+      {
+        "N": 200,
+        "I_wire": 8.236732520057252e-05,
+        "I_plate": 8.236731966071697e-05,
+        "balance": 6.725792703052039e-08,
+        "iters": 314
+      },
+      {
+        "N": 400,
+        "I_wire": 8.227610548117171e-05,
+        "I_plate": 8.227609960026789e-05,
+        "balance": 7.147766400559489e-08,
+        "iters": 327
+      }
+    ],
+    "richardson_N100_200_400": {
+      "p": 0.9790063039274429,
+      "I_inf_A_per_m": 8.21821717617474e-05,
+      "finest_two_pct_of_fine_as_in_summary_txt": 0.111,
+      "GCI": "NOT FOUND"
+    }
+  },
+  "comparison_nov1": {
+    "gap_OF_Rich_vs_box_Rich_pct": 0.104,
+    "gap_recomputed_from_json": 0.10385560505756875,
+    "domain_effect_F2_over_C2_t0.1_pct": 0.091,
+    "domain_corrected_OF_Rich_A_per_m": 8.234239670890651e-05,
+    "domain_corrected_OF_Rich_as_in_summary_txt": 8.23424e-05,
+    "gap_domain_corrected_vs_box_pct": 0.195,
+    "F2_stalled_after_s": 0.08,
+    "formal_agreement_declared_nov1": false,
+    "reason_formal_agreement_not_declared": "identical domain not met; F2 stalled; agree3 pending"
+  },
+  "agree5_openfoam_only_supporting_context": {
+    "formally_compared_to_box_engine": false,
+    "source_result": "/opt/fan-research/fan-agree5-20261105/out/extract/RESULT.md",
+    "source_summary": "/opt/fan-research/fan-agree5-20261105/out/extract/SUMMARY_agree5.json",
+    "t_s": 0.06,
+    "tolerance": 1e-12,
+    "HT2": {
+      "cells": 131600,
+      "I_wire": 8.120481613395171e-05
+    },
+    "HT4": {
+      "cells": 526400,
+      "I_wire": 8.199640717392026e-05
+    },
+    "HT8": {
+      "cells": 2105600,
+      "I_wire": 8.220753122306827e-05
+    },
+    "I_inf": 8.22779059061176e-05,
+    "I_inf_as_in_RESULT_md": 8.22779e-05,
+    "p": 1.9066643571005328,
+    "p_as_in_RESULT_md": 1.907,
+    "finest_two_pct": 0.25681837905474053,
+    "GCI_fine_Fs_1.25_pct_from_RESULT_md": 0.117,
+    "side_by_side_vs_nov1_box_Rich_pct_not_a_formal_comparison": 0.116490161208865
+  }
+}

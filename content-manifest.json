@@ -5088,5 +5088,20 @@
     "path": "scripts/watch_queue_comparisons.py",
     "sha256": "27ebca020eed773af944324fad5b690d88d3607599b37afa870043b8b2650d9c",
     "size_bytes": 2130
+  },
+  {
+    "path": "reports/EHD_Current_Two_Engine_Verification_2026-11-01.md",
+    "sha256": "c1c0f1620fa4dcdc21b512b36f9f3a102008f8d6791d33f10e25ae934cfc2770",
+    "size_bytes": 14093
+  },
+  {
+    "path": "results/ehd-current-verification-20261101/summary.json",
+    "sha256": "3c685d834ef9ee1af4ed8c35f7a08544ce4dc35d70c915f82559de783625fda5",
+    "size_bytes": 4930
+  },
+  {
+    "path": "scripts/ehd_current_two_engine_verification.py",
+    "sha256": "199729dbbf8ddd0f0b331dd47e2ff0615b824e2f3420b6e2b0f44e18c1006f78",
+    "size_bytes": 2295
   }
 ]
