@@ -79,7 +79,7 @@ Identical to the frozen plain-Picard A2 (relative difference < 1e-9), as expecte
 | lc_factor 0.5 | 8,670 | 8.206228e-05 | 8.224772e-05 | 9.4164e-08 | 1.8e-05 |
 | lc_factor 0.25 | 33,671 | 8.211425e-05 | 8.221098e-05 | 9.4123e-08 | 1.8e-05 |
 
-- Richardson `I_inf` = **8.212437e-05 A/m**; observed order 2.62; finest-two change 0.063%.
+- Richardson `I_inf` = **8.212437e-05 A/m**; observed order 2.62; finest-two change 0.063%. This is the frozen scoring statistic. The supplemental fourth mesh below (contour 8.218815e-05, above this value) shows the extrapolation is **not** a valid continuum estimate; it is superseded for reporting by the converged weak current, and only the pass/fail verdict rests on it.
 - Gap to OpenFOAM `8.226752e-05`: **−0.174%** (rule ≤ 5%). Gap to box FV `8.218217e-05` (infinite half-plane, context only): −0.070%.
 - Convergence is **oscillatory** (coarse→medium down, medium→fine up). Richardson is therefore only indicative. Every mesh is within 0.25% of OpenFOAM, and the full three-mesh range is 0.39%, so the verdict does not depend on the extrapolation.
 - On the finest mesh the contour current and the independent weak current differ by 0.12%.
@@ -93,7 +93,7 @@ Identical to the frozen plain-Picard A2 (relative difference < 1e-9), as expecte
 
 ## What this is and is not
 
-Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, GetDP finite-element) now give the Nov 1 fixed-injection unipolar half-domain current within 0.18% of each other. GetDP and OpenFOAM used an identical domain and BCs. This is numerical verification of the fixed-injection model only. It is not experimental validation, a Kaptzov/Peek corona-onset result, thrust, airflow, or efficiency. A supplemental fourth mesh is reported below; it is not part of the rule.
+Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, GetDP finite-element) now give the Nov 1 fixed-injection unipolar half-domain current within about 0.25% of each other on every GetDP mesh (see the supplemental section for the converged estimate). GetDP and OpenFOAM used an identical domain and BCs. This is numerical verification of the fixed-injection model only. It is not experimental validation, a Kaptzov/Peek corona-onset result, thrust, airflow, or efficiency. A supplemental fourth mesh is reported below; it is not part of the rule.
 
 ## Supplemental fourth mesh (lc_factor 0.125, outside the frozen rule)
 
@@ -108,4 +108,7 @@ Three independent numerical methods (box finite-volume, OpenFOAM finite-volume, 
 
 - The weak current `I_vol` is mesh-converged: the change from lc 0.25 to 0.125 is 0.0005%. Its converged value 8.2211e-05 A/m is −0.069% from OpenFOAM and +0.035% from box FV.
 - The official point-sampled contour current is **not** in the asymptotic range. Its last three values rise with growing differences (apparent order negative), so a Richardson value from lc 0.5/0.25/0.125 is not meaningful. It stays within 0.25% of OpenFOAM on all four meshes (−0.096% on the finest), and it approaches the converged `I_vol` as the mesh is refined.
-- So the frozen-rule PASS above stands, and the honest error statement for GetDP is: wire current 8.221e-05 A/m with a mesh uncertainty of about ±0.1% (spread of the two estimators on the two finest meshes). All three engines agree within 0.11% on that basis.
+- So the frozen-rule PASS above stands. For reporting, the GetDP wire current is 8.221e-05 A/m from `I_vol`, the estimator that converged. `I_vol` was chosen as the reporting estimator after the data were seen; it is not the frozen official contour current.
+- Its uncertainty is about ±0.1%, a conservative bound on **mesh error only** (the two estimators on the two finest meshes span 8.211425–8.221098e-05, a full width of 0.118%). It excludes time-step error (the `Δt` check moved the contour by 3.4e-7) and does not mean the domain charge is steady (it still rises about 0.5% per 100 steps at `t = 0.06` s, OpenFOAM's sample time).
+- On that basis the three values are OpenFOAM 8.226752e-05, GetDP 8.221054e-05 and box FV 8.218217e-05: a spread of 0.104%, set by OpenFOAM vs box FV, with GetDP between them. Box FV used an infinite half-plane, not the identical domain, so it is context only. Given GetDP's ±0.1%, the agreement is best stated as about 0.1–0.2%.
+- Scorer record for this mesh: `results/study-r2-extra/E01_SUMMARY.json` (`python3 check_e01.py results/study-r2-extra f0p125`; a single mesh never scores a pass).
