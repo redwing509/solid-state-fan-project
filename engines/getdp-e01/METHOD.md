@@ -145,3 +145,22 @@ Compare `I_inf` to OpenFOAM `8.226752e-05` A/m. **Pass: relative gap ≤ 5%**, o
 - Reproducible tests: `tests/test_known_solution.py` and `tests/ACCEPTANCE.md` (8 tests passed). They re-score the saved files and, when `scripts/coaxial_verification.py` and numpy are available, check that exact `I'` matches the independent shooting/BVP pair.
 - Host for the accepted solves: **mail**, `/opt/fan-tools`. Nothing was started on vps3, rig1, or the laptop. No duplicate GetDP job was started; none was running when this note was written.
 - A coarse Nov 1 wire–plate smoke (`run_e01.sh`, `results/smoke/wp_f1` on mail) was started at 11:44 PM Pacific Time and failed at once with `Error : Field[] expects XYZ coordinates as argument` while evaluating `V_laplace[] = ScalarField[1]` after reading `v_init.pos`. GetDP 3.5.0 requires the evaluation point in `[]`; the official form is `ScalarField[XYZ[]]{1}` (manual §6.2.6). A later untested `ScalarField[1]{X, Y, Z}` rewrite still fails (`Unknown Constant: X`). `run_e01.sh` now emits `ScalarField[XYZ[]]{1}` and invokes GetDP with one `-pos Map Contour` (a repeated `-pos` flag keeps only the last name; a later `-res` post would print every Picard step). That study is not part of the known-solution pass/fail; A1/A2 bands were not moved.
+
+## Wire–plate start-up fix and study rules (t1300u, written 22 Nov 2026 ~11:10 PM Pacific Time, before any scored wire–plate run)
+
+**Finding.** The mail study `study-t1277u` (22 Nov 2026, 6:46–6:49 PM Pacific Time) exited rc=0 but was never scored. Re-scoring it, and re-running the coarse mesh on the box with the same pinned binaries, shows a period-2 Picard limit cycle: domain charge alternates between about `9.1e-14` and `4.46e-6` C/m on every other step. The lagged reaction coefficient `μ ρ_lag / ε0` over-damps the transport when `ρ_lag` is large and vanishes when `ρ_lag ≈ 0`. Step 40 lands on the collapsed branch, so the contour current is about `1e-16` A/m. That run is rejected. A2 is weakly space-charge loaded and converged under plain Picard; a box re-solve of A2 at `lc_factor` 1 and 0.5 with the unchanged file reproduced the official `6.782031e-05` A/m. A Newton linearization of the `ρ²` term with lagged `E` diverged on the coarse wire–plate mesh and was discarded.
+
+**Accepted change (one variable).** The transport equation gains the backward-Euler time term `(ρ − ρ_prev)/Δt` (two cancelling Galerkin terms with `inv_dt = 1/Δt`). This is the physical charge-transport time derivative with a quasi-static field, the same problem OpenFOAM marched to `t = 0.06` s. At a steady state the two terms cancel, so the steady equations, the SUPG term, the BCs and the domain are unchanged. Each step: one linear solve of the mixed Poisson + transport system with `E` and `ρ_lag` from the previous step.
+
+- `Δt = 1e-4` s, `n_steps = 600` (`t = 0.06` s, the OpenFOAM sample time) for the wire–plate study and for the A2 re-verification.
+- A per-step monitor writes domain charge `Q` and a weak (volume) wire current `I_vol = ∫ μ ρ ∇V · ∇φ dA`, with `φ` = 1 for `r ≤ r1`, 0 for `r ≥ r2`, linear between (`r1 = 2 r_w`, `r2 = 8 r_w` wire–plate; `r1 = 2a`, `r2 = 8a` coax). It is a monitor and a cross-check of the contour current, not the official current.
+- The official wire–plate current is still the `r = 5 r_w` contour flux (`check_e01.py`). The official A2 current is still the five-sample mean (`check_uni.py`).
+
+**Rules written before the scored runs (bands not moved):**
+
+1. A2 re-verification with the changed file, three meshes (`results/verify-r2/`): finest mean current within 1% of `6.78117058395794e-05` A/m, finest-two change ≤ 2%, apparent order > 0.5 where defined. If A2 fails, the wire–plate study is not scored.
+2. Settled run: on every mesh, the relative change of `I_vol` over the last 100 steps (`t` 0.05 → 0.06 s) is ≤ 0.1%. A mesh that is not settled is not used.
+3. Frozen E-01 rule (AGREEMENT-PLAN.md / RECOMMENDATION.md): Richardson `I_inf` within 5% of OpenFOAM `8.226752e-05` A/m, observed order > 0.5, finest-two change ≤ 2%, same domain and BCs. Oscillatory convergence (sign change between successive differences) is reported.
+4. Time-step check on the coarse mesh only: `Δt = 5e-5` s, 1200 steps; the contour current differs from the `Δt = 1e-4` s value by ≤ 0.5%. Reported, not part of the frozen rule.
+
+The box-FV value `8.218217e-05` A/m (infinite half-plane) is reported for context; the formal comparison is to OpenFOAM on the identical domain.

@@ -10,12 +10,50 @@ RW = 39.5e-6
 RP = 5 * RW
 MU = 2.3e-4
 I_OF = 8.226752e-05  # OpenFOAM Richardson, A/m, half-domain
+I_BOX = 8.218217e-05  # box FV Richardson (infinite half-plane), context only
 
 CURRENT_ABS_MIN = 1e-18  # A/m; below this is treated as no current
+SETTLE_WINDOW = 100      # steps (t 0.05 -> 0.06 s at dt = 1e-4 s); METHOD.md
+SETTLE_TOL = 1e-3        # 0.1% relative change of I_vol over the window
 
 
 def usable_current(I):
     return I is not None and math.isfinite(I) and abs(I) > CURRENT_ABS_MIN
+
+
+def monitor_settled(values, window=SETTLE_WINDOW, tol=SETTLE_TOL):
+    """Return (ok, rel_change) for the last `window` steps of a monitor series.
+
+    rel_change = (max - min) / |last| over the final window + 1 values. A
+    short, non-finite or zero series is never settled.
+    """
+    vals = list(values)
+    if len(vals) < window + 1:
+        return False, math.inf
+    tail = vals[-(window + 1):]
+    if not all(math.isfinite(v) for v in tail):
+        return False, math.inf
+    last = tail[-1]
+    if abs(last) <= CURRENT_ABS_MIN:
+        return False, math.inf
+    change = (max(tail) - min(tail)) / abs(last)
+    return change <= tol, change
+
+
+def oscillatory(Ic, Im, If_):
+    """True when successive mesh differences change sign."""
+    return (Ic - Im) * (Im - If_) < 0
+
+
+def monitor_series(path: Path):
+    if not path.is_file():
+        return []
+    out = []
+    for ln in path.read_text().splitlines():
+        n = floats_in(ln)
+        if n:
+            out.append(n[-1])
+    return out
 
 
 def nums(line: str):
@@ -81,6 +119,14 @@ def one(d: Path):
         v_laplace_probe=last_scalar(d / "v_laplace_probe.dat"),
         finite=usable_current(I),
     )
+    mon = monitor_series(d / "monitor_I.dat")
+    ok, change = monitor_settled(mon)
+    rec.update(
+        n_steps=len(mon),
+        I_vol=mon[-1] if mon else None,
+        settled=ok,
+        settle_change=None if not math.isfinite(change) else change,
+    )
     return rec
 
 def main():
@@ -93,7 +139,7 @@ def main():
             continue
         rows.append(dict(tag=t, **one(d)))
     report = dict(openfoam_I=I_OF, meshes=rows)
-    if len(rows) >= 3 and all(r["I_contour"] for r in rows):
+    if len(rows) >= 3 and all(usable_current(r["I_contour"]) for r in rows[:3]):
         Ic, Im, If_ = (rows[0]["I_contour"], rows[1]["I_contour"], rows[2]["I_contour"])
         change = abs(If_ - Im) / abs(If_)
         try:
@@ -102,8 +148,13 @@ def main():
         except (ValueError, ZeroDivisionError):
             p, Iinf = None, None
         gap = None if Iinf is None else abs(Iinf - I_OF) / I_OF
-        ok = (Iinf is not None and gap <= 0.05 and p is not None and p > 0.5 and change <= 0.02)
-        report.update(p=p, I_inf=Iinf, rel_gap_OF=gap, finest_two_change=change, e01_pass=ok)
+        settled = all(r["settled"] for r in rows[:3])
+        ok = (settled and Iinf is not None and gap <= 0.05 and p is not None
+              and p > 0.5 and change <= 0.02)
+        report.update(p=p, I_inf=Iinf, rel_gap_OF=gap, finest_two_change=change,
+                      oscillatory=oscillatory(Ic, Im, If_), all_settled=settled,
+                      rel_gap_box_fv=None if Iinf is None else abs(Iinf - I_BOX) / I_BOX,
+                      e01_pass=ok)
     (root / "E01_SUMMARY.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
 
