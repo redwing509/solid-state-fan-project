@@ -34,7 +34,7 @@ Finest-mesh error **0.330%** (≤ 1%). Finest-two relative change **0.316%** (�
 
 ## What this does not cover
 
-The Nov 1 wire–plate GetDP comparison to OpenFOAM `8.226752e-05` A/m (METHOD.md steps B and C, Q-01 F-4 agreement test, pre-registered ≤ 5% current rule) is **not** done. A coarse smoke was started on mail at 11:44 PM Pacific Time and failed immediately with `Error : Field[] expects XYZ coordinates as argument` while reading the Laplace start-up field. That process is not running. It was not rerun: mail is at its Fan runner cap of 4 with the r8 twins, load ~14. `run_e01.sh` now writes `ScalarField[1]{X, Y, Z}` for a later smoke. vps3 has no E-01 directory and is at its cap of 3 e40k cases.
+The Nov 1 wire–plate GetDP comparison to OpenFOAM `8.226752e-05` A/m (METHOD.md steps B and C, Q-01 F-4 agreement test, pre-registered ≤ 5% current rule) is **not** done. A coarse smoke was started on mail at 11:44 PM Pacific Time and failed immediately with `Error : Field[] expects XYZ coordinates as argument` while evaluating `V_laplace[] = ScalarField[1]` (GetDP 3.5.0 needs the point in `[]`, official form `ScalarField[XYZ[]]{1}`). That process is not running. `run_e01.sh` is corrected to emit `ScalarField[XYZ[]]{1}` and to pass `-pos Map Contour` in one invocation. Known-solution A1/A2 do not use `GmshRead`/`ScalarField` and are unchanged. Bands were not moved.
 
 ## Reproducing the score
 

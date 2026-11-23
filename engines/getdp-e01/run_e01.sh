@@ -38,7 +38,7 @@ p=Path('case.pro')
 t=p.read_text()
 t=t.replace('use_v_init = 0;', 'use_v_init = 1;')
 t=t.replace('Function { V_laplace[] = 0.; }',
-            'Function {\n  GmshRead[\"v_init.pos\"];\n  V_laplace[] = ScalarField[1]{X, Y, Z};\n}')
+            'Function {\n  GmshRead[\"v_init.pos\"];\n  V_laplace[] = ScalarField[XYZ[]]{1};\n}')
 p.write_text(t)
 print(p.read_text())
 "
@@ -47,7 +47,14 @@ print(p.read_text())
     echo 'Include "contour.pro";' >> case.pro
     ln -sfn "$ROOT/${SRC}/contour.pro" contour.pro
   fi
-  nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map -pos Contour > getdp.log 2>&1
+  # GetDP 3.5.0 keeps only the last repeated -pos flag; pass both names after one -pos
+  # so Map and Contour run in the same process on the final in-memory solution.
+  # A second getdp -res case.res pass would post every saved Picard step (wrong I_contour).
+  if [ -f contour.pro ]; then
+    nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map Contour > getdp.log 2>&1
+  else
+    nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map > getdp.log 2>&1
+  fi
   cd "$ROOT"
   echo "=== done $dest $(date -Is) ==="
   tail -5 "$dest/getdp.log"
