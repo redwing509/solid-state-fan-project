@@ -1,0 +1,91 @@
+name: C++ sanitizers (ASan + UBSan)
+
+# Builds the pinned OpenFOAM v2412 solver (modern-ehd electrostaticSimpleFoam)
+# with AddressSanitizer + UndefinedBehaviorSanitizer and runs a short
+# coaxialCorona smoke case. Free GitHub-hosted runner only; read-only token.
+# The legacy-ehd solver targets OpenFOAM 4.1 and is not built here.
+
+on:
+  pull_request:
+    paths:
+      - "pinned_public_source/modern-ehd/src/**"
+      - "pinned_public_source/modern-ehd/examples/coaxialCorona/**"
+      - ".github/workflows/sanitizers.yml"
+  push:
+    branches: [main]
+    paths:
+      - "pinned_public_source/modern-ehd/src/**"
+      - ".github/workflows/sanitizers.yml"
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: "SIMPLE iterations for the smoke run"
+        default: "30"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sanitizers-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  asan-ubsan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      ITER: ${{ github.event.inputs.iterations || '30' }}
+      SRC: pinned_public_source/modern-ehd
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            pinned_public_source/modern-ehd
+            .github
+      - name: Install OpenFOAM v2412 (openfoam.com Debian repo)
+        run: |
+          curl -fsSL https://dl.openfoam.com/add-debian-repo.sh | sudo bash
+          sudo apt-get install -y --no-install-recommends openfoam2412-dev
+      - name: Build electrostaticSimpleFoam with -fsanitize=address,undefined
+        shell: bash
+        run: |
+          set +u
+          source /usr/lib/openfoam/openfoam2412/etc/bashrc || true
+          set -u
+          cp -r "$SRC" "$RUNNER_TEMP/modern-ehd"
+          opts="$RUNNER_TEMP/modern-ehd/src/electrostaticSimpleFoam/Make/options"
+          SAN="-fsanitize=address,undefined -fno-omit-frame-pointer -fno-sanitize-recover=undefined -g -O1"
+          # Prepend sanitizer flags to compile and link lines of the CI copy only.
+          sed -i "s|^EXE_INC = \\\\|EXE_INC = $SAN \\\\|; s|^EXE_LIBS = \\\\|EXE_LIBS = $SAN \\\\|" "$opts"
+          cat "$opts"
+          cd "$RUNNER_TEMP/modern-ehd"
+          sh ./Allwmake 2>&1 | tee "$RUNNER_TEMP/build.log"
+          test -x "$FOAM_USER_APPBIN/electrostaticSimpleFoam"
+          ldd "$FOAM_USER_APPBIN/electrostaticSimpleFoam" | grep -E "asan|ubsan"
+      - name: Run coaxialCorona smoke case under ASan/UBSan
+        shell: bash
+        env:
+          # OpenFOAM frees some singletons only at exit; leaks are reported but not fatal.
+          ASAN_OPTIONS: detect_leaks=0:abort_on_error=1:strict_string_checks=1:detect_stack_use_after_return=1
+          UBSAN_OPTIONS: print_stacktrace=1:halt_on_error=1
+        run: |
+          set +u
+          source /usr/lib/openfoam/openfoam2412/etc/bashrc || true
+          set -u
+          case="$RUNNER_TEMP/case"
+          cp -r "$RUNNER_TEMP/modern-ehd/examples/coaxialCorona" "$case"
+          cd "$case"
+          foamDictionary system/controlDict -entry endTime -set "$ITER"
+          foamDictionary system/controlDict -entry writeInterval -set "$ITER"
+          blockMesh > log.blockMesh 2>&1
+          "$FOAM_USER_APPBIN/electrostaticSimpleFoam" 2>&1 | tee log.solver
+          grep -q "^End" log.solver
+          ! grep -E "ERROR: AddressSanitizer|runtime error:" log.solver
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sanitizer-logs
+          path: |
+            ${{ runner.temp }}/build.log
+            ${{ runner.temp }}/case/log.*
+          if-no-files-found: ignore
