@@ -1,0 +1,22 @@
+Info    : Running '/workspace/fan-third-engine/opt/gmsh-4.15.2-Linux64/bin/gmsh -2 -format msh2 -setnumber lc_factor 0.25 /workspace/fan-e01-wireplate/engines/getdp-e01/study/wireplate.geo -o /workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2/wp_f0p25/case.msh' [Gmsh 4.15.2, 1 node, max. 1 thread]
+Info    : Started on Sun Nov 22 23:01:51 2026
+Info    : Reading '/workspace/fan-e01-wireplate/engines/getdp-e01/study/wireplate.geo'...
+Info    : Done reading '/workspace/fan-e01-wireplate/engines/getdp-e01/study/wireplate.geo'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Circle)
+Info    : [ 20%] Meshing curve 2 (Circle)
+Info    : [ 30%] Meshing curve 3 (Circle)
+Info    : [ 40%] Meshing curve 4 (Circle)
+Info    : [ 50%] Meshing curve 10 (Line)
+Info    : [ 60%] Meshing curve 11 (Line)
+Info    : [ 70%] Meshing curve 12 (Line)
+Info    : [ 80%] Meshing curve 13 (Line)
+Info    : [ 90%] Meshing curve 14 (Line)
+Info    : Done meshing 1D (Wall 0.0136469s, CPU 0.008872s)
+Info    : Meshing 2D...
+Info    : Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.925427s, CPU 0.898154s)
+Info    : 33671 nodes 67348 elements
+Info    : Writing '/workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2/wp_f0p25/case.msh'...
+Info    : Done writing '/workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2/wp_f0p25/case.msh'
+Info    : Stopped on Sun Nov 22 23:01:52 2026 (From start: Wall 1.03045s, CPU 1.00255s)

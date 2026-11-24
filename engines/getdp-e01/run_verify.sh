@@ -71,6 +71,8 @@ run_uni() {
     "$ROOT/verify/coaxial_unipolar.geo" -o "$dest/case.msh" > "$dest/gmsh.log" 2>&1
   grep -E "nodes|elements|Mesh" "$dest/gmsh.log" | tail -20 > "$dest/mesh_info.txt" || true
   cd "$dest"
+  # The monitor appends one line per step; never mix two runs in one file.
+  rm -f monitor_Q.dat monitor_I.dat
   nice -n 19 "$GETDP" case.pro -msh case.msh -solve Unipolar -pos Map > getdp.log 2>&1
   cd "$ROOT"
   echo "done $dest"

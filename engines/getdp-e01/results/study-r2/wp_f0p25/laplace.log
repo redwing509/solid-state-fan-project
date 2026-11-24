@@ -1,0 +1,36 @@
+Info    : Running '/workspace/fan-third-engine/opt/getdp-3.5.0-Linux64/bin/getdp laplace.pro -msh case.msh -solve Laplace -pos LaplaceMap' [GetDP 3.5.0, 1 node, max. 1 thread]
+Info    : Started (Sun Nov 22 23:01:52 2026, Wall = 9.01222e-05s, CPU = 0.002806s, Mem = 6.67188Mb)
+Info    : Initializing Gmsh
+Info    : Loading problem definition 'laplace.pro'
+Info    : Loading problem definition 'unipolar.pro'
+Info    : Selected Resolution 'Laplace'
+Info    : Loading Geometric data 'case.msh'
+Info    : Snapped x coordinate of 434 nodes to 0
+Info    : System 'L' : Real
+P r e - P r o c e s s i n g . . .
+Info    : Treatment Formulation 'Laplace'
+Info    :   Generate ExtendedGroup '_CO_Entity_9' (NodesOf, None)
+Info    :   Generate ExtendedGroup '_CO_Entity_10' (NodesOf, None)
+Info    : System 1/1: 33434 Dofs
+Info    : (Wall = 0.114675s, CPU = 0.11699s, Mem = 23.6133Mb)
+E n d   P r e - P r o c e s s i n g
+P r o c e s s i n g . . .
+Info    : Generate[L]
+Info    : Solve[L]
+Info    : N: 33434 - preonly lu mumps
+Info    : SaveSolution[L]
+Info    : (Wall = 0.64326s, CPU = 0.563021s, Mem = 93.4219Mb)
+E n d   P r o c e s s i n g
+P o s t - P r o c e s s i n g . . .
+Info    : NameOfSystem not set in PostProcessing: selected 'L'
+Info    : Selected PostProcessing 'Laplace'
+Info    : Selected Mesh 'case.msh'
+Info    : PostOperation 'LaplaceMap' 1/2
+          > 'v_init.pos'
+Info    : PostOperation 'LaplaceMap' 2/2
+          > 'v_laplace_probe.dat'
+Info    : Initializing rapid search grid...
+Info    : ...done: 20x20x1
+Info    : (Wall = 0.993642s, CPU = 0.876749s, Mem = 93.6016Mb)
+E n d   P o s t - P r o c e s s i n g
+Info    : Stopped (Sun Nov 22 23:01:53 2026, Wall = 0.997871s, CPU = 0.876958s, Mem = 93.6016Mb)

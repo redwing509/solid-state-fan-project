@@ -1,0 +1,70 @@
+=== wireplate lc_factor=0.125 -> /workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2-extra/wp_f0p125 2026-11-22T23:25:59-08:00 ===
+Info    : 132230 nodes 264466 elements
+--- Laplace pre-solve ---
+// Nov 1 / E-01 original-domain unipolar current (t1244u). PUSH=0. Model-only.
+V0 = 7540;
+rho_a = 1.743e-4;
+mu_ion = 2.3e-4;
+eps0 = 8.85419e-12;
+h_mesh = 1.000000e-06;
+n_steps = 600;
+inv_dt = 1.0e4;   // 1/dt, dt = 1e-4 s; 600 steps = 0.06 s
+mon_r1 = 2*39.5e-6;
+mon_r2 = 8*39.5e-6;
+use_v_init = 1;
+Function {
+  GmshRead["v_init.pos"];
+  V_laplace[] = ScalarField[XYZ[]]{1};
+}
+// The runner enables use_v_init and GmshRead["v_init.pos"] after the Laplace pre-solve.
+// Probe in the gap, on the symmetry plane below the wire (x=0, mid-gap).
+probe_x = 0.0;
+probe_y = -0.010;
+
+Group {
+  Emitter = Region[1];
+  Collector = Region[2];
+  Right = Region[3];
+  Top = Region[4];
+  SymmetryEdge = Region[5];
+  Outflow = Region[{2, 3, 4}];
+  Domain = Region[6];
+  ProbeContour = Region[{}];
+}
+
+Include "unipolar.pro";
+
+--- Unipolar solve ---
+=== done /workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2-extra/wp_f0p125 2026-11-23T01:01:41-08:00 ===
+Info    : PostOperation 'Contour' 74/74
+          >> 'ctr_r.dat'
+Info    : (Wall = 5731.79s, CPU = 5472.11s, Mem = 1180.29Mb)
+E n d   P o s t - P r o c e s s i n g
+Info    : Stopped (Mon Nov 23 01:01:40 2026, Wall = 5731.84s, CPU = 5472.12s, Mem = 1180.29Mb)
+== I_vol.dat ==
+ 0 8.221053970221295e-05
+== monitor_I.dat ==
+
+ 0 8.221053970221295e-05
+== I_contour.dat MISSING ==
+== I_emitter.dat ==
+ 0 0
+== I_collector.dat ==
+ 0 0
+== Q_rho.dat ==
+ 0 9.411215051779185e-08
+== v_probe.dat ==
+15 180315  0 -0.01 0  0 0 0   2622.734312309966  
+== r_probe.dat ==
+15 180315  0 -0.01 0  0 0 0   0.0001061289868089236  
+== e_probe.dat ==
+15 180315  0 -0.01 0  0 0 0   972.8914398197085 -240495.2739782743 0  
+== v_laplace_probe.dat ==
+15 180315  0 -0.01 0  0 0 0   1218.897180794665  
+== ctr_e.dat ==
+
+15 62282  1.209338714158011e-20 0.0001975 0  0 0 0   18936.56077432632 3213279.507846832 0  
+== ctr_r.dat ==
+
+15 62282  1.209338714158011e-20 0.0001975 0  0 0 0   0.0001741994129152992  
+E01_DONE /workspace/fan-e01-wireplate/engines/getdp-e01/results/study-r2-extra

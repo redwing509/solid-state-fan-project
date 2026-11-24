@@ -4,7 +4,10 @@ rho_a = 1.743e-4;
 mu_ion = 2.3e-4;
 eps0 = 8.85419e-12;
 h_mesh = 8e-6;
-n_picard = 40;
+n_steps = 600;
+inv_dt = 1.0e4;   // 1/dt, dt = 1e-4 s; 600 steps = 0.06 s
+mon_r1 = 2*39.5e-6;
+mon_r2 = 8*39.5e-6;
 use_v_init = 0;
 Function { V_laplace[] = 0.; }
 // The runner enables use_v_init and GmshRead["v_init.pos"] after the Laplace pre-solve.

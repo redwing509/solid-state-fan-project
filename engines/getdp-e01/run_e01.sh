@@ -28,6 +28,7 @@ run_one() {
   python3 -c "import pathlib,re; p=pathlib.Path('$dest/laplace.pro'); t=p.read_text(); f=float('$fac'); t=re.sub(r'^h_mesh = .*', 'h_mesh = %.6e;'%(8e-6*f), t, count=1, flags=re.M); p.write_text(t)"
   cd "$dest"
   echo "--- Laplace pre-solve ---"
+  rm -f v_init.pos   # never start from an older run's Laplace guess
   nice -n 19 "$GETDP" laplace.pro -msh case.msh -solve Laplace -pos LaplaceMap > laplace.log 2>&1
   [[ -f v_init.pos ]]
   # Coupled wrapper: Init from v_init.pos
@@ -43,6 +44,11 @@ p.write_text(t)
 print(p.read_text())
 "
   echo "--- Unipolar solve ---"
+  # The monitor appends one line per step; never mix two runs in one file.
+  rm -f monitor_Q.dat monitor_I.dat
+  # Never score a table left over from an earlier run in this directory.
+  rm -f ctr_e.dat ctr_r.dat I_vol.dat Q_rho.dat I_emitter.dat I_collector.dat \
+    v_probe.dat e_probe.dat r_probe.dat ./*_r0*.dat
   if [[ -f "$ROOT/${SRC}/contour.pro" ]]; then
     echo 'Include "contour.pro";' >> case.pro
     ln -sfn "$ROOT/${SRC}/contour.pro" contour.pro
@@ -58,7 +64,7 @@ print(p.read_text())
   cd "$ROOT"
   echo "=== done $dest $(date -Is) ==="
   tail -5 "$dest/getdp.log"
-  for f in I_contour.dat I_emitter.dat I_collector.dat Q_rho.dat v_probe.dat r_probe.dat e_probe.dat v_laplace_probe.dat ctr_e.dat ctr_r.dat; do
+  for f in I_vol.dat monitor_I.dat I_contour.dat I_emitter.dat I_collector.dat Q_rho.dat v_probe.dat r_probe.dat e_probe.dat v_laplace_probe.dat ctr_e.dat ctr_r.dat; do
     if [[ -f "$dest/$f" ]]; then echo "== $f =="; tail -2 "$dest/$f"; else echo "== $f MISSING =="; fi
   done
 }

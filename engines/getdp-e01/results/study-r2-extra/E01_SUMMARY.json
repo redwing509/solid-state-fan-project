@@ -1,0 +1,28 @@
+{
+  "openfoam_I": 8.226752e-05,
+  "meshes": [
+    {
+      "tag": "f0p125",
+      "dir": "results/study-r2-extra/wp_f0p125",
+      "n_pts": 37,
+      "I_contour": 8.218814933133042e-05,
+      "rel_OF": 0.0009647874236343005,
+      "I_emitter": 0.0,
+      "I_collector": 0.0,
+      "Q_rho": 9.411215051779185e-08,
+      "v_probe": 2622.734312309966,
+      "r_probe": 0.0001061289868089236,
+      "v_laplace_probe": 1218.897180794665,
+      "finite": true,
+      "n_steps": 600,
+      "I_vol": 8.221053970221295e-05,
+      "settled": true,
+      "settle_change": 1.7659598392600805e-05
+    }
+  ],
+  "missing": [],
+  "expected_steps": 600,
+  "tags_halving": true,
+  "a2_r2_pass": true,
+  "e01_pass": false
+}

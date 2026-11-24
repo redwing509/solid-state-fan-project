@@ -1,6 +1,17 @@
 // Coupled Poisson + unipolar drift, Picard lag on E = -grad V.
-// One system so charge enters Poisson as Dof{r}. Fixed Picard count.
-// h_mesh and n_picard must be set by the wrapper before this Include.
+// One system so charge enters Poisson as Dof{r}. Fixed step count.
+// Backward-Euler time term (rho - rho_prev)/dt damps the lagged update
+// (t1300u; METHOD.md). It cancels at a steady state.
+// h_mesh, n_steps, inv_dt, mon_r1 and mon_r2 must be set by the wrapper
+// before this Include.
+
+Function {
+  // Weak (volume) wire-current weight: phi = 1 for r <= mon_r1, 0 for
+  // r >= mon_r2, linear between; grad phi = -r_hat / (mon_r2 - mon_r1).
+  mon_rr[] = Sqrt[X[]*X[] + Y[]*Y[]] + 1e-30;
+  mon_in[] = (mon_rr[] > mon_r1 && mon_rr[] < mon_r2) ? 1.0 : 0.0;
+  mon_gphi[] = -mon_in[] * XYZ[] / (mon_rr[] * (mon_r2 - mon_r1));
+}
 
 Jacobian {
   { Name Vol;
@@ -102,6 +113,11 @@ Formulation {
         In Domain; Jacobian Vol; Integration I1; }
       Galerkin { [ mu_ion / eps0 * {r} * Dof{r} , {r} ];
         In Domain; Jacobian Vol; Integration I1; }
+      // Backward-Euler time term; {r} is the previous step's solution.
+      Galerkin { [ inv_dt * Dof{r} , {r} ];
+        In Domain; Jacobian Vol; Integration I1; }
+      Galerkin { [ -inv_dt * {r} , {r} ];
+        In Domain; Jacobian Vol; Integration I1; }
       // Consistent SUPG, τ = h / (2|μ E|+ε), written as four single-Dof
       // terms because GetDP allows only one Dof{} per expression.
       Galerkin { [
@@ -144,9 +160,13 @@ Resolution {
       InitSolution[U];
       // Persist the Type Init guess so the first transport pass has E=-grad V.
       SaveSolution[U];
-      For it In {1:n_picard}
-        Generate[U]; Solve[U]; SaveSolution[U];
+      // Only the start and the final step are written to case.res; the
+      // monitor records Q and I_vol at every step.
+      For it In {1:n_steps}
+        Generate[U]; Solve[U];
+        PostOperation[Monitor];
       EndFor
+      SaveSolution[U];
     }
   }
 }
@@ -172,6 +192,12 @@ PostProcessing {
             In Collector; Jacobian Sur; Integration I1; }
         }
       }
+      // I_vol = -int rho mu E . grad(phi) dA = int mu rho grad(v) . grad(phi) dA.
+      { Name I_vol; Value {
+          Integral { [ mu_ion * {r} * ({d v} * mon_gphi[]) ];
+            In Domain; Jacobian Vol; Integration I1; }
+        }
+      }
       { Name Q_rho; Value {
           Integral { [ {r} ]; In Domain; Jacobian Vol; Integration I1; }
         }
@@ -195,11 +221,18 @@ PostOperation {
       Print[ v, OnPoint {probe_x, probe_y, 0}, Format Table, File "v_laplace_probe.dat" ];
     }
   }
+  { Name Monitor; NameOfPostProcessing Unipolar;
+    Operation {
+      Print[ Q_rho[Domain], OnGlobal, Format Table, File >> "monitor_Q.dat" ];
+      Print[ I_vol[Domain], OnGlobal, Format Table, File >> "monitor_I.dat" ];
+    }
+  }
   { Name Map; NameOfPostProcessing Unipolar;
     Operation {
       Print[ I_emitter[Emitter], OnGlobal, Format Table, File "I_emitter.dat" ];
       Print[ I_collector[Collector], OnGlobal, Format Table, File "I_collector.dat" ];
       Print[ Q_rho[Domain], OnGlobal, Format Table, File "Q_rho.dat" ];
+      Print[ I_vol[Domain], OnGlobal, Format Table, File "I_vol.dat" ];
       Print[ v, OnPoint {probe_x, probe_y, 0}, Format Table, File "v_probe.dat" ];
       Print[ e, OnPoint {probe_x, probe_y, 0}, Format Table, File "e_probe.dat" ];
       Print[ r, OnPoint {probe_x, probe_y, 0}, Format Table, File "r_probe.dat" ];
